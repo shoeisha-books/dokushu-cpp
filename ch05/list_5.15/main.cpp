@@ -25,10 +25,12 @@ public:
 int_vector::int_vector(std::initializer_list<int> init)
     : m_size{ init.size() }, m_array{ new int[init.size()] }
 {
+    std::size_t i = 0;
     // std::initializer_listの中身を使って動的配列を初期化する
-    for (std::size_t i = 0; i < init.size(); ++i)
+    for (int e : init)
     {
-        m_array[i] = init[i];
+        m_array[i] = e;
+        i += 1;
     }
 }
 
