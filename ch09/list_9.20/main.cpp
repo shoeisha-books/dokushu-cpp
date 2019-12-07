@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 template <typename T>
 struct A

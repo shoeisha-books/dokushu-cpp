@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // データだけを持っている2次元ベクトルの構造体
 struct vector2d
@@ -16,7 +16,7 @@ class Vec2
 public:
     int getX() const { return m_x; }
     int getY() const { return m_y; }
-    
+
     void setX(int x) { m_x = x; }
     void setY(int y) { m_y = y; }
 };

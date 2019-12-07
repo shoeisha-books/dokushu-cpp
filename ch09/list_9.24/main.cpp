@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 左辺値を受け取るテンプレート
 template <typename T>
@@ -19,6 +19,6 @@ int main()
     int i = 0;
 
     foo(i);
-    
+
     foo(0);
 }

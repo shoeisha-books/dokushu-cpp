@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <fstream>
 
 int main()
@@ -18,6 +18,6 @@ int main()
     in.clear();
 
     state = in.rdstate();
-    
+
     std::cout << "clear: " << state << std::endl;
 }

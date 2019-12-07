@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class vector4d
 {
@@ -30,7 +30,7 @@ class vector3d
 public:
     explicit vector3d(float x, float y, float z)
         : x{ x }, y{ y }, z{ z } {}
-    
+
     // vector3dをvector4dに変換する変換関数
     operator vector4d() const;
 };
@@ -45,7 +45,7 @@ vector3d::operator vector4d() const
 int main()
 {
     vector3d v1{ 1, 2, 3 }, v2{ 0, 1, 0 };
-    
+
     vector4d a = v1; // vector3dをvector4dに変換する（①）
 
                      // OK。vector4dのフレンド関数が呼ばれる（②）

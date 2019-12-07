@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <initializer_list> // std::initializer_listを使うのに必要
 
 class int_vector

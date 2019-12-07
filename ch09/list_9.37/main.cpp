@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <initializer_list>
 
 // T型の要素を持つコンテナ
@@ -14,9 +14,9 @@ public:
 
     // {}を使った初期化
     Container(std::initializer_list<T> init);
-    
+
     ~Container() { delete[] ptr; }
-    
+
     void show() const;
 };
 

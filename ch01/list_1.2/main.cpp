@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 何も引数を受け取らず、何も戻り値を返さない関数
 void hello_world()

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class Integer
 {
@@ -13,7 +13,7 @@ public:
     // 後置は第2項にint型を受け取る関数としてオーバーロード
     Integer operator++(int); // 後置インクリメント演算子
     Integer operator--(int); // 後置デクリメント演算子
-    
+
     void show() const;
 };
 
@@ -55,16 +55,16 @@ void Integer::show() const
 int main()
 {
     Integer x = 10;
-    
+
     ++x;
     x.show();
-    
+
     x++;
     x.show();
-    
+
     --x;
     x.show();
-    
+
     x--;
     x.show();
 }

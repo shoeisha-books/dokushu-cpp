@@ -1,4 +1,4 @@
-﻿class A
+class A
 {
     int m_v;
 

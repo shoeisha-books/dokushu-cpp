@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <set>
 
 void print_set(const std::set<int>& l)

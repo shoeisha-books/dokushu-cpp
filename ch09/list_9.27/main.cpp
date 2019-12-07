@@ -1,4 +1,4 @@
-﻿struct vector2d
+struct vector2d
 {
     using value_type = float;
     float x;

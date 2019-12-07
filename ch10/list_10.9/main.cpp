@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class A
 {
@@ -16,9 +16,9 @@ int main()
     {
         // コンストラクターで投げられた例外はnew演算子を通して投げられる
         A* ptr = new A;
-        
+
         // …… // 何かの処理
-        
+
         delete ptr;
     }
     catch (int e)

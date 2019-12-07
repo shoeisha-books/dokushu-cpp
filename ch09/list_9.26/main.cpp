@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <utility> // std::move
 
 void show_value_category(int& value)

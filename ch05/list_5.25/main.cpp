@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <utility>
 
 // 家を表すクラス
@@ -11,9 +11,9 @@ public:
         : m_land{ new int[size] } {}
 
     ~home() { delete[] m_land; }
-    
+
     home(home&& other);
-    
+
     int* land() const { return m_land; }
 };
 

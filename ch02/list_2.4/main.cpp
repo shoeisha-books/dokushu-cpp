@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // メンバー変数を3つ持った共用体
 union U

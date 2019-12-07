@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 extern int value; // extern変数
 

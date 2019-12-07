@@ -1,4 +1,4 @@
-﻿int main()
+int main()
 {
     int size = 1000; // 要素数
     int* darray = new int[size];
@@ -17,8 +17,8 @@
         darray = tmp; // 新領域に差し替え
         size = new_size; // 要素数を変更
     }
-    
+
     // ……
-    
+
     delete[] darray;
 }

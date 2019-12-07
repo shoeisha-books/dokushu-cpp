@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 戻り値を推論ではなく、テンプレート引数で指定した型で返すようにしたテンプレート
 template <typename R, typename A, typename B, typename C>

@@ -1,4 +1,4 @@
-﻿#include <new> // std::bad_array_new_length例外に必要
+#include <new> // std::bad_array_new_length例外に必要
 #include <iostream>
 
 int main()
@@ -9,7 +9,7 @@ int main()
         int* array = new int[len] {0, 1, 2, 3, 4, 5}; // 6要素で初期化しようとする
 
         // …… // 何かの処理
-        
+
         delete[] array;
     }
     // 実際に確保する動的配列の長さより初期化リストのほうが長かった場合の例外ハンドラー

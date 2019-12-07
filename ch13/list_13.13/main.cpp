@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include <iostream>
 
 int main()
@@ -11,7 +11,7 @@ int main()
 
     std::cout << str.rfind(sub) << std::endl;
     std::cout << str.rfind(sub, 2) << std::endl;
-    
+
     std::cout << str.find('s') << std::endl; // 文字の検索
     std::cout << str.rfind('s') << std::endl; // 文字の検索
 }

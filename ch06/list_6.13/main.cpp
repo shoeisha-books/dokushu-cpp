@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 呼び出されるたびにカウントして現在値を返すカウンタークラス
 class Counter

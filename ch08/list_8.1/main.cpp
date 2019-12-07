@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 int main()
 {
@@ -22,13 +22,13 @@ int main()
 
     // 浮動小数点数は16進数表記にはならない（が科学技術表記のまま）
     std::cout << 123.456f << std::endl;
-    
+
     // 整数は16進数で表示されることを期待するが……
     std::cout << 123456 << std::endl;
-    
+
     // 10進数表記をアンセット
     std::cout.unsetf(std::ios::dec);
-    
+
     // 16進数表記だけがセットされているので16進数表記になる（★）
     std::cout << 123456 << std::endl;
 }

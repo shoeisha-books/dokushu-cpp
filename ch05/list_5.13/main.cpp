@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 
 class Object
@@ -36,7 +36,7 @@ int main()
     obj[0].show_name();
     obj[1].show_name();
     obj[2].show_name();
-    
+
     // 配列のdelete演算子。各要素の（ここでは10個の）デストラクターがすべて呼ばれる
     delete[] obj;
 }

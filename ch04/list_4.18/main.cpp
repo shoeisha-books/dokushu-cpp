@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 namespace // 無名名前空間
 {

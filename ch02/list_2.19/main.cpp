@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 2次元ベクトルを表す構造体
 struct vector2d

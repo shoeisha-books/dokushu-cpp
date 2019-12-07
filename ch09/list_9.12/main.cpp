@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // プライマリテンプレート
 template <typename A, typename B, typename C>

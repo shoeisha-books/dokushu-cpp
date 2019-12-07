@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <exception> // std::exceptionに必要
 
 class my_exception : public std::exception

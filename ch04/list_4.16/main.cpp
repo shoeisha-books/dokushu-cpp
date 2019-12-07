@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class A
 {
@@ -7,13 +7,13 @@ class A
 public:
     // コンストラクターをインライン指定付きで宣言
     inline A();
-    
+
     // 自動でインラインになるメンバー関数
     void set_i(int i)
     {
         this->i = i;
     }
-    
+
     // インラインにならないメンバー関数
     void show() const;
 };

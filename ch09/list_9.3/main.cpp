@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 関数テンプレートでの積和演算
 template <typename T>

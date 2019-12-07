@@ -1,4 +1,4 @@
-﻿#include <map>
+#include <map>
 #include <iostream>
 
 int main()

@@ -1,4 +1,4 @@
-﻿class S
+class S
 {
 public:
     // 宣言と同時に定義も与える場合
@@ -22,8 +22,8 @@ void S::bar(T value)
 int main()
 {
     S s;
-    
+
     s.foo<int>(0);
-    
+
     s.bar<float>(0.0f);
 }

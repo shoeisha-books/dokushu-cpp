@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class Base
 {
@@ -28,13 +28,13 @@ int main()
 
     // OK。DerivedはBaseのメンバー関数を継承しているので呼び出せる
     derived.method_Base();
-    
+
     // OK。もちろんDerivedのメンバー関数も呼び出せる
     derived.method_Derived();
-    
+
     // 基底クラスへの参照は派生クラスからも作れる
     Base& base = derived;
-    
+
     // OK。Baseのメンバー関数へはBaseの参照からたどることができる
     base.method_Base();
 }

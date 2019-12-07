@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     std::cout << "元の変数：" << a << std::endl;
 
     a = 42; // キャプチャ元の変数を変更する
-    
+
     // 参照でキャプチャしているので元の変数が変わればラムダ式の中で見える値も変わる
     lambda();
 }

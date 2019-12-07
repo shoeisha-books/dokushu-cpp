@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class int_observer_ptr
 {
@@ -26,6 +26,6 @@ int main()
     std::cout << *pointer << std::endl;
 
     value = 42;
-    
+
     std::cout << *pointer << std::endl;
 }

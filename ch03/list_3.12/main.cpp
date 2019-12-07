@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class Base // 基底となるクラス
 {
@@ -28,7 +28,7 @@ int main()
     base.foo(); // 基底クラスのfooが呼ばれる
     // base.bar(); // エラー。基底クラスには派生クラスで追加した
                    // メンバーは存在していないので呼び出せない
-    
+
     Derived derived;
     derived.foo(); // 基底クラスのfooが呼ばれる
     derived.bar(); // 派生クラスで追加したbarが呼ばれる

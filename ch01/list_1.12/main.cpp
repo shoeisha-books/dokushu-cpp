@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 void nochange(int i)
 {
@@ -15,12 +15,12 @@ void set42(int* pi) // int型へのポインターを引数として受け取る
 int main()
 {
     int i = 0; // iはこの時点では0
-    
+
     nochange(i); // 変数iが持っている値だけを渡す
-    
+
     // 変数i自体は変更されない
     std::cout << i << std::endl;
-    
+
     set42(&i); // 変数iへのアドレスを渡している
 
     // set42がアドレスを使って変数iを変更しているので、iの値は42になっている

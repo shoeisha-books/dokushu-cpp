@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include <iostream>
 
 int main()
@@ -11,7 +11,7 @@ int main()
     {
         std::cout << "empty." << std::endl;
     }
-    
+
     str = "漢字";
     std::cout << str.length() << std::endl;
 }

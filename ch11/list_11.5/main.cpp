@@ -1,4 +1,4 @@
-﻿#include <cstdint> // std::intptr_tのため
+#include <cstdint> // std::intptr_tのため
 #include <iostream>
 
 // さまざまな理由でconst修飾されてない安全ではない関数

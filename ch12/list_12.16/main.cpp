@@ -1,4 +1,4 @@
-﻿#include <vector>
+#include <vector>
 #include <iostream>
 
 void print_vector(const std::vector<int>& v)

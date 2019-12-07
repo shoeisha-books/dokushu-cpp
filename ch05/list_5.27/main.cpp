@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 int identity(int v)
 {

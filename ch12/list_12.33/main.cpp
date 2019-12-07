@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // predicateがtrueを返した要素のみをコンソールに出力する関数
 template <typename P>

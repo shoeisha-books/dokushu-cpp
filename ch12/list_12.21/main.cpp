@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <list>
 #include <iterator>
 
@@ -19,7 +19,7 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << std::endl;
-    
+
     std::cout << "il1:" << std::endl;
     for (auto it = il1.begin(); it != il1.end(); ++it)
     {

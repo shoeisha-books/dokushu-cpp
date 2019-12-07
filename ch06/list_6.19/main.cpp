@@ -1,4 +1,4 @@
-﻿class A
+class A
 {
 public:
     operator int() const { return 0; }
@@ -22,7 +22,7 @@ int main()
                 // Bからintへの暗黙変換は行われない
 
     char cb = b; // エラー。intへの暗黙変換が禁止されているのでcharへも代入できない
-    
+
     int j(b); // OK。変数jは変換関数の戻り値で初期化される
     int k = static_cast<int>(b); // OK。明示的にキャストした場合は変換関数が呼ばれる
 }

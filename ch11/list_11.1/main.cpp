@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <typeinfo> // typeid演算子、std::type_infoに必要
 
 int main()

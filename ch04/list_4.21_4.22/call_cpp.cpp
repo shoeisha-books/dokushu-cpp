@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 extern "C" void call_c(); // Cリンケージを指定してC言語の関数を呼べるように
 

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class A
 {
@@ -15,12 +15,12 @@ void function_scope(int i)
 {
     A a; // 関数スコープから抜けるとデストラクターが呼ばれる
     std::cout << "関数スコープ" << std::endl;
-    
+
     if (i > 0)
     {
         return; // 関数の処理がここから呼び出し元に移る
     }
-    
+
     std::cout << "if文のあと" << std::endl;
 }
 

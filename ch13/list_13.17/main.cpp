@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 
 int main()
@@ -18,6 +18,6 @@ int main()
     std::size_t idx = 0;
     // 文字列を10進数としてint型に変換し、変換できなかった文字のインデックスをidxに格納
     int integer = std::stoi("42.195", &idx);
-    
+
     std::cout << integer << "; idx = " << idx << std::endl;
 }

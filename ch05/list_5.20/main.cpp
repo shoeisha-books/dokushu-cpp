@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 受け取った参照をそのまま返す関数
 int& id(int& i)

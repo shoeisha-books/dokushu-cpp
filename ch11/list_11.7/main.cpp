@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <typeinfo> // std::bad_castに必要
 
 class Base
@@ -34,7 +34,7 @@ int main()
     try
     {
         Derived& rd = dynamic_cast<Derived&>(rb); // Base型からDerived型へキャスト
-    
+
         // キャスト成功
         // 参照はDerived型なのでDerived型のメンバー関数が呼ばれる
         std::cout << rd.get_class_name() << std::endl;
@@ -50,7 +50,7 @@ int main()
     {
         // 実際のインスタンスの型はDerived型なのでキャストは失敗する
         MoreDerived& rmd = dynamic_cast<MoreDerived&>(rb);
-    
+
         std::cout << rmd.get_class_name() << std::endl;
     }
     catch (std::bad_cast & bc)

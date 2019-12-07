@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 template <int i>
 void show_nttp()

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class BaseA
 {
@@ -40,7 +40,7 @@ int main()
 
     // base_a.method_BaseB(); // エラー。BaseAの参照を使っているので、
                               // BaseBのメンバー関数を呼び出せない
-    
+
     //base_a.method_Derived(); // エラー。同様にDerivedではないので呼べない
 
     BaseB& base_b = derived; // DerivedはBaseBの派生クラスでもあるので

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 int value = 42; // 変数の実体の宣言、初期化はここでしかできない
 

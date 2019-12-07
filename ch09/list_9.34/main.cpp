@@ -1,4 +1,4 @@
-﻿#include <type_traits>
+#include <type_traits>
 
 template <typename T>
 class vector2d

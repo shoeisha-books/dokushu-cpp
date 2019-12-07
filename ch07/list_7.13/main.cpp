@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class Base
 {
@@ -46,16 +46,16 @@ int main()
 
     // DerivedBが継承したBase::show()の呼び出し
     more_derived.DerivedB::show();
-    
+
     // DerivedAの参照を経由してBaseへの参照を取得
     Base& base1 = static_cast<DerivedA&>(more_derived);
-    
+
     // DerivedAの参照を経由したので、DerivedAが継承したBase::show()の呼び出し
     base1.show();
-    
+
     // DerivedBの参照を経由してBaseへの参照を取得
     Base& base2 = static_cast<DerivedB&>(more_derived);
-    
+
     // DerivedBの参照を経由したので、DerivedBが継承したBase::show()の呼び出し
     base2.show();
 }

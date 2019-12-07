@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <iomanip>
 #include <fstream> // ファイルの入出力には<fstream>ヘッダーを使用する
 #include <string>

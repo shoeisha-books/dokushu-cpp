@@ -1,4 +1,4 @@
-﻿#include <vector>
+#include <vector>
 
 template <typename T>
 typename std::vector<T>::reference // Tを使っているのでtypenameが必要

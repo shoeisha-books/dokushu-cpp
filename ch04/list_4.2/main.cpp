@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 std::string get_message(); // 関数の前方宣言
 

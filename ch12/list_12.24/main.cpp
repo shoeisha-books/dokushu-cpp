@@ -1,4 +1,4 @@
-﻿#include <tuple>
+#include <tuple>
 #include <iostream>
 
 int main()

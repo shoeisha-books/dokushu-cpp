@@ -1,4 +1,4 @@
-﻿#include <new> // std::bad_alloc例外に必要
+#include <new> // std::bad_alloc例外に必要
 #include <iostream>
 
 int main()
@@ -6,7 +6,7 @@ int main()
     try
     {
         int* ptr = new int;
-        
+
         // …… // 何かの処理;
 
         delete ptr;

@@ -1,4 +1,4 @@
-﻿template <typename... T>
+template <typename... T>
 void function(T&&... args);
 
 // 引数の数が可変なテンプレート関数

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 
 template <typename T>
@@ -24,7 +24,7 @@ public:
     {
         return "Aをintで明示的特殊化したテンプレート";
     }
-    
+
     // プライマリテンプレートとまったく同じ動作をする場合でも、
     // 明示的特殊化したテンプレートでも定義する必要がある
     void common_method()
@@ -36,10 +36,10 @@ public:
 int main()
 {
     A<float> f; // プライマリテンプレートが使われる
-    
+
     std::cout << f.name() << std::endl;
-    
+
     A<int> i; // 明示的特殊化したテンプレートが使われる
-    
+
     std::cout << i.name() << std::endl;
 }

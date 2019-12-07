@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // メンバー変数を3つ持った構造体
 struct S

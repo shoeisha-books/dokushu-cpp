@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -18,11 +18,11 @@ int main()
     // 正数のみ後ろから順番にコピー
     auto last = std::copy_if(v.rbegin(), v.rend(), c.begin(),
         [](int i) { return 0 < i; });
-    
+
     // 返されたイテレーターの手前までにしか有効なデータは入っていないので、
     // それ以後は削除する
     c.erase(last, c.end());
-    
+
     for (auto e : c)
     {
         std::cout << e << " ";

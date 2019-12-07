@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <utility> // std::move
 
 void show_value_category(int& value)
@@ -31,9 +31,9 @@ int main()
 
     direct(i);
     direct(0);
-    
+
     std::cout << std::endl;
-    
+
     move(i);
     move(0);
 }

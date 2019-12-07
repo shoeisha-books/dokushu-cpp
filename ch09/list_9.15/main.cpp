@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 template <typename Type>
 Type fused_multiply_add(Type a, Type b, Type c)

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 namespace A // 名前空間A
 {

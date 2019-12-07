@@ -1,4 +1,4 @@
-﻿#include <regex>
+#include <regex>
 #include <string>
 #include <iostream>
 

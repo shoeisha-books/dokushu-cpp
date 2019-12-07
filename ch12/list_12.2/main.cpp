@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 int sum_all(int* first, int* last, int val)
 {
@@ -18,9 +18,9 @@ int main()
     {
         array[i] = i;
     }
-    
+
     int* first = &array[0]; // 先頭要素を指す
     int* last = &array[10]; // 末尾要素の次を指す
-    
+
     std::cout << sum_all(first, last, 0) << std::endl;
 }

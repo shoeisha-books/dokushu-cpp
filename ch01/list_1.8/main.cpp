@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 void show_message(int value)
 {

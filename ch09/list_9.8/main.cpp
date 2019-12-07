@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 template <typename T>
 class S
@@ -21,9 +21,9 @@ int main()
     // それぞれのstaticメンバー変数のアドレスを表示
     std::cout << "&S<int>::value: " << &S<int>::value << std::endl;
     std::cout << "&S<float>::value: " << &S<float>::value << std::endl;
-    
+
     S<int>::value = 42; // int型で作ったstaticメンバー変数を変更する
-    
+
     // staticメンバー変数自体がそれぞれのクラスの実体ごとに作られるので
     // S<float>::valueは変更されない
     std::cout << "S<int>::value: " << S<int>::value << std::endl;

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 引数がそれぞれ違ったテンプレートパラメーターを使っている
 template <typename P, typename S, typename C, typename O>

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 template <typename Type>
 Type lea(Type ptr, Type stride, Type count, Type offset)

@@ -1,4 +1,4 @@
-﻿#include <map>
+#include <map>
 #include <iostream>
 
 int main()
@@ -19,12 +19,12 @@ int main()
     {
         std::cout << iter->first << ": " << iter->second << std::endl;
     }
-    
+
     // プルトニウムをすべて削除し削除された要素数を返す
     std::size_t erased = w.erase("Pu");
-    
+
     std::cout << "elements num:" << erased << std::endl;
-    
+
     for (auto iter = w.begin(); iter != w.end(); ++iter)
     {
         std::cout << iter->first << ": " << iter->second << std::endl;

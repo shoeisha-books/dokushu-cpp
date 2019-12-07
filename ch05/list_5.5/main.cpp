@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 class Triangle
 {
     int m_height; // 高さ

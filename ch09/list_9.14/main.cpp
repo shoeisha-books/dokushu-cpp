@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 // A, B, Cがそれぞれ違う型だった場合、計算結果の型は簡単にはわからない
 // 戻り値の型にautoと指定すれば戻り値の型をreturn文から推論する
 template <typename A, typename B, typename C>

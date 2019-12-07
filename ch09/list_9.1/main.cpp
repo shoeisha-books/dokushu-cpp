@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // 整数の積和演算
 int fused_multiply_add(int a, int b, int c)

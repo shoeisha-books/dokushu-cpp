@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class Base
 {
@@ -49,11 +49,11 @@ int main()
     more_derived.method_DerivedA();
     more_derived.method_DerivedB();
     more_derived.method_MoreDerived();
-    
+
     // 今までは曖昧だったが、Baseは仮想基底クラスなので
     // 曖昧にならず呼び出すことができる
     more_derived.method_Base();
-    
+
     // こちらも曖昧にならずBaseの参照を取得できる
     Base& base = more_derived;
 }

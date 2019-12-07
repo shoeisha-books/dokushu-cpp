@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 class heap
 {
@@ -10,7 +10,7 @@ public:
     {
         delete i;
     }
-    
+
     bool create();
 
     // bool型に変換する

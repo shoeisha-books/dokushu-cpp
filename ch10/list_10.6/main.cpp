@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 // この関数から例外が飛んで来ることはない
 void no_throw_exception() noexcept

@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 int function(int a, int b, int c)
 {
@@ -15,6 +15,6 @@ int main()
         std::cout << "lambda(" << a << ", " << b << ", " << c << ")"
             << std::endl;
     };
-    
+
     lambda(0, 1, 2);
 }

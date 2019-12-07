@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <iomanip> // 入出力マニピュレーターを使用するために必要
 
 int main()
