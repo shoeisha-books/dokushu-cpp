@@ -1,15 +1,15 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 int main()
 {
     std::vector iv = { 1, 2, 3, 4, 5 };
 
-    iv.resize(4); // Ø‚è‹l‚ß‚é•ûŒü‚ÉƒŠƒTƒCƒY
+    iv.resize(4); // åˆ‡ã‚Šè©°ã‚ã‚‹æ–¹å‘ã«ãƒªã‚µã‚¤ã‚º
 
     std::cout << "size() = " << iv.size() << std::endl;
 
-    iv.resize(6, -1); // L‚Î‚·BV‚µ‚­‘‚¦‚½•”•ª‚Í-1‚Å‰Šú‰»‚³‚ê‚é
+    iv.resize(6, -1); // ä¼¸ã°ã™ã€‚æ–°ã—ãå¢—ãˆãŸéƒ¨åˆ†ã¯-1ã§åˆæœŸåŒ–ã•ã‚Œã‚‹
 
     std::cout << "size() = " << iv.size() << std::endl;
 

@@ -1,4 +1,4 @@
-#include <algorithm>
+ï»¿#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -7,8 +7,8 @@ int main()
     std::vector v = { 1, 2, 3, 2, 1 };
 
     auto c = std::count(v.begin(), v.end(), 2);
-    std::cout << "v‚É2‚Í" << c << "‚Â‚ ‚è‚Ü‚·" << std::endl;
+    std::cout << "vã«2ã¯" << c << "ã¤ã‚ã‚Šã¾ã™" << std::endl;
 
     c = std::count_if(v.begin(), v.end(), [](int v) { return v < 2; });
-    std::cout << "v‚É‚Í2‚æ‚è¬‚³‚¢—v‘f‚Í" << c << "‚Â‚ ‚è‚Ü‚·" << std::endl;
+    std::cout << "vã«ã¯2ã‚ˆã‚Šå°ã•ã„è¦ç´ ã¯" << c << "ã¤ã‚ã‚Šã¾ã™" << std::endl;
 }

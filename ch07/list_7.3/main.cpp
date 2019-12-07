@@ -1,15 +1,15 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
 public:
     Base()
     {
-        std::cout << "BaseƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl;
+        std::cout << "Baseãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
     }
     explicit Base(int i)
     {
-        std::cout << "Aˆø”•t‚«ƒRƒ“ƒXƒgƒ‰ƒNƒ^[: " << i << std::endl;
+        std::cout << "Aå¼•æ•°ä»˜ãã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼: " << i << std::endl;
     }
 };
 

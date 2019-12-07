@@ -1,12 +1,12 @@
-#include <iostream>
-#include <typeinfo> // std::bad_cast‚É•K—v
+ï»¿#include <iostream>
+#include <typeinfo> // std::bad_castã«å¿…è¦
 
 class Base
 {
 public:
-    virtual ~Base() {} // ‰¼‘zƒfƒXƒgƒ‰ƒNƒ^[‚ğ’è‹`‚µ‚Äƒ|ƒŠƒ‚[ƒtƒBƒbƒN‚É‚·‚é
+    virtual ~Base() {} // ä»®æƒ³ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚’å®šç¾©ã—ã¦ãƒãƒªãƒ¢ãƒ¼ãƒ•ã‚£ãƒƒã‚¯ã«ã™ã‚‹
 
-                       // virtual‚Å‚Í‚È‚¢ƒƒ“ƒo[ŠÖ”
+                       // virtualã§ã¯ãªã„ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°
     const char* get_class_name() const { return "Base"; }
 };
 
@@ -24,37 +24,37 @@ public:
 
 int main()
 {
-    Derived d; // ÀÛ‚ÌƒIƒuƒWƒFƒNƒg‚ÍDerivedŒ^
+    Derived d; // å®Ÿéš›ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯Derivedå‹
 
-    Base& rb = d; // BaseŒ^‚Ö‚ÌQÆ‚É‚·‚é
+    Base& rb = d; // Baseå‹ã¸ã®å‚ç…§ã«ã™ã‚‹
 
-    // BaseŒ^‚Ö‚ÌQÆ‚ğg‚Á‚Ä‚¢‚é‚Ì‚ÅBaseŒ^‚Ìƒƒ“ƒo[ŠÖ”‚ªŒÄ‚Î‚ê‚é
+    // Baseå‹ã¸ã®å‚ç…§ã‚’ä½¿ã£ã¦ã„ã‚‹ã®ã§Baseå‹ã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
     std::cout << rb.get_class_name() << std::endl;
 
     try
     {
-        Derived& rd = dynamic_cast<Derived&>(rb); // BaseŒ^‚©‚çDerivedŒ^‚ÖƒLƒƒƒXƒg
+        Derived& rd = dynamic_cast<Derived&>(rb); // Baseå‹ã‹ã‚‰Derivedå‹ã¸ã‚­ãƒ£ã‚¹ãƒˆ
     
-        // ƒLƒƒƒXƒg¬Œ÷
-        // QÆ‚ÍDerivedŒ^‚È‚Ì‚ÅDerivedŒ^‚Ìƒƒ“ƒo[ŠÖ”‚ªŒÄ‚Î‚ê‚é
+        // ã‚­ãƒ£ã‚¹ãƒˆæˆåŠŸ
+        // å‚ç…§ã¯Derivedå‹ãªã®ã§Derivedå‹ã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
         std::cout << rd.get_class_name() << std::endl;
     }
     catch (std::bad_cast & bc)
     {
-        // ƒLƒƒƒXƒg¸”s
-        // QÆ‚Å‚ÌƒLƒƒƒXƒg‚É¸”s‚µ‚½ê‡Adynamic_cast‚Ístd::bad_cast—áŠO‚ğ“Š‚°‚é
-        std::cout << "dynamic_cast¸”s" << std::endl;
+        // ã‚­ãƒ£ã‚¹ãƒˆå¤±æ•—
+        // å‚ç…§ã§ã®ã‚­ãƒ£ã‚¹ãƒˆã«å¤±æ•—ã—ãŸå ´åˆã€dynamic_castã¯std::bad_castä¾‹å¤–ã‚’æŠ•ã’ã‚‹
+        std::cout << "dynamic_castå¤±æ•—" << std::endl;
     }
 
     try
     {
-        // ÀÛ‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ÌŒ^‚ÍDerivedŒ^‚È‚Ì‚ÅƒLƒƒƒXƒg‚Í¸”s‚·‚é
+        // å®Ÿéš›ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®å‹ã¯Derivedå‹ãªã®ã§ã‚­ãƒ£ã‚¹ãƒˆã¯å¤±æ•—ã™ã‚‹
         MoreDerived& rmd = dynamic_cast<MoreDerived&>(rb);
     
         std::cout << rmd.get_class_name() << std::endl;
     }
     catch (std::bad_cast & bc)
     {
-        std::cout << "dynamic_cast¸”s" << std::endl;
+        std::cout << "dynamic_castå¤±æ•—" << std::endl;
     }
 }

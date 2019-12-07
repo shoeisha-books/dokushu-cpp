@@ -1,15 +1,15 @@
-#include <cstdint> // std::intptr_t‚Ì‚½‚ß
+ï»¿#include <cstdint> // std::intptr_tã®ãŸã‚
 #include <iostream>
 
-// ‚³‚Ü‚´‚Ü‚È——R‚ÅconstCü‚³‚ê‚Ä‚È‚¢ˆÀ‘S‚Å‚Í‚È‚¢ŠÖ”
-// “Á‚ÉCŒ¾Œê‚Æ‚ÌŒ“‚Ë‡‚¢‚Å‚±‚Ì‚æ‚¤‚É‚È‚Á‚Ä‚¢‚é‚±‚Æ‚ª‘½‚¢
+// ã•ã¾ã–ã¾ãªç†ç”±ã§constä¿®é£¾ã•ã‚Œã¦ãªã„å®‰å…¨ã§ã¯ãªã„é–¢æ•°
+// ç‰¹ã«Cè¨€èªã¨ã®å…¼ã­åˆã„ã§ã“ã®ã‚ˆã†ã«ãªã£ã¦ã„ã‚‹ã“ã¨ãŒå¤šã„
 extern "C" void unsafe_c_function(char* str)
 {
     std::cout << "unsafe_c_function: " << str << std::endl;
 }
 
-// ‚³‚Ü‚´‚Ü‚È——R‚Å³‚µ‚¢Œ^‚Åó‚¯æ‚ê‚È‚¢ŠÖ”
-// ƒR[ƒ‹ƒoƒbƒNAPI‚È‚Ç‚É‚æ‚­Œ©‚ç‚ê‚é
+// ã•ã¾ã–ã¾ãªç†ç”±ã§æ­£ã—ã„å‹ã§å—ã‘å–ã‚Œãªã„é–¢æ•°
+// ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯APIãªã©ã«ã‚ˆãè¦‹ã‚‰ã‚Œã‚‹
 void unsafe_interface_function(void* data)
 {
     auto value = reinterpret_cast<std::intptr_t>(data);
@@ -21,10 +21,10 @@ int main()
     const int value = 72;
     const char message[] = "constant string";
 
-    // ŠÖ”‚É“n‚¹‚é‚æ‚¤‚Éconst‚ğŠO‚·
+    // é–¢æ•°ã«æ¸¡ã›ã‚‹ã‚ˆã†ã«constã‚’å¤–ã™
     unsafe_c_function(const_cast<char*>(message));
 
-    // ”’l‚ğƒ|ƒCƒ“ƒ^[Œ^‚É•ÏŠ·‚µ‚Ä“n‚·
+    // æ•°å€¤ã‚’ãƒã‚¤ãƒ³ã‚¿ãƒ¼å‹ã«å¤‰æ›ã—ã¦æ¸¡ã™
     unsafe_interface_function(reinterpret_cast<void*>(
         static_cast<std::intptr_t>(value)));
 }

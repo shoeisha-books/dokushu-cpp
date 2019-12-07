@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 
 int main()
@@ -7,7 +7,7 @@ int main()
 
     std::cout << hello;
 
-    hello = ", string"; // ‚æ‚è’·‚¢•¶Žš—ñ‚ð‚ ‚Æ‚©‚ç‘ã“ü‚Å‚«‚é
+    hello = ", string"; // ã‚ˆã‚Šé•·ã„æ–‡å­—åˆ—ã‚’ã‚ã¨ã‹ã‚‰ä»£å…¥ã§ãã‚‹
 
     std::cout << hello << std::endl;
 }

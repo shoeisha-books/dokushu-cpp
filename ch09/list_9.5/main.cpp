@@ -1,10 +1,10 @@
-#include <iostream>
+﻿#include <iostream>
 
 template <typename T>
 class vector2d
 {
 public:
-    // �e���v���[�g�p�����[�^�[�œn���ꂽ�^�Ń����o�[�ϐ���錾
+    // テンプレートパラメーターで渡された型でメンバー変数を宣言
     T x;
     T y;
 };
@@ -21,17 +21,17 @@ void show(float v)
 
 int main()
 {
-    // float�^��2�����x�N�g�����`
+    // float型の2次元ベクトルを定義
     vector2d<float> f2d{ 10.0f, 20.0f };
     
-    // int�^��2�����x�N�g�����`
+    // int型の2次元ベクトルを定義
     vector2d<int> i2d{ 10, 20 };
     
-    // �G���[�B�����N���X�e���v���[�g���g���Ă��邪�A�e���v���[�g�������قȂ�̂ŕʂ̌^
+    // エラー。同じクラステンプレートを使っているが、テンプレート引数が異なるので別の型
     // i2d = f2d;
     
-    f2d.x = -10.0f; // �����o�[�ւ̃A�N�Z�X���@�͒ʏ�̃N���X�Ɠ���
+    f2d.x = -10.0f; // メンバーへのアクセス方法は通常のクラスと同じ
     
-    show(i2d.y); // int�^�̃I�[�o�[���[�h���Ă΂��
-    show(f2d.y); // float�^�̃I�[�o�[���[�h���Ă΂��
+    show(i2d.y); // int型のオーバーロードが呼ばれる
+    show(f2d.y); // float型のオーバーロードが呼ばれる
 }

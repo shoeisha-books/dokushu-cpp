@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class BaseA
 {
@@ -20,7 +20,7 @@ public:
 
 class Derived
     : public BaseA
-    , public BaseB // 2‚Â–Ú‚ÌƒNƒ‰ƒX‚ğŒp³
+    , public BaseB // 2ã¤ç›®ã®ã‚¯ãƒ©ã‚¹ã‚’ç¶™æ‰¿
 {
 public:
     void method_Derived()
@@ -32,20 +32,20 @@ public:
 int main()
 {
     Derived derived;
-    derived.method_BaseA(); // BaseA‚©‚çŒp³‚µ‚½ƒƒ“ƒo[ŠÖ”‚ÌŒÄ‚Ño‚µ
-    derived.method_BaseB(); // BaseB‚©‚çŒp³‚µ‚½ƒƒ“ƒo[ŠÖ”‚ÌŒÄ‚Ño‚µ
-    derived.method_Derived(); // Derived‚Å’è‹`‚µ‚½ƒƒ“ƒo[ŠÖ”‚ÌŒÄ‚Ño‚µ
+    derived.method_BaseA(); // BaseAã‹ã‚‰ç¶™æ‰¿ã—ãŸãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å‘¼ã³å‡ºã—
+    derived.method_BaseB(); // BaseBã‹ã‚‰ç¶™æ‰¿ã—ãŸãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å‘¼ã³å‡ºã—
+    derived.method_Derived(); // Derivedã§å®šç¾©ã—ãŸãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å‘¼ã³å‡ºã—
 
-    BaseA& base_a = derived; // Derived‚ÍBaseA‚Ì”h¶ƒNƒ‰ƒX‚È‚Ì‚ÅBaseA‚Æ‚µ‚Äˆµ‚¦‚é
+    BaseA& base_a = derived; // Derivedã¯BaseAã®æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ãªã®ã§BaseAã¨ã—ã¦æ‰±ãˆã‚‹
 
-    // base_a.method_BaseB(); // ƒGƒ‰[BBaseA‚ÌQÆ‚ğg‚Á‚Ä‚¢‚é‚Ì‚ÅA
-                              // BaseB‚Ìƒƒ“ƒo[ŠÖ”‚ğŒÄ‚Ño‚¹‚È‚¢
+    // base_a.method_BaseB(); // ã‚¨ãƒ©ãƒ¼ã€‚BaseAã®å‚ç…§ã‚’ä½¿ã£ã¦ã„ã‚‹ã®ã§ã€
+                              // BaseBã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚’å‘¼ã³å‡ºã›ãªã„
     
-    //base_a.method_Derived(); // ƒGƒ‰[B“¯—l‚ÉDerived‚Å‚Í‚È‚¢‚Ì‚ÅŒÄ‚×‚È‚¢
+    //base_a.method_Derived(); // ã‚¨ãƒ©ãƒ¼ã€‚åŒæ§˜ã«Derivedã§ã¯ãªã„ã®ã§å‘¼ã¹ãªã„
 
-    BaseB& base_b = derived; // Derived‚ÍBaseB‚Ì”h¶ƒNƒ‰ƒX‚Å‚à‚ ‚é‚Ì‚Å
-                             // BaseB‚Æ‚µ‚Ä‚àˆµ‚¦‚é
+    BaseB& base_b = derived; // Derivedã¯BaseBã®æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§ã‚‚ã‚ã‚‹ã®ã§
+                             // BaseBã¨ã—ã¦ã‚‚æ‰±ãˆã‚‹
 
-    //base_b.method_Derived(); // ƒGƒ‰[BBaseA“¯—l
-    //base_b.method_Derived(); // ƒGƒ‰[BBaseA“¯—l
+    //base_b.method_Derived(); // ã‚¨ãƒ©ãƒ¼ã€‚BaseAåŒæ§˜
+    //base_b.method_Derived(); // ã‚¨ãƒ©ãƒ¼ã€‚BaseAåŒæ§˜
 }

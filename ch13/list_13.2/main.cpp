@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
 {
-    // 2‚Â‚Ì•¶š—ñ‚ğŒ‹‡‚·‚éFC++
+    // 2ã¤ã®æ–‡å­—åˆ—ã‚’çµåˆã™ã‚‹ï¼šC++
     std::string strA = "Hello, ";
     std::string strB = "world.";
 
-    std::string strC = strA + strB; // Œ‹‡
+    std::string strC = strA + strB; // çµåˆ
     std::cout << strC << std::endl;
 
-    if (strC == "Hello, world.") // ”äŠr
+    if (strC == "Hello, world.") // æ¯”è¼ƒ
     {
         std::cout << "ok." << std::endl;
     }
-    // Šm•Û‚³‚ê‚½—Ìˆæ‚Í©“®“I‚É‰ğ•ú‚³‚ê‚é
+    // ç¢ºä¿ã•ã‚ŒãŸé ˜åŸŸã¯è‡ªå‹•çš„ã«è§£æ”¾ã•ã‚Œã‚‹
 }

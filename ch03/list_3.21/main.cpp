@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class vector3d
 {
@@ -10,7 +10,7 @@ public:
     vector3d();
     explicit vector3d(float x, float y, float z);
 
-    // ƒtƒŒƒ“ƒhŠÖ”‚ÌéŒ¾ ƒvƒƒgƒ^ƒCƒvéŒ¾‚Éfriend‚ğ•t‚¯‚½‚¾‚¯
+    // ãƒ•ãƒ¬ãƒ³ãƒ‰é–¢æ•°ã®å®£è¨€ ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ã«friendã‚’ä»˜ã‘ãŸã ã‘
     friend vector3d add(const vector3d& lhs, const vector3d& rhs);
     void dump() const;
 };
@@ -25,12 +25,12 @@ vector3d::vector3d(float x, float y, float z)
 {
 }
 
-// ’è‹`‚É‚Ífriend‚Í•s—v
+// å®šç¾©ã«ã¯friendã¯ä¸è¦
 vector3d add(const vector3d& lhs, const vector3d& rhs)
 {
     vector3d result;
 
-    // ƒƒ“ƒo[ŠÖ”‚Å‚È‚¢‚ª”ñŒöŠJƒƒ“ƒo[‚ÉƒAƒNƒZƒX‚·‚é‚±‚Æ‚ª‚Å‚«‚é
+    // ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã§ãªã„ãŒéå…¬é–‹ãƒ¡ãƒ³ãƒãƒ¼ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã“ã¨ãŒã§ãã‚‹
     result.x = lhs.x + rhs.x;
     result.y = lhs.y + rhs.y;
     result.z = lhs.z + rhs.z;
@@ -45,6 +45,6 @@ void vector3d::dump() const
 int main()
 {
     vector3d a(1, 1, 1), b(1, 2, 3);
-    vector3d c = add(a, b); // ƒtƒŒƒ“ƒhŠÖ”ŒÄ‚Ño‚µ
+    vector3d c = add(a, b); // ãƒ•ãƒ¬ãƒ³ãƒ‰é–¢æ•°å‘¼ã³å‡ºã—
     c.dump();
 }

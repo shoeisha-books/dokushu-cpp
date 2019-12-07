@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 class person
@@ -16,11 +16,11 @@ public:
     int age() const;
 };
 
-// •s³‚È’l‚Å”N—î‚ğ‰Šú‰»‚·‚éƒRƒ“ƒXƒgƒ‰ƒNƒ^[
-// m_name‚Í‰Šú‰»ƒŠƒXƒg‚É‚È‚¢‚ªA‚±‚Ìê‡‚É‚Ístd::string‚ÌƒfƒtƒHƒ‹ƒg‚Å‰Šú‰»‚³‚ê‚é
+// ä¸æ­£ãªå€¤ã§å¹´é½¢ã‚’åˆæœŸåŒ–ã™ã‚‹ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
+// m_nameã¯åˆæœŸåŒ–ãƒªã‚¹ãƒˆã«ãªã„ãŒã€ã“ã®å ´åˆã«ã¯std::stringã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§åˆæœŸåŒ–ã•ã‚Œã‚‹
 person::person() : m_age(-1)
 {
-    std::cout << "ƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 void person::set_name(std::string name)
@@ -45,11 +45,11 @@ int person::age() const
 
 int main()
 {
-    person bob; // ƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚É‚æ‚é‰Šú‰»‚ªs‚í‚ê‚é
+    person bob; // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã«ã‚ˆã‚‹åˆæœŸåŒ–ãŒè¡Œã‚ã‚Œã‚‹
 
-    std::cout << "‰Šú‰»’¼Œã‚Ì”N—î: " << bob.age() << std::endl;
+    std::cout << "åˆæœŸåŒ–ç›´å¾Œã®å¹´é½¢: " << bob.age() << std::endl;
     bob.set_name("bob");
     bob.set_age(20);
-    std::cout << "–¼‘O`: " << bob.name() << std::endl;
-    std::cout << "”N—î: " << bob.age() << std::endl;
+    std::cout << "åå‰`: " << bob.name() << std::endl;
+    std::cout << "å¹´é½¢: " << bob.age() << std::endl;
 }

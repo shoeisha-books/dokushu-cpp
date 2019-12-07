@@ -1,6 +1,6 @@
-#include <iostream>
+﻿#include <iostream>
 
-// �߂�l�𐄘_�ł͂Ȃ��A�e���v���[�g�����Ŏw�肵���^�ŕԂ��悤�ɂ����e���v���[�g
+// 戻り値を推論ではなく、テンプレート引数で指定した型で返すようにしたテンプレート
 template <typename R, typename A, typename B, typename C>
 R fused_multiply_add(A a, B b, C c)
 {
@@ -9,9 +9,9 @@ R fused_multiply_add(A a, B b, C c)
 
 int main()
 {
-    // �v�Z���ʂ�float�^�ŕԂ��Ăق������A
-    // �擪�̈����͓����I�ɂ�double�^�Ōv�Z���Ăق�������
-    // ���ꂾ���w�肵�A���Ƃ̓R���p�C���[�ɐ��_������
+    // 計算結果はfloat型で返してほしいが、
+    // 先頭の引数は内部的にはdouble型で計算してほしいため
+    // それだけ指定し、あとはコンパイラーに推論させる
     std::cout << fused_multiply_add<float, double>(1.23456f, 2, 3)
         << std::endl;
 }

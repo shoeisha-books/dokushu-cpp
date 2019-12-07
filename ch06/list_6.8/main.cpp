@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Array
 {
     int buffer[100];
 
 public:
-    int& operator[](int index); // “Yš‰‰Zq
+    int& operator[](int index); // æ·»å­—æ¼”ç®—å­
 
     std::size_t size() const { return 100; }
 };

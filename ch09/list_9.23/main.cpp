@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ”ñŒ^ƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ðŒ^„˜_‚·‚é
+// éžåž‹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’åž‹æŽ¨è«–ã™ã‚‹
 template <auto i>
 void show_nttp()
 {

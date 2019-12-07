@@ -1,23 +1,23 @@
-#include <stdlib.h>
+ï»¿#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 
 int main()
 {
-    /* 2‚Â‚Ì•¶š—ñ‚ğŒ‹‡‚·‚éFCŒ¾Œê*/
+    /* 2ã¤ã®æ–‡å­—åˆ—ã‚’çµåˆã™ã‚‹ï¼šCè¨€èª*/
     const char* strA = "Hello, ";
     const char* strB = "world.";
 
-    /* —ÌˆæŠm•Û */
+    /* é ˜åŸŸç¢ºä¿ */
     char* strC = (char*)malloc(strlen(strA) + strlen(strB) + 1);
 
-    strcpy(strC, strA); /* strA‚ğstrC‚ÉƒRƒs[ */
-    strcat(strC, strB); /* strB‚ğstrC‚ÉŒ‹‡ */
+    strcpy(strC, strA); /* strAã‚’strCã«ã‚³ãƒ”ãƒ¼ */
+    strcat(strC, strB); /* strBã‚’strCã«çµåˆ */
     puts(strC);
 
-    if (strcmp(strC, "Hello, world.") == 0) /* ”äŠr */
+    if (strcmp(strC, "Hello, world.") == 0) /* æ¯”è¼ƒ */
     {
         puts("ok.");
     }
-    free(strC); /* —Ìˆæ‰ğ•ú */
+    free(strC); /* é ˜åŸŸè§£æ”¾ */
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
@@ -7,10 +7,10 @@ class Integer
 public:
     Integer(int value) : value{ value } { }
 
-    Integer& operator+=(const Integer& rhs); // ‰ÁZ
-    Integer& operator-=(const Integer& rhs); // Œ¸Z
-    Integer& operator*=(const Integer& rhs); // æZ
-    Integer& operator/=(const Integer& rhs); // œZ
+    Integer& operator+=(const Integer& rhs); // åŠ ç®—
+    Integer& operator-=(const Integer& rhs); // æ¸›ç®—
+    Integer& operator*=(const Integer& rhs); // ä¹—ç®—
+    Integer& operator/=(const Integer& rhs); // é™¤ç®—
 
     void show() const;
 };

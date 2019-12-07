@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 class Object
@@ -13,18 +13,18 @@ public:
 
 Object::Object(std::string name) : name{ name }
 {
-    // •¶š—ñ‚ğƒƒ“ƒo[•Ï”‚Ìname‚ÉƒRƒs[
+    // æ–‡å­—åˆ—ã‚’ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®nameã«ã‚³ãƒ”ãƒ¼
 }
 
 const std::string& Object::get_name() const
 {
-    return name; // name‚ğQÆ‚Å•Ô‚·
+    return name; // nameã‚’å‚ç…§ã§è¿”ã™
 }
 
 int main()
 {
-    Object obj{ "‚Æ‚Ä‚à‘å‚«‚ÈƒIƒuƒWƒFƒNƒg" };
-    // ƒƒ“ƒo[•Ï”‚Ö‚ÌQÆ‚ğæ“¾BƒRƒs[‚ª‹N‚«‚È‚¢‚Ì‚Å‚‘¬
+    Object obj{ "ã¨ã¦ã‚‚å¤§ããªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ" };
+    // ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã¸ã®å‚ç…§ã‚’å–å¾—ã€‚ã‚³ãƒ”ãƒ¼ãŒèµ·ããªã„ã®ã§é«˜é€Ÿ
     const std::string& name = obj.get_name();
     std::cout << name << std::endl;
 }

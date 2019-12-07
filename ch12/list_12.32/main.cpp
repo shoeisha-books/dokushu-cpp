@@ -1,18 +1,18 @@
-#include <map>
+ï»¿#include <map>
 #include <iostream>
 
 int main()
 {
-    std::multimap<std::string, float> w; // ‘Š‘ÎŒ´q¿—Ê
+    std::multimap<std::string, float> w; // ç›¸å¯¾åŸå­è³ªé‡
 
-    w.insert(std::pair{ "U", 235.04f }); // ƒEƒ‰ƒ“235
-    w.insert(std::pair{ "U", 238.05f }); // ƒEƒ‰ƒ“238
+    w.insert(std::pair{ "U", 235.04f }); // ã‚¦ãƒ©ãƒ³235
+    w.insert(std::pair{ "U", 238.05f }); // ã‚¦ãƒ©ãƒ³238
 
-    w.insert(std::pair{ "Pu", 238.05f }); // ƒvƒ‹ƒgƒjƒEƒ€238
-    w.insert(std::pair{ "Pu", 239.05f }); // ƒvƒ‹ƒgƒjƒEƒ€239
-    w.insert(std::pair{ "Pu", 240.05f }); // ƒvƒ‹ƒgƒjƒEƒ€240
+    w.insert(std::pair{ "Pu", 238.05f }); // ãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ 238
+    w.insert(std::pair{ "Pu", 239.05f }); // ãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ 239
+    w.insert(std::pair{ "Pu", 240.05f }); // ãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ 240
 
-    // ƒvƒ‹ƒgƒjƒEƒ€‚ªŠÜ‚Ü‚ê‚Ä‚¢‚é”ÍˆÍ‚ğstd::pair‚Å•Ô‚·
+    // ãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ ãŒå«ã¾ã‚Œã¦ã„ã‚‹ç¯„å›²ã‚’std::pairã§è¿”ã™
     auto pu = w.equal_range("Pu");
 
     for (auto iter = pu.first; iter != pu.second; ++iter)
@@ -20,7 +20,7 @@ int main()
         std::cout << iter->first << ": " << iter->second << std::endl;
     }
     
-    // ƒvƒ‹ƒgƒjƒEƒ€‚ğ‚·‚×‚Äíœ‚µíœ‚³‚ê‚½—v‘f”‚ğ•Ô‚·
+    // ãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ ã‚’ã™ã¹ã¦å‰Šé™¤ã—å‰Šé™¤ã•ã‚ŒãŸè¦ç´ æ•°ã‚’è¿”ã™
     std::size_t erased = w.erase("Pu");
     
     std::cout << "elements num:" << erased << std::endl;

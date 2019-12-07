@@ -1,21 +1,26 @@
-#include <iostream>
+ï»¿#include <iostream>
+
 class A
 {
     int i;
+
 public:
-    // ƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚ÌéŒ¾‚Æ’è‹`
+    // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã®å®£è¨€ã¨å®šç¾©
     A() : i(0) { }
-    // ƒƒ“ƒo[ŠÖ”‚ÌéŒ¾‚Æ’è‹`
+
+    // ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å®£è¨€ã¨å®šç¾©
     void set_i(int i)
     {
         this->i = i;
     }
-    // constƒƒ“ƒo[ŠÖ”‚à’è‹`‚Å‚«‚é
+
+    // constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚‚å®šç¾©ã§ãã‚‹
     void show() const
     {
         std::cout << i << std::endl;
     }
 };
+
 int main()
 {
     A a;

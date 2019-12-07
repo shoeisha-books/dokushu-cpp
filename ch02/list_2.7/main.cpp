@@ -1,25 +1,25 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class product
 {
-    int id; // ¤•iID
-    int price; // ’P‰¿
-    int stock; // İŒÉ”
+    int id; // å•†å“ID
+    int price; // å˜ä¾¡
+    int stock; // åœ¨åº«æ•°
 
 public:
-    int get_id(); // ¤•iID‚Ìgetter
-    void set_id(int new_id); // ¤•iID‚Ìsetter
+    int get_id(); // å•†å“IDã®getter
+    void set_id(int new_id); // å•†å“IDã®setter
 
-    int get_price(); // ’P‰¿‚Ìgetter
-    void set_price(int new_price); // ’P‰¿‚Ìsetter
+    int get_price(); // å˜ä¾¡ã®getter
+    void set_price(int new_price); // å˜ä¾¡ã®setter
 
-    int get_stock(); // İŒÉ”‚Ìgetter
-    void set_stock(int new_stock); // İŒÉ”‚Ìsetter
+    int get_stock(); // åœ¨åº«æ•°ã®getter
+    void set_stock(int new_stock); // åœ¨åº«æ•°ã®setter
 };
 
 int product::get_id()
 {
-    // ƒƒ“ƒo[ŠÖ”‚Ì“à‘¤‚Å‚Íƒƒ“ƒo[•Ï”‚É’¼ÚƒAƒNƒZƒX‚Å‚«‚é
+    // ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å†…å´ã§ã¯ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã«ç›´æ¥ã‚¢ã‚¯ã‚»ã‚¹ã§ãã‚‹
     return id;
 }
 
@@ -35,10 +35,10 @@ int product::get_price()
 
 void product::set_price(int new_price)
 {
-    // Setter‚ğg‚¤‚ÆV‚µ‚¢’l‚ª•s³‚È’l‚Å‚È‚¢‚©ƒ`ƒFƒbƒN‚Å‚«‚é
+    // Setterã‚’ä½¿ã†ã¨æ–°ã—ã„å€¤ãŒä¸æ­£ãªå€¤ã§ãªã„ã‹ãƒã‚§ãƒƒã‚¯ã§ãã‚‹
     if (new_price < 0)
     {
-        std::cout << "ƒGƒ‰[F’P‰¿‚Í0ˆÈã‚É‚µ‚Ä‚­‚¾‚³‚¢" << std::endl;
+        std::cout << "ã‚¨ãƒ©ãƒ¼ï¼šå˜ä¾¡ã¯0ä»¥ä¸Šã«ã—ã¦ãã ã•ã„" << std::endl;
         return;
     }
     price = new_price;
@@ -53,7 +53,7 @@ void product::set_stock(int new_stock)
 {
     if (new_stock < 0)
     {
-        std::cout << "ƒGƒ‰[FİŒÉ”‚Í0ˆÈã‚É‚µ‚Ä‚­‚¾‚³‚¢" << std::endl;
+        std::cout << "ã‚¨ãƒ©ãƒ¼ï¼šåœ¨åº«æ•°ã¯0ä»¥ä¸Šã«ã—ã¦ãã ã•ã„" << std::endl;
         return;
     }
     stock = new_stock;
@@ -61,17 +61,16 @@ void product::set_stock(int new_stock)
 
 int main()
 {
-    product pen; // ƒyƒ“‚ÉŠÖ‚·‚éƒf[ƒ^‚ğ‚Â•Ï”
-
-                 // ƒƒ“ƒo[•Ï”‚Í”ñŒöŠJ‚È‚Ì‚Åsetter‚ğg‚Á‚Ä’l‚ğŠi”[‚µ‚Ä‚¢‚­
+    product pen; // ãƒšãƒ³ã«é–¢ã™ã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’æŒã¤å¤‰æ•°
+                 // ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã¯éå…¬é–‹ãªã®ã§setterã‚’ä½¿ã£ã¦å€¤ã‚’æ ¼ç´ã—ã¦ã„ã
     pen.set_id(0);
     pen.set_price(100);
     pen.set_stock(200);
 
-    product* ptr = &pen; // ƒCƒ“ƒXƒ^ƒ“ƒX‚Ö‚Ìƒ|ƒCƒ“ƒ^[
+    product* ptr = &pen; // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼
 
-    // ƒAƒ[‰‰Zq‚ğg‚Á‚Ägetter‚©‚ç’l‚ğæ“¾
-    std::cout << "¤•iIDF" << ptr->get_id() << std::endl;
-    std::cout << "’P‰¿F" << ptr->get_price() << std::endl;
-    std::cout << "İŒÉ”F" << ptr->get_stock() << std::endl;
+    // ã‚¢ãƒ­ãƒ¼æ¼”ç®—å­ã‚’ä½¿ã£ã¦getterã‹ã‚‰å€¤ã‚’å–å¾—
+    std::cout << "å•†å“IDï¼š" << ptr->get_id() << std::endl;
+    std::cout << "å˜ä¾¡ï¼š" << ptr->get_price() << std::endl;
+    std::cout << "åœ¨åº«æ•°ï¼š" << ptr->get_stock() << std::endl;
 }

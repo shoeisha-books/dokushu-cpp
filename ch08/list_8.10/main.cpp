@@ -1,4 +1,4 @@
-#include <fstream>
+ï»¿#include <fstream>
 #include <iostream>
 
 int main()
@@ -6,10 +6,10 @@ int main()
 
     std::ofstream out{ "hello_binary.bin", std::ios::binary };
 
-    // lŠÔ‚ª•¶š‚Æ‚µ‚Ä”F¯‚Å‚«‚È‚¢”’l‚ğ’¼Úo—Í
+    // äººé–“ãŒæ–‡å­—ã¨ã—ã¦èªè­˜ã§ããªã„æ•°å€¤ã‚’ç›´æ¥å‡ºåŠ›
     out.put(1);
 
-    // ƒXƒgƒŠ[ƒ€‚ª•Ô‚³‚ê‚é‚Ì‚Å‚±‚Ì‚æ‚¤‚É˜A‘±‚µ‚ÄŒÄ‚Ô‚±‚Æ‚ª‚Å‚«‚é
+    // ã‚¹ãƒˆãƒªãƒ¼ãƒ ãŒè¿”ã•ã‚Œã‚‹ã®ã§ã“ã®ã‚ˆã†ã«é€£ç¶šã—ã¦å‘¼ã¶ã“ã¨ãŒã§ãã‚‹
     out.put(2).put(3);
 
     out.close();
@@ -17,9 +17,9 @@ int main()
     char a, b, c;
     std::ifstream in{ "hello_binary.bin", std::ios::binary };
 
-    // 1ƒoƒCƒg‚ğ’¼Ú“ü—Í
+    // 1ãƒã‚¤ãƒˆã‚’ç›´æ¥å…¥åŠ›
     in.get(a);
-    in.get(b).get(c); // get()ŠÖ”‚à“¯—l‚É˜A‘±‚µ‚ÄŒÄ‚×‚é
+    in.get(b).get(c); // get()é–¢æ•°ã‚‚åŒæ§˜ã«é€£ç¶šã—ã¦å‘¼ã¹ã‚‹
     std::cout << "a: " << a << std::endl;
     std::cout << "b: " << b << std::endl;
     std::cout << "c: " << c << std::endl;

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void hello()
 {
@@ -12,14 +12,14 @@ void goodbye()
 
 int main()
 {
-    hello(); // ƒ}ƒNƒ‚ª’è‹`‚³‚ê‚é‘O‚Í‰½‚à’u‚«Š·‚í‚ç‚È‚¢
+    hello(); // ãƒã‚¯ãƒ­ãŒå®šç¾©ã•ã‚Œã‚‹å‰ã¯ä½•ã‚‚ç½®ãæ›ã‚ã‚‰ãªã„
 
     std::cout << "hello, macro" << std::endl;
 
-#define hello goodbye // hello‚ğgoodbye‚É’u‚«Š·‚¦‚éƒ}ƒNƒ
+#define hello goodbye // helloã‚’goodbyeã«ç½®ãæ›ãˆã‚‹ãƒã‚¯ãƒ­
 
-    hello(); // ƒ}ƒNƒ‚ªhello‚ğgoodbye‚É’u‚«Š·‚¦‚é
+    hello(); // ãƒã‚¯ãƒ­ãŒhelloã‚’goodbyeã«ç½®ãæ›ãˆã‚‹
 
-    // •¶š—ñ‚Ì’†‚ÉŒ»‚ê‚é‚Ì‚Í¯•Êq‚Å‚Í‚È‚¢‚Ì‚Åƒ}ƒNƒ‚Å’u‚«Š·‚í‚ç‚È‚¢
+    // æ–‡å­—åˆ—ã®ä¸­ã«ç¾ã‚Œã‚‹ã®ã¯è­˜åˆ¥å­ã§ã¯ãªã„ã®ã§ãƒã‚¯ãƒ­ã§ç½®ãæ›ã‚ã‚‰ãªã„
     std::cout << "hello, macro" << std::endl;
 }

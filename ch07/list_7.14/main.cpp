@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -9,7 +9,7 @@ public:
     }
 };
 
-// DerivedA‚Í‰¼‘zŠî’êƒNƒ‰ƒX‚Æ‚µ‚ÄBase‚ğŒp³‚·‚é
+// DerivedAã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹ã¨ã—ã¦Baseã‚’ç¶™æ‰¿ã™ã‚‹
 class DerivedA : virtual public Base
 {
 public:
@@ -19,7 +19,7 @@ public:
     }
 };
 
-// DerivedB‚Í‰¼‘zŠî’êƒNƒ‰ƒX‚Æ‚µ‚ÄBase‚ğŒp³‚·‚é
+// DerivedBã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹ã¨ã—ã¦Baseã‚’ç¶™æ‰¿ã™ã‚‹
 class DerivedB : virtual public Base
 {
 public:
@@ -29,9 +29,9 @@ public:
     }
 };
 
-// DerivedA‚àDerivedB‚àBase‚©‚ç”h¶‚µ‚Ä‚¢‚é‚ªA
-// Base‚Í‰¼‘zŠî’êƒNƒ‰ƒXw’è‚³‚ê‚Ä‚¢‚é‚Ì‚Å
-// MoreDerived‚É‚ÍBase‚Í‚½‚¾1‚Â‚µ‚©‘¶İ‚µ‚È‚¢
+// DerivedAã‚‚DerivedBã‚‚Baseã‹ã‚‰æ´¾ç”Ÿã—ã¦ã„ã‚‹ãŒã€
+// Baseã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã®ã§
+// MoreDerivedã«ã¯Baseã¯ãŸã 1ã¤ã—ã‹å­˜åœ¨ã—ãªã„
 class MoreDerived : public DerivedA, public DerivedB
 {
 public:
@@ -45,15 +45,15 @@ int main()
 {
     MoreDerived more_derived;
 
-    // ‚±‚ê‚ç‚Ìƒƒ“ƒo[ŠÖ”‚Í‚±‚ê‚Ü‚Å‚Ç‚¨‚è•’Ê‚ÉŒp³‚³‚ê‚é‚Ì‚ÅŒÄ‚Ño‚¹‚é
+    // ã“ã‚Œã‚‰ã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã¯ã“ã‚Œã¾ã§ã©ãŠã‚Šæ™®é€šã«ç¶™æ‰¿ã•ã‚Œã‚‹ã®ã§å‘¼ã³å‡ºã›ã‚‹
     more_derived.method_DerivedA();
     more_derived.method_DerivedB();
     more_derived.method_MoreDerived();
     
-    // ¡‚Ü‚Å‚ÍB–†‚¾‚Á‚½‚ªABase‚Í‰¼‘zŠî’êƒNƒ‰ƒX‚È‚Ì‚Å
-    // B–†‚É‚È‚ç‚¸ŒÄ‚Ño‚·‚±‚Æ‚ª‚Å‚«‚é
+    // ä»Šã¾ã§ã¯æ›–æ˜§ã ã£ãŸãŒã€Baseã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹ãªã®ã§
+    // æ›–æ˜§ã«ãªã‚‰ãšå‘¼ã³å‡ºã™ã“ã¨ãŒã§ãã‚‹
     more_derived.method_Base();
     
-    // ‚±‚¿‚ç‚àB–†‚É‚È‚ç‚¸Base‚ÌQÆ‚ğæ“¾‚Å‚«‚é
+    // ã“ã¡ã‚‰ã‚‚æ›–æ˜§ã«ãªã‚‰ãšBaseã®å‚ç…§ã‚’å–å¾—ã§ãã‚‹
     Base& base = more_derived;
 }

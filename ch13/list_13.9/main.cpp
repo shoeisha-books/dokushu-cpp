@@ -1,11 +1,11 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 
 int main()
 {
     std::string str = "123";
     for (std::string::size_type i = 0;
-        i < str.length(); // length()‚Í\¬‚·‚échar‚Ì”‚ð•Ô‚·i13.3.5ŽQÆj
+        i < str.length(); // length()ã¯æ§‹æˆã™ã‚‹charã®æ•°ã‚’è¿”ã™ï¼ˆ13.3.5å‚ç…§ï¼‰
         ++i)
     {
         std::cout << str[i];

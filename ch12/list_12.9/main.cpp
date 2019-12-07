@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 int main()
@@ -6,9 +6,9 @@ int main()
     std::vector v0 = { 0, 2, 4, 6, 8 };
     std::vector<int> v1;
 
-    v1.assign(v0.begin(), v0.end()); // v0‚Ìæ“ª‚©‚ç––”ö
+    v1.assign(v0.begin(), v0.end()); // v0ã®å…ˆé ­ã‹ã‚‰æœ«å°¾
 
-    v0.assign(10, -1); // 10ŒÂ‚Ì-1
+    v0.assign(10, -1); // 10å€‹ã®-1
 
     v1.assign({ 1, 3, 5, 7, 9 }); // std::initializer_list<int>
 

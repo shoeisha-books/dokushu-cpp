@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class BaseA
 {
@@ -33,8 +33,8 @@ public:
 };
 
 Derived::Derived(int a, int b)
-    : BaseA{ a } // BaseA‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚Öˆø”‚ğ“n‚·
-    , BaseB{ b } // BaseB‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚Öˆø”‚ğ“n‚·
+    : BaseA{ a } // BaseAã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã¸å¼•æ•°ã‚’æ¸¡ã™
+    , BaseB{ b } // BaseBã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã¸å¼•æ•°ã‚’æ¸¡ã™
 {
 }
 

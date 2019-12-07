@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 struct vector2d
 {
@@ -9,8 +9,8 @@ struct vector2d
 };
 
 template <typename Vector>
-typename Vector::value_type // typenameƒL[ƒ[ƒh‚ğg‚Á‚Ä
-                            // ˆË‘¶–¼‚ªŒ^‚Å‚ ‚é‚±‚Æ‚ğƒRƒ“ƒpƒCƒ‰[‚É‹³‚¦‚é
+typename Vector::value_type // typenameã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã‚’ä½¿ã£ã¦
+                            // ä¾å­˜åãŒå‹ã§ã‚ã‚‹ã“ã¨ã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãƒ¼ã«æ•™ãˆã‚‹
 dot_product(const Vector& lhs, const Vector& rhs)
 {
     return lhs.x * rhs.x + lhs.y * rhs.y;

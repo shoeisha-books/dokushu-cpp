@@ -1,19 +1,19 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <list>
 
 int main()
 {
     std::list il = { 0, 1, 2, 3, 4 };
-    auto top = il.begin(); // top‚Í0‚ğw‚·
+    auto top = il.begin(); // topã¯0ã‚’æŒ‡ã™
 
     auto next = il.begin();
-    ++next; // next‚Í1‚ğw‚·
+    ++next; // nextã¯1ã‚’æŒ‡ã™
 
     auto bottom = il.end();
-    --bottom; // bottom‚Í4‚ğw‚·
+    --bottom; // bottomã¯4ã‚’æŒ‡ã™
 
-    il.erase(top); // íœ‚³‚ê‚½—v‘f‚ğw‚·top‚Í–³Œø‚É‚È‚é‚ª
-    il.push_back(5); // ‚»‚êˆÈŠOinextAbottomj‚Í–³Œø‚Æ‚È‚ç‚È‚¢
+    il.erase(top); // å‰Šé™¤ã•ã‚ŒãŸè¦ç´ ã‚’æŒ‡ã™topã¯ç„¡åŠ¹ã«ãªã‚‹ãŒ
+    il.push_back(5); // ãã‚Œä»¥å¤–ï¼ˆnextã€bottomï¼‰ã¯ç„¡åŠ¹ã¨ãªã‚‰ãªã„
 
     for (auto iter = next; iter != bottom; ++iter)
     {

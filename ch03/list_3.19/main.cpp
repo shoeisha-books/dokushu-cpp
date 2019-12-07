@@ -1,35 +1,35 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 union U
 {
-    // ƒfƒtƒHƒ‹ƒg‚ÌƒAƒNƒZƒXŽw’è‚Ípublic
+    // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚¢ã‚¯ã‚»ã‚¹æŒ‡å®šã¯public
     float f;
 
 private:
     int i;
 
 public:
-    U(); // ƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚âƒfƒXƒgƒ‰ƒNƒ^[‚à’è‹`‚Å‚«‚é
+    U(); // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚„ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚‚å®šç¾©ã§ãã‚‹
     int get_i() const;
 };
 
-// ƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚Å‚Íæ“ªˆÈŠO‚Ìƒƒ“ƒo[•Ï”‚Å‰Šú‰»‚Å‚«‚é
+// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã§ã¯å…ˆé ­ä»¥å¤–ã®ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã§åˆæœŸåŒ–ã§ãã‚‹
 U::U() : i(0xdeadbeef)
 {
-    // ƒƒ“ƒo[‚ÌƒAƒhƒŒƒX‚ð—ñ‹“
+    // ãƒ¡ãƒ³ãƒãƒ¼ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’åˆ—æŒ™
     std::cout << "&f: " << &f << std::endl
         << "&i: " << &i << std::endl;
 }
 
 int U::get_i() const
 {
-    return this->i; // ‹¤—p‘Ì‚Ìƒƒ“ƒo[ŠÖ”‚àthis‚ªŽg‚¦‚é
+    return this->i; // å…±ç”¨ä½“ã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚‚thisãŒä½¿ãˆã‚‹
 }
 
 int main()
 {
-    U u; // ƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚ªintŒ^‚Å‰Šú‰»‚·‚é
+    U u; // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ãŒintåž‹ã§åˆæœŸåŒ–ã™ã‚‹
     std::cout << std::hex << u.get_i() << std::endl;
-    u.f = 2.71828f; // floatŒ^‚Ì’l‚ð‘ã“ü‚·‚é
+    u.f = 2.71828f; // floatåž‹ã®å€¤ã‚’ä»£å…¥ã™ã‚‹
     std::cout << std::hex << u.get_i() << std::endl;
 }

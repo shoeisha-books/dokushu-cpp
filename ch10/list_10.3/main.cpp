@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    throw 0; // ’N‚àcatch‚µ‚È‚¢—áŠO
+    throw 0; // èª°ã‚‚catchã—ãªã„ä¾‹å¤–
     
-    // std::terminate()‚ªŒÄ‚Î‚ê‚ÄƒvƒƒOƒ‰ƒ€‚ª‹­§I—¹‚·‚é
-    // ‚±‚êˆÈ~‚Ìˆ—‚ÍÀs‚³‚ê‚È‚¢
+    // std::terminate()ãŒå‘¼ã°ã‚Œã¦ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒå¼·åˆ¶çµ‚äº†ã™ã‚‹
+    // ã“ã‚Œä»¥é™ã®å‡¦ç†ã¯å®Ÿè¡Œã•ã‚Œãªã„
 
-    std::cout << "throw‚Ì‚ ‚Æ" << std::endl;
+    std::cout << "throwã®ã‚ã¨" << std::endl;
 }

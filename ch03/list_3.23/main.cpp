@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class S
 {
-    static int count; // ƒCƒ“ƒXƒ^ƒ“ƒX‚Ì”‚ð”‚¦‚éstaticƒƒ“ƒo[•Ï”
+    static int count; // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®æ•°ã‚’æ•°ãˆã‚‹staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°
 
 public:
     S();
@@ -11,17 +11,17 @@ public:
     void show_count() const;
 };
 
-int S::count = 0; // staticƒƒ“ƒo[•Ï”‚ÌŽÀ‘Ì‚ð’è‹`‚µ‚Ä0‚Å‰Šú‰»‚·‚é
+int S::count = 0; // staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®å®Ÿä½“ã‚’å®šç¾©ã—ã¦0ã§åˆæœŸåŒ–ã™ã‚‹
 
 S::S()
 {
-    // ƒCƒ“ƒXƒ^ƒ“ƒX‚ªì‚ç‚ê‚½‚çƒCƒ“ƒNƒŠƒƒ“ƒg‚·‚é
+    // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒä½œã‚‰ã‚ŒãŸã‚‰ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã™ã‚‹
     ++count;
 }
 
 S::~S()
 {
-    // ”jŠü‚³‚ê‚½‚çƒfƒNƒŠƒƒ“ƒg‚·‚é
+    // ç ´æ£„ã•ã‚ŒãŸã‚‰ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã™ã‚‹
     --count;
 }
 
@@ -33,15 +33,15 @@ void S::show_count() const
 void function()
 {
     S a;
-    a.show_count(); // ƒCƒ“ƒXƒ^ƒ“ƒX‚Ímain()‚Ìa‚Æ‚±‚ÌŠÖ”“à‚Ìa‚Ì2‚Â‚ª‚ ‚é
+    a.show_count(); // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã¯main()ã®aã¨ã“ã®é–¢æ•°å†…ã®aã®2ã¤ãŒã‚ã‚‹
 
-    // ‚±‚ÌŠÖ”“à‚Ìa‚ÍŠÖ”‚ªI—¹‚·‚é‚Æ“¯Žž‚É”jŠü‚³‚ê‚éiÚ×‚Í4.3ßj
+    // ã“ã®é–¢æ•°å†…ã®aã¯é–¢æ•°ãŒçµ‚äº†ã™ã‚‹ã¨åŒæ™‚ã«ç ´æ£„ã•ã‚Œã‚‹ï¼ˆè©³ç´°ã¯4.3ç¯€ï¼‰
 }
 
 int main()
 {
     S a;
-    a.show_count(); // a‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚ÅƒCƒ“ƒNƒŠƒƒ“ƒg‚³‚ê‚é‚Ì‚Å1‚ªo—Í‚³‚ê‚é
+    a.show_count(); // aã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã§ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã•ã‚Œã‚‹ã®ã§1ãŒå‡ºåŠ›ã•ã‚Œã‚‹
     function();
-    a.show_count(); // function()ŠÖ”“à‚Ìa‚Í”jŠü‚³‚ê‚Ä‚¢‚é‚Ì‚Å1‚Æ‚È‚é
+    a.show_count(); // function()é–¢æ•°å†…ã®aã¯ç ´æ£„ã•ã‚Œã¦ã„ã‚‹ã®ã§1ã¨ãªã‚‹
 }

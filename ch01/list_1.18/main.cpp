@@ -1,17 +1,17 @@
-#include <iostream>
+ï»¿#include <iostream>
 int main()
 {
-    // ‰Šú‰»ƒŠƒXƒg‚æ‚è‚à”z—ñ‚Ì‚Ù‚¤‚ª’·‚¢‚Ì‚ÅA
-    // ‰Šú’l‚ª‚È‚¢Žc‚è‚Í0‚Å‰Šú‰»‚³‚ê‚é
+    // åˆæœŸåŒ–ãƒªã‚¹ãƒˆã‚ˆã‚Šã‚‚é…åˆ—ã®ã»ã†ãŒé•·ã„ã®ã§ã€
+    // åˆæœŸå€¤ãŒãªã„æ®‹ã‚Šã¯0ã§åˆæœŸåŒ–ã•ã‚Œã‚‹
     int array[5] = { 5, 4, 3 };
 
-    // ”z—ñ‚Ìæ“ª‚Í0‚©‚çŽn‚Ü‚é
+    // é…åˆ—ã®å…ˆé ­ã¯0ã‹ã‚‰å§‹ã¾ã‚‹
     std::cout << "array[0] = " << array[0] << std::endl;
     
     std::cout << "array[1] = " << array[1] << std::endl;
     std::cout << "array[2] = " << array[2] << std::endl;
     std::cout << "array[3] = " << array[3] << std::endl;
     
-    // ”z—ñ‚ÌÅŒã‚Ì“Y‚¦Žš‚Í ’·‚³-1
+    // é…åˆ—ã®æœ€å¾Œã®æ·»ãˆå­—ã¯ é•·ã•-1
     std::cout << "array[4] = " << array[4] << std::endl;
 }

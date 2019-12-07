@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -13,9 +13,9 @@ int main()
     std::ifstream in{ "hello_eof.txt" };
 
     std::string line;
-    // 1s“Ç‚İ‚İi‚±‚Ìƒtƒ@ƒCƒ‹‚Í1s‚¾‚¯‚È‚Ì‚Å‚±‚ê‚Å‚·‚×‚Ä“Ç‚İI‚í‚éj
+    // 1è¡Œèª­ã¿è¾¼ã¿ï¼ˆã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯1è¡Œã ã‘ãªã®ã§ã“ã‚Œã§ã™ã¹ã¦èª­ã¿çµ‚ã‚ã‚‹ï¼‰
     std::getline(in, line);
 
     std::cout << line << std::endl;
-    std::cout << "ƒtƒ@ƒCƒ‹––”öH " << std::boolalpha << in.eof() << std::endl;
+    std::cout << "ãƒ•ã‚¡ã‚¤ãƒ«æœ«å°¾ï¼Ÿ " << std::boolalpha << in.eof() << std::endl;
 }

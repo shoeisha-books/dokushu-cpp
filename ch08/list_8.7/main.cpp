@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -6,14 +6,14 @@ int main()
 {
     std::ofstream out;
 
-    // ƒeƒLƒXƒgƒ‚[ƒh‚Å‘‚«o‚µ—piˆÃ–Ùj‚É‹ó‚É‚µ‚Ä‚©‚çƒI[ƒvƒ“
+    // ãƒ†ã‚­ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§æ›¸ãå‡ºã—ç”¨ï¼ˆæš—é»™ï¼‰ã«ç©ºã«ã—ã¦ã‹ã‚‰ã‚ªãƒ¼ãƒ—ãƒ³
     out.open("hello_file.txt", std::ios::out | std::ios::trunc);
 
     out << "Hello, File IO" << std::endl;
 
     out.close();
 
-    // ƒeƒLƒXƒgƒ‚[ƒh‚Å“Ç‚İ‚İ—pi–¾¦j‚ÉƒI[ƒvƒ“
+    // ãƒ†ã‚­ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§èª­ã¿è¾¼ã¿ç”¨ï¼ˆæ˜ç¤ºï¼‰ã«ã‚ªãƒ¼ãƒ—ãƒ³
     std::ifstream in{ "hello_file.txt", std::ios::in };
 
     std::string line;

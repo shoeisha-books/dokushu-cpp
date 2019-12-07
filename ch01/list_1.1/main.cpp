@@ -1,7 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    // ƒRƒ“ƒ\[ƒ‹‚ÉHello, world‚Æo—Í‚·‚é
+    // ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«Hello, worldã¨å‡ºåŠ›ã™ã‚‹
     std::cout << "Hello, world" << std::endl;
 }

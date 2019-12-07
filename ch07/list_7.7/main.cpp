@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
-    // ”ñŒöŠJ‚È‰¼‘zŠÖ”
+    // éå…¬é–‹ãªä»®æƒ³é–¢æ•°
     virtual void method();
 
 public:
@@ -16,18 +16,18 @@ void Base::method()
 
 class Derived : public Base
 {
-    // Šî’êƒNƒ‰ƒX‚Å”ñŒöŠJ‚Æ‚È‚Á‚Ä‚¢‚Ä‚àƒI[ƒo[ƒ‰ƒCƒh‚¾‚¯‚Í‚Å‚«‚é
+    // åŸºåº•ã‚¯ãƒ©ã‚¹ã§éå…¬é–‹ã¨ãªã£ã¦ã„ã¦ã‚‚ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã ã‘ã¯ã§ãã‚‹
     void method() override;
 };
 
 void Derived::method()
 {
     std::cout << "Derived::method()" << std::endl;
-    // Base::method(); // ƒGƒ‰[BBase::method‚Í”ñŒöŠJƒƒ“ƒo[‚È‚Ì‚ÅŒÄ‚Ño‚¹‚È‚¢
+    // Base::method(); // ã‚¨ãƒ©ãƒ¼ã€‚Base::methodã¯éå…¬é–‹ãƒ¡ãƒ³ãƒãƒ¼ãªã®ã§å‘¼ã³å‡ºã›ãªã„
 }
 
 int main()
 {
     Derived derived;
-    derived.call_method(); // ”ñŒöŠJƒƒ“ƒo[‚ÌƒI[ƒo[ƒ‰ƒCƒh‚ªŒÄ‚Ño‚³‚ê‚é
+    derived.call_method(); // éå…¬é–‹ãƒ¡ãƒ³ãƒãƒ¼ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ãŒå‘¼ã³å‡ºã•ã‚Œã‚‹
 }

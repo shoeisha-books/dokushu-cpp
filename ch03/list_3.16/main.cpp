@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -13,8 +13,8 @@ void A::foo()
 
 void call_foo(A* pa)
 {
-    pa->foo(); // ƒ|ƒCƒ“ƒ^[‚ðŽg‚Á‚Äƒƒ“ƒo[‚ÉƒAƒNƒZƒX
-    // (*pa).foo() ‚Æ‘‚­‚±‚Æ‚à‚Å‚«‚é
+    pa->foo(); // ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã‚’ä½¿ã£ã¦ãƒ¡ãƒ³ãƒãƒ¼ã«ã‚¢ã‚¯ã‚»ã‚¹
+    // (*pa).foo() ã¨æ›¸ãã“ã¨ã‚‚ã§ãã‚‹
 }
 
 int main()

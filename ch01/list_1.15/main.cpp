@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
@@ -6,7 +6,7 @@ int main()
 
     if (ptr == nullptr)
     {
-        std::cout << "ptr‚Íƒkƒ‹ƒ|ƒCƒ“ƒ^[‚Å‚·" << std::endl;
+        std::cout << "ptrã¯ãƒŒãƒ«ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã§ã™" << std::endl;
     }
     else
     {

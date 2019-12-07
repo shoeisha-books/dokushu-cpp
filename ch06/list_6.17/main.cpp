@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class heap
 {
@@ -13,14 +13,14 @@ public:
     
     bool create();
 
-    // boolŒ^‚É•ÏŠ·‚·‚é
+    // boolå‹ã«å¤‰æ›ã™ã‚‹
     operator bool() const;
 };
 
 bool heap::create()
 {
-    // true/false‚É‚È‚é‚Ì‚ÅAif•¶‚Å‚»‚Ì‚Ü‚ÜğŒ•ªŠò‚Å‚«‚é
-    if (*this) // boolŒ^‚Ö‚Ì•ÏŠ·ŠÖ”‚ªŒÄ‚Î‚ê‚é
+    // true/falseã«ãªã‚‹ã®ã§ã€ifæ–‡ã§ãã®ã¾ã¾æ¡ä»¶åˆ†å²ã§ãã‚‹
+    if (*this) // boolå‹ã¸ã®å¤‰æ›é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
     {
         return false;
     }
@@ -41,16 +41,16 @@ int main()
 
     if (!h)
     {
-        std::cout << "•ÏŠ·ŠÖ”‚ªfalse‚ğ•Ô‚µ‚Ü‚µ‚½" << std::endl;
+        std::cout << "å¤‰æ›é–¢æ•°ãŒfalseã‚’è¿”ã—ã¾ã—ãŸ" << std::endl;
     }
 
-    std::cout << "heap::create()ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "heap::create()å‘¼ã³å‡ºã—" << std::endl;
     h.create();
 
     if (!h)
     {
-        std::cout << "•ÏŠ·ŠÖ”‚ªfalse‚ğ•Ô‚µ‚Ü‚µ‚½" << std::endl;
+        std::cout << "å¤‰æ›é–¢æ•°ãŒfalseã‚’è¿”ã—ã¾ã—ãŸ" << std::endl;
     }
 
-    std::cout << "I—¹" << std::endl;
+    std::cout << "çµ‚äº†" << std::endl;
 }

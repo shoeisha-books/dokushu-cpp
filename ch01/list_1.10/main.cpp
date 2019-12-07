@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
@@ -8,8 +8,8 @@ int main()
     case 1: // FALL THROUGH !!
     case 2: // FALL THROUGH !!
     case 3:
-        std::cout << "a‚Í1‚©2‚©3‚Å‚·" << std::endl;
+        std::cout << "aã¯1ã‹2ã‹3ã§ã™" << std::endl;
         return 0;
     }
-    std::cout << "Žc‚è‚Ìˆ—" << std::endl;
+    std::cout << "æ®‹ã‚Šã®å‡¦ç†" << std::endl;
 }

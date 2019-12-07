@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 std::string type(int)
@@ -13,7 +13,7 @@ std::string type(const char*)
 
 int main()
 {
-    auto lambda = [](const auto& value) // value‚ÌŒ^‚ÍŒÄ‚Ño‚µ‚Ìˆø”‚©‚ç„˜_‚³‚ê‚é
+    auto lambda = [](const auto& value) // valueã®å‹ã¯å‘¼ã³å‡ºã—æ™‚ã®å¼•æ•°ã‹ã‚‰æ¨è«–ã•ã‚Œã‚‹
     {
         std::cout << type(value) << std::endl;
     };

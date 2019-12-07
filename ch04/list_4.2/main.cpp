@@ -1,14 +1,14 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-std::string get_message(); // ŠÖ”‚Ì‘O•ûéŒ¾
+std::string get_message(); // é–¢æ•°ã®å‰æ–¹å®£è¨€
 
 int main()
 {
-    auto msg = get_message(); // ’è‹`‚ª‚Ü‚¾‚È‚­‚Ä‚àŠÖ”ŒÄ‚Ño‚µ‚ª‚Å‚«‚é
+    auto msg = get_message(); // å®šç¾©ãŒã¾ã ãªãã¦ã‚‚é–¢æ•°å‘¼ã³å‡ºã—ãŒã§ãã‚‹
     std::cout << msg << std::endl;
 }
 
-// ŠÖ”‚ÌÀÛ‚Ì’è‹`
+// é–¢æ•°ã®å®Ÿéš›ã®å®šç¾©
 std::string get_message()
 {
     return "Hello, forward declaration";

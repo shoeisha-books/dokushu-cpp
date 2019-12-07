@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Triangle
 {
@@ -23,10 +23,10 @@ float Triangle::area() const
 
 int main()
 {
-    // ƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚Ö‚Ìˆø”‚ª•¡”‚Ìê‡‚ÍƒJƒ“ƒ}‚Å‹æØ‚é
+    // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã¸ã®å¼•æ•°ãŒè¤‡æ•°ã®å ´åˆã¯ã‚«ãƒ³ãƒã§åŒºåˆ‡ã‚‹
     Triangle* tri = new Triangle{ 10.0f, 5.0f };
 
-    std::cout << "OŠpŒ`‚Ì–ÊÏ: " << tri->area() << std::endl;
+    std::cout << "ä¸‰è§’å½¢ã®é¢ç©: " << tri->area() << std::endl;
 
-    delete tri; // ƒNƒ‰ƒX‚Å‚àdelete‰‰Zq‚Í’Êí‚Ì‚Ü‚Ü
+    delete tri; // ã‚¯ãƒ©ã‚¹ã§ã‚‚deleteæ¼”ç®—å­ã¯é€šå¸¸ã®ã¾ã¾
 }

@@ -1,19 +1,19 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    auto dephault = std::cout.flags(); // ƒfƒtƒHƒ‹ƒg‚Ìƒtƒ‰ƒO‚ğ•Û‘¶
+    auto dephault = std::cout.flags(); // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ•ãƒ©ã‚°ã‚’ä¿å­˜
 
     std::cout.setf(std::ios::scientific);
 
-    // basefield‚ğƒNƒŠƒAA‚Â‚Ü‚èŠî”‚ÉŠÖ‚·‚éƒtƒ‰ƒO‚ğƒNƒŠƒA
+    // basefieldã‚’ã‚¯ãƒªã‚¢ã€ã¤ã¾ã‚ŠåŸºæ•°ã«é–¢ã™ã‚‹ãƒ•ãƒ©ã‚°ã‚’ã‚¯ãƒªã‚¢
     std::cout.setf(std::ios::hex, std::ios::basefield);
 
-    std::cout << 123.456f << std::endl; // ‰ÈŠw‹Zp•\‹L
-    std::cout << 123456 << std::endl; // 16i”•\‹L
+    std::cout << 123.456f << std::endl; // ç§‘å­¦æŠ€è¡“è¡¨è¨˜
+    std::cout << 123456 << std::endl; // 16é€²æ•°è¡¨è¨˜
 
-    std::cout.flags(dephault); // ƒfƒtƒHƒ‹ƒg‚ÉƒŠƒZƒbƒg
+    std::cout.flags(dephault); // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã«ãƒªã‚»ãƒƒãƒˆ
 
-    std::cout << 123.456f << std::endl; // ’Êí•\‹L
-    std::cout << 123456 << std::endl; // 10i”•\‹L
+    std::cout << 123.456f << std::endl; // é€šå¸¸è¡¨è¨˜
+    std::cout << 123456 << std::endl; // 10é€²æ•°è¡¨è¨˜
 }

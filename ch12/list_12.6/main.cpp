@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 int main()
 {
-    std::vector iv0 = { 1, 2, 3, 4, 5 }; // ƒRƒs[Œ³
-    std::vector iv1 = iv0; // ƒRƒs[
+    std::vector iv0 = { 1, 2, 3, 4, 5 }; // ã‚³ãƒ”ãƒ¼å…ƒ
+    std::vector iv1 = iv0; // ã‚³ãƒ”ãƒ¼
 
     for (int i : iv1)
     {

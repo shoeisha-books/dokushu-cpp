@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 struct product
 {
@@ -7,22 +7,22 @@ struct product
     int stock;
 };
 
-// ˆø”‚Æ‚µ‚Ä\‘¢‘Ì•Ï”‚ğó‚¯æ‚éŠÖ”
+// å¼•æ•°ã¨ã—ã¦æ§‹é€ ä½“å¤‰æ•°ã‚’å—ã‘å–ã‚‹é–¢æ•°
 void show_product(product product)
 {
-    std::cout << "¤•iIDF" << product.id << std::endl;
-    std::cout << "’P‰¿F" << product.price << std::endl;
-    std::cout << "İŒÉ”F" << product.stock << std::endl;
+    std::cout << "å•†å“IDï¼š" << product.id << std::endl;
+    std::cout << "å˜ä¾¡ï¼š" << product.price << std::endl;
+    std::cout << "åœ¨åº«æ•°ï¼š" << product.stock << std::endl;
 }
 
 int main()
 {
     product pen =
     {
-        0, // ¤•iID
-        100, // ’P‰¿
-        200, // İŒÉ”
+        0, // å•†å“ID
+        100, // å˜ä¾¡
+        200, // åœ¨åº«æ•°
     };
 
-    show_product(pen); // ’Êí‚Ì•Ï”‚Æ“¯‚¶‚æ‚¤‚ÉŠÖ”‚É“n‚·
+    show_product(pen); // é€šå¸¸ã®å¤‰æ•°ã¨åŒã˜ã‚ˆã†ã«é–¢æ•°ã«æ¸¡ã™
 }

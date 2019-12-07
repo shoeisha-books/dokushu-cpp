@@ -1,6 +1,6 @@
-#include <iostream>
+﻿#include <iostream>
 
-// �Ăяo����邽�тɃJ�E���g���Č��ݒl��Ԃ��J�E���^�[�N���X
+// 呼び出されるたびにカウントして現在値を返すカウンタークラス
 class Counter
 {
     int value;
@@ -8,19 +8,19 @@ class Counter
 public:
     Counter() : value{ 0 } {}
 
-    int operator()(); // �������󂯎��Ȃ��֐��Ăяo�����Z�q�̃I�[�o�[���[�h
-    int operator()(int n); // ������1�̊֐��Ăяo�����Z�q�̃I�[�o�[���[�h
+    int operator()(); // 引数を受け取らない関数呼び出し演算子のオーバーロード
+    int operator()(int n); // 仮引数1つの関数呼び出し演算子のオーバーロード
 
     void show() const;
 };
 
-// �������Ȃ��Ƃ��ɂ̓C���N�������g���č��̃J�E���^�[�l��Ԃ�
+// 引数がないときにはインクリメントして今のカウンター値を返す
 int Counter::operator()()
 {
     return ++value;
 }
 
-// �����ŋ�̓I�ȑ����l���^����ꂽ�Ƃ��ɂ͂��̐���������������
+// 引数で具体的な増減値が与えられたときにはその数だけ増減させる
 int Counter::operator()(int n)
 {
     return value += n;

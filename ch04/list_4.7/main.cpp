@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int count()
 {
@@ -8,9 +8,9 @@ int count()
 
 int main()
 {
-    std::cout << "1‰ñ–Ú: " << count() << std::endl;
+    std::cout << "1å›žç›®: " << count() << std::endl;
 
-    std::cout << "2‰ñ–Ú: " << count() << std::endl;
+    std::cout << "2å›žç›®: " << count() << std::endl;
 
-    std::cout << "3‰ñ–Ú: " << count() << std::endl;
+    std::cout << "3å›žç›®: " << count() << std::endl;
 }

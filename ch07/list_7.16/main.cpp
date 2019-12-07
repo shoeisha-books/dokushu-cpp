@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 class Base
 {
@@ -24,22 +24,22 @@ public:
 class MoreDerived : public DerivedA, public DerivedB
 {
 public:
-    // ���z���N���X�̃R���X�g���N�^�[�Ăяo��
+    // 仮想基底クラスのコンストラクター呼び出し
     MoreDerived() : Base{ 3 } {}
 };
 
-// ��`����Ă���N���X�̒��ōł��h�����Ă���N���X
+// 定義されているクラスの中で最も派生しているクラス
 class MoreMoreDerived : public MoreDerived
 {
 public:
-    // �����ł����z���N���X�̃R���X�g���N�^�[�Ăяo��
+    // ここでも仮想基底クラスのコンストラクター呼び出し
     MoreMoreDerived() : Base{ 4 } {}
 };
 
 int main()
 {
-    // �ł��h�����Ă���MoreMoreDerived�ł͂Ȃ��A
-    // MoreDerived�̃C���X�^���X�𐶐�����Ƃ��ɂ�
-    // �ǂ̃R���X�g���N�^�[�œn�����l���o�͂����H
+    // 最も派生しているMoreMoreDerivedではなく、
+    // MoreDerivedのインスタンスを生成するときには
+    // どのコンストラクターで渡した値が出力される？
     MoreDerived more_derived;
 }

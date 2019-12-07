@@ -1,17 +1,17 @@
-#include <type_traits>
+ï»¿#include <type_traits>
 
 template <typename T>
 class vector2d
 {
     static_assert(std::is_signed<T>::value,
-        "T‚Í•„†‚ğˆµ‚¦‚é”’lŒ^‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚·");
+        "Tã¯ç¬¦å·ã‚’æ‰±ãˆã‚‹æ•°å€¤å‹ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™");
     T x;
     T y;
 
 public:
-    // cc
+    // â€¦â€¦
 };
 
 vector2d<float> vf; // OK
 vector2d<int> vi; // OK
-vector2d<unsigned int> vu; // ƒGƒ‰[
+vector2d<unsigned int> vu; // ã‚¨ãƒ©ãƒ¼

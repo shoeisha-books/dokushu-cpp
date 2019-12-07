@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <set>
 
 int main()
@@ -7,8 +7,8 @@ int main()
     auto first = is.begin();
     auto last = is.end();
 
-    is.insert(8); // 8‚ğ‘}“ü
-    is.erase(is.find(3)); // 3‚ğíœ
+    is.insert(8); // 8ã‚’æŒ¿å…¥
+    is.erase(is.find(3)); // 3ã‚’å‰Šé™¤
 
     while (first != last)
     {

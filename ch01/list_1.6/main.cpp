@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int a = 1 + 2 * 3 - 4;
     std::cout << a << std::endl;
-    int b = (1 + 2) * (3 - 4); // Š‡ŒÊ‚Ì’†‚©‚çŒvŽZ
+    int b = (1 + 2) * (3 - 4); // æ‹¬å¼§ã®ä¸­ã‹ã‚‰è¨ˆç®—
     std::cout << b << std::endl;
 }

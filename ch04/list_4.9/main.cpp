@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int foo(int value)
 {
-    // ‰½‚©•¡G‚Èˆ—
+    // ä½•ã‹è¤‡é›‘ãªå‡¦ç†
     std::cout << "foo: " << value << std::endl;
     return value;
 }
 
-bool is_even(int value) // ‹ô”‚È‚çtrue‚ğ•Ô‚·ŠÖ”
+bool is_even(int value) // å¶æ•°ãªã‚‰trueã‚’è¿”ã™é–¢æ•°
 {
     return value % 2 == 0;
 }
@@ -19,10 +19,10 @@ bool is_zero(int value)
 
 int main()
 {
-    // foo(42)‚Ì–ß‚è’l‚ª0‚Å‚Í‚È‚¢‹ô”‚Ìê‡‚É•ªŠò‚³‚¹‚Ä‚¢‚é‚ªA
-    // •¡G‚Èˆ—‚ğ‚·‚éfoo()ŠÖ”‚ª2‰ñŒÄ‚Î‚ê‚Ä‚µ‚Ü‚¤
+    // foo(42)ã®æˆ»ã‚Šå€¤ãŒ0ã§ã¯ãªã„å¶æ•°ã®å ´åˆã«åˆ†å²ã•ã›ã¦ã„ã‚‹ãŒã€
+    // è¤‡é›‘ãªå‡¦ç†ã‚’ã™ã‚‹foo()é–¢æ•°ãŒ2å›å‘¼ã°ã‚Œã¦ã—ã¾ã†
     if (is_even(foo(42)) && !is_zero(foo(42)))
     {
-        std::cout << "foo(42)‚Íƒ[ƒ‚Å‚Í‚È‚¢‹ô”‚ğ•Ô‚µ‚Ü‚µ‚½" << std::endl;
+        std::cout << "foo(42)ã¯ã‚¼ãƒ­ã§ã¯ãªã„å¶æ•°ã‚’è¿”ã—ã¾ã—ãŸ" << std::endl;
     }
 }

@@ -1,40 +1,42 @@
-// ‚±‚Ìƒ\[ƒX‚ÍƒRƒ“ƒpƒCƒ‹‚Å‚«‚Ü‚¹‚ñ
+ï»¿// ã“ã®ã‚½ãƒ¼ã‚¹ã¯ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã§ãã¾ã›ã‚“
 
 class Base
 {
 protected:
-    // ‰¼‘zŠÖ”ƒe[ƒuƒ‹
+    // ä»®æƒ³é–¢æ•°ãƒ†ãƒ¼ãƒ–ãƒ«
     struct
     {
-        // ‰¼‘zŠÖ”‚Ö‚Ìƒ|ƒCƒ“ƒ^[
+        // ä»®æƒ³é–¢æ•°ã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼
         vfunc - pointer foo_vfunc;
     } vtable;
 
 public:
-    // ‰¼‘zŠÖ”‚ÌBase‚É‚¨‚¯‚é–{‘Ì
-    void foo_body() { cc }
+    // ä»®æƒ³é–¢æ•°ã®Baseã«ãŠã‘ã‚‹æœ¬ä½“
+    void foo_body() { â€¦â€¦ }
     void foo()
     {
-        // ‰¼‘zŠÖ”‚ğg‚Á‚½–{‘Ì‚ÌŒÄ‚Ño‚µ
+        // ä»®æƒ³é–¢æ•°ã‚’ä½¿ã£ãŸæœ¬ä½“ã®å‘¼ã³å‡ºã—
         vtable.foo_vfunc();
     }
     Base()
     {
-        vtable.foo_vfunc = &foo_body; // Base::foo_body‚Ö‚ÌƒAƒhƒŒƒX‚ğİ’è‚·‚é
+        vtable.foo_vfunc = &foo_body; // Base::foo_bodyã¸ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¨­å®šã™ã‚‹
     }
 };
+
 class Derived : public Base
 {
 public:
-    // ‰¼‘zŠÖ”‚ÌDerived‚É‚¨‚¯‚é–{‘Ì
-    void foo_body() { cc }
+    // ä»®æƒ³é–¢æ•°ã®Derivedã«ãŠã‘ã‚‹æœ¬ä½“
+    void foo_body() { â€¦â€¦ }
     Derived()
     {
-        vtable.foo_vfunc = &foo_body; // Derived::foo_body‚Ö‚ÌƒAƒhƒŒƒX‚Åã‘‚«‚·‚é
+        vtable.foo_vfunc = &foo_body; // Derived::foo_bodyã¸ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ä¸Šæ›¸ãã™ã‚‹
     }
 };
+
 int main()
 {
     Derived d;
-    d.foo(); // ‰¼‘zŠÖ”ŒÄ‚Ño‚µ
+    d.foo(); // ä»®æƒ³é–¢æ•°å‘¼ã³å‡ºã—
 }

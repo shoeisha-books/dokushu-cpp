@@ -1,4 +1,4 @@
-#include <vector>
+﻿#include <vector>
 #include <iostream>
 
 void print_vector(const std::vector<int>& v)
@@ -27,6 +27,6 @@ int main()
     v.clear();
     if (v.empty())
     {
-        std::cout << "v�͋�ł�" << std::endl;
+        std::cout << "vは空です" << std::endl;
     }
 }

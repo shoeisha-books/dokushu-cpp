@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <typeinfo>
 
 class Base
 {
 public:
-    virtual ~Base() { } // ‰¼‘zƒfƒXƒgƒ‰ƒNƒ^[‚ğ’è‹`‚µ‚Äƒ|ƒŠƒ‚[ƒtƒBƒbƒN‚É‚·‚é
+    virtual ~Base() { } // ä»®æƒ³ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚’å®šç¾©ã—ã¦ãƒãƒªãƒ¢ãƒ¼ãƒ•ã‚£ãƒƒã‚¯ã«ã™ã‚‹
 };
 
 class DerivedA : public Base
@@ -15,29 +15,29 @@ class DerivedB : public Base
 {
 };
 
-// “n‚³‚ê‚½ƒIƒuƒWƒFƒNƒg‚ÌÀÛ‚ÌŒ^‚É‚æ‚Á‚ÄƒƒbƒZ[ƒW‚ğ•Ï‚¦‚é
+// æ¸¡ã•ã‚ŒãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å®Ÿéš›ã®å‹ã«ã‚ˆã£ã¦ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å¤‰ãˆã‚‹
 void determine_class(const Base& obj)
 {
     const std::type_info& obj_type = typeid(obj);
 
     if (obj_type == typeid(DerivedA))
     {
-        // “n‚³‚ê‚½obj‚ªÀÛ‚É‚ÍDerivedAŒ^‚¾‚Á‚½ê‡
-        std::cout << "obj ‚Í DerivedAŒ^‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚Å‚·" << std::endl;
+        // æ¸¡ã•ã‚ŒãŸobjãŒå®Ÿéš›ã«ã¯DerivedAå‹ã ã£ãŸå ´åˆ
+        std::cout << "obj ã¯ DerivedAå‹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã§ã™" << std::endl;
     }
     else if (obj_type == typeid(DerivedB))
     {
-        // “n‚³‚ê‚½obj‚ªÀÛ‚É‚ÍDerivedBŒ^‚¾‚Á‚½ê‡
-        std::cout << "obj ‚Í DerivedBŒ^‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚Å‚·" << std::endl;
+        // æ¸¡ã•ã‚ŒãŸobjãŒå®Ÿéš›ã«ã¯DerivedBå‹ã ã£ãŸå ´åˆ
+        std::cout << "obj ã¯ DerivedBå‹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã§ã™" << std::endl;
     }
     else
     {
-        std::cout << "obj ‚Í DerivedA‚Å‚àDerivedB‚Å‚à‚È‚¢ƒCƒ“ƒXƒ^ƒ“ƒX‚Å‚·"
+        std::cout << "obj ã¯ DerivedAã§ã‚‚DerivedBã§ã‚‚ãªã„ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã§ã™"
             << std::endl;
     }
 }
 
-// determine_class‚ª’m‚ç‚È‚¢”h¶ƒNƒ‰ƒX
+// determine_classãŒçŸ¥ã‚‰ãªã„æ´¾ç”Ÿã‚¯ãƒ©ã‚¹
 class DerivedC : public Base
 {
 };
@@ -46,13 +46,13 @@ int main()
 {
     DerivedA a;
 
-    determine_class(a); // DerivedAŒ^‚ÌƒIƒuƒWƒFƒNƒg‚ğ“n‚·
+    determine_class(a); // DerivedAå‹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã™
 
     DerivedB b;
 
-    determine_class(b); // DerivedBŒ^‚ÌƒIƒuƒWƒFƒNƒg‚ğ“n‚·
+    determine_class(b); // DerivedBå‹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã™
 
     DerivedC c;
 
-    determine_class(c); // DerivedCŒ^‚ÌƒIƒuƒWƒFƒNƒg‚ğ“n‚·
+    determine_class(c); // DerivedCå‹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã™
 }

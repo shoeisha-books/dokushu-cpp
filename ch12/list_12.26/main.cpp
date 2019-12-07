@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <set>
 
 int main()
@@ -8,7 +8,7 @@ int main()
     for (int i = 0; i < 8; ++i)
     {
         auto iter = is.find(i);
-        if (iter != is.end()) // end()‚Æ“™‚µ‚­‚È‚¯‚ê‚ÎŒ©‚Â‚©‚Á‚Ä‚¢‚é
+        if (iter != is.end()) // end()ã¨ç­‰ã—ããªã‘ã‚Œã°è¦‹ã¤ã‹ã£ã¦ã„ã‚‹
         {
             std::cout << *iter << std::endl;
         }

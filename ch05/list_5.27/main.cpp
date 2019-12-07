@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int identity(int v)
 {
@@ -12,11 +12,11 @@ int square(int v)
 
 int main()
 {
-    // ŠÖ”ƒŠƒtƒ@ƒŒƒ“ƒX‚ğéŒ¾‚µidentity‚Å‰Šú‰»‚·‚é
+    // é–¢æ•°ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã‚’å®£è¨€ã—identityã§åˆæœŸåŒ–ã™ã‚‹
     int(&func)(int) = identity;
 
-    // ŠÖ”ƒŠƒtƒ@ƒŒƒ“ƒX‚ğŒo—R‚µ‚Äidentity‚ğŒÄ‚Ño‚·
+    // é–¢æ•°ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã‚’çµŒç”±ã—ã¦identityã‚’å‘¼ã³å‡ºã™
     std::cout << "func(4): " << func(4) << std::endl;
 
-    // func = square; // ƒGƒ‰[BŠÖ”ƒŠƒtƒ@ƒŒƒ“ƒX‚ÍQÆæ‚ğ‚ ‚Æ‚©‚ç•ÏX‚Å‚«‚È‚¢
+    // func = square; // ã‚¨ãƒ©ãƒ¼ã€‚é–¢æ•°ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã¯å‚ç…§å…ˆã‚’ã‚ã¨ã‹ã‚‰å¤‰æ›´ã§ããªã„
 }

@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    int* ptr = 0; // ƒkƒ‹ƒ|ƒCƒ“ƒ^[‚Å‰Šú‰»
+    int* ptr = 0; // ãƒŒãƒ«ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã§åˆæœŸåŒ–
 
-    std::cout << ptr << std::endl; // ƒ|ƒCƒ“ƒ^[•Ï”‚ª‚Á‚Ä‚¢‚éƒAƒhƒŒƒX‚ğ•\¦‚·‚é
+    std::cout << ptr << std::endl; // ãƒã‚¤ãƒ³ã‚¿ãƒ¼å¤‰æ•°ãŒæŒã£ã¦ã„ã‚‹ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¡¨ç¤ºã™ã‚‹
 
-    ptr = nullptr; // ƒkƒ‹ƒ|ƒCƒ“ƒ^[ƒŠƒeƒ‰ƒ‹‚ğ‘ã“ü
+    ptr = nullptr; // ãƒŒãƒ«ãƒã‚¤ãƒ³ã‚¿ãƒ¼ãƒªãƒ†ãƒ©ãƒ«ã‚’ä»£å…¥
 
     std::cout << ptr << std::endl;
 }

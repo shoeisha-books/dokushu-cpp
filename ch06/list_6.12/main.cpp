@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
 public:
-    A* operator&(); // ƒAƒhƒŒƒX‰‰Zq
+    A* operator&(); // ã‚¢ãƒ‰ãƒ¬ã‚¹æ¼”ç®—å­
     const A* operator&() const;
 };
 

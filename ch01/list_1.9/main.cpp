@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
@@ -6,16 +6,16 @@ int main()
     switch (a + 1)
     {
     case 1:
-        std::cout << "a + 1‚Í1‚Å‚·" << std::endl;
+        std::cout << "a + 1ã¯1ã§ã™" << std::endl;
         break;
     case 2:
-        std::cout << "a + 1‚Í2‚Å‚·" << std::endl;
+        std::cout << "a + 1ã¯2ã§ã™" << std::endl;
         break;
     default:
-        std::cout << "a + 1‚Í1‚Å‚à2‚Å‚à3‚Å‚à‚ ‚è‚Ü‚¹‚ñ" << std::endl;
+        std::cout << "a + 1ã¯1ã§ã‚‚2ã§ã‚‚3ã§ã‚‚ã‚ã‚Šã¾ã›ã‚“" << std::endl;
         break;
     case 3:
-        std::cout << "a + 1‚Í3‚Å‚·" << std::endl;
+        std::cout << "a + 1ã¯3ã§ã™" << std::endl;
         break;
     }
 }

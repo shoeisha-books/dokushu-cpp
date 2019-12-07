@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
@@ -12,7 +12,7 @@ int main()
     str0 += str2;
     std::cout << "str0: " << str0 << std::endl;
 
-    // std::string‚ª‰E•Ó‚É‚ ‚ê‚ÎA¶•Ó‚ÉC•¶Žš—ñ‚ª—ˆ‚Ä‚à‚æ‚¢
+    // std::stringãŒå³è¾ºã«ã‚ã‚Œã°ã€å·¦è¾ºã«Cæ–‡å­—åˆ—ãŒæ¥ã¦ã‚‚ã‚ˆã„
     std::string str3 = "Say " + str0;
     std::cout << "str3: " << str3 << std::endl;
 }

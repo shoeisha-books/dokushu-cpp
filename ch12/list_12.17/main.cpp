@@ -1,22 +1,22 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <list>
-#include <iterator> // std::advance()—p
+#include <iterator> // std::advance()ç”¨
 
 int main()
 {
-    // ƒNƒ‰ƒXƒeƒ“ƒvƒŒ[ƒg‚ÌŒ^„˜_‚ğg‚Á‚Ä<T>‚ğÈ—ª‚·‚é‚±‚Æ‚à‚Å‚«‚é
+    // ã‚¯ãƒ©ã‚¹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã®å‹æ¨è«–ã‚’ä½¿ã£ã¦<T>ã‚’çœç•¥ã™ã‚‹ã“ã¨ã‚‚ã§ãã‚‹
     std::list<int> l = { 1, 5, 9 };
 
     l.insert(l.begin(), 0);
     l.insert(l.end(), 10);
 
     auto iter = l.begin();
-    std::advance(iter, 2); // iter‚ğ2‚Âi‚ß‚é
+    std::advance(iter, 2); // iterã‚’2ã¤é€²ã‚ã‚‹
 
     l.insert(iter, 2, 3);
 
     int ia[] = { 6, 7, 8 };
-    std::advance(iter, -2); // 2‚Â–ß‚é
+    std::advance(iter, -2); // 2ã¤æˆ»ã‚‹
 
     l.insert(iter, ia, ia + 3);
 

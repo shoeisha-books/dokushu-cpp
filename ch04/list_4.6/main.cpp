@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -9,17 +9,17 @@ public:
 
 A::A()
 {
-    std::cout << "ƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl;
+    std::cout << "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
 }
 
 A::~A()
 {
-    std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[" << std::endl;
+    std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
 }
 
-A a; // ƒOƒ[ƒoƒ‹•Ï”
+A a; // ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°
 
 int main()
 {
-    std::cout << "main()ŠÖ”" << std::endl;
+    std::cout << "main()é–¢æ•°" << std::endl;
 }

@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 int main()
 {
     std::vector v = { 0, 1, 2, 3, 4 };
 
-    auto it = v.begin() + 1; // æ“ª‚©‚ç2”Ô–Ú‚ğw‚·
+    auto it = v.begin() + 1; // å…ˆé ­ã‹ã‚‰2ç•ªç›®ã‚’æŒ‡ã™
     v.erase(it);
 
     for (int i : v)

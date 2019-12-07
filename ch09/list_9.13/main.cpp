@@ -1,18 +1,18 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 
 int main()
 {
     std::vector<int> v{ 10, 20, 30 };
 
-    // �l�X�g�����^�͂ƂĂ��������炵���āA�������~�X���Ă��܂���������Ȃ�
-    // std::vector<T>::reference��T&��\���l�X�g�����^���ł���
-    // �G���[�B�^���ԈႦ�Ă��܂����i�̂�v��std::vector<float>�������̂�������Ȃ�
+    // ネストした型はとても長ったらしくて、しかもミスしてしまうかもしれない
+    // std::vector<T>::referenceはT&を表すネストした型名である
+    // エラー。型を間違えてしまった（昔はvはstd::vector<float>だったのかもしれない
     std::vector<float>::reference r = v[0];
 
-    // �Y�������g���ăA�N�Z�X���Ă��邽��
-    // �^�������Ȃ��Ă��v�f�ւ̎Q�Ƃ��擾���Ă��邾�낤�ƍl������
-    // �Y�����Z�q���g���Ă��邩��v�f�ւ̎Q�Ƃ��擾���Ă���͂����A�Ƃ킩��̂�
-    // auto���g���Ă��^�̗\�z�����ēǂނƂ����ꗂ����܂萶�܂�Ȃ�
+    // 添え字を使ってアクセスしているため
+    // 型を書かなくても要素への参照を取得しているだろうと考えられる
+    // 添字演算子を使っているから要素への参照を取得しているはずだ、とわかるので
+    // autoを使っても型の予想がついて読むときに齟齬があまり生まれない
     const auto& cr = v[0];
 }

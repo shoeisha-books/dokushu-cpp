@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
@@ -11,12 +11,12 @@ public:
     void show() const;
 };
 
-// ƒRƒs[‘ã“ü‰‰Zq‚ÍƒRƒs[Œ³‚ÌƒIƒuƒWƒFƒNƒg‚ğ•ÏX‚Å‚«‚È‚¢‚Ì‚Å
-// constQÆ‚Åó‚¯æ‚é
+// ã‚³ãƒ”ãƒ¼ä»£å…¥æ¼”ç®—å­ã¯ã‚³ãƒ”ãƒ¼å…ƒã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å¤‰æ›´ã§ããªã„ã®ã§
+// constå‚ç…§ã§å—ã‘å–ã‚‹
 Integer& Integer::operator=(const Integer& rhs)
 {
-    std::cout << "ƒRƒs[: " << value << " -> " << rhs.value << std::endl;
-    value = rhs.value; // ’l‚ğƒRƒs[‚·‚é
+    std::cout << "ã‚³ãƒ”ãƒ¼: " << value << " -> " << rhs.value << std::endl;
+    value = rhs.value; // å€¤ã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹
     return *this;
 }
 
@@ -30,7 +30,7 @@ int main()
     Integer x = 42;
     Integer y = 10;
 
-    y = x; // ƒRƒs[
+    y = x; // ã‚³ãƒ”ãƒ¼
 
     y.show();
 }

@@ -1,5 +1,6 @@
-#include <iostream>
-// ŠÖ”ƒeƒ“ƒvƒŒ[ƒg‚Å‚ÌÏ˜a‰‰Z
+ï»¿#include <iostream>
+
+// é–¢æ•°ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã§ã®ç©å’Œæ¼”ç®—
 template <typename T>
 T fused_multiply_add(T a, T b, T c)
 {
@@ -14,7 +15,7 @@ class Integer
 public:
     Integer(int value) : value{ value } { }
 
-    // ‰ÁŒ¸Z‚Ì‚İ—pˆÓ‚³‚ê‚Ä‚¢‚é
+    // åŠ æ¸›ç®—ã®ã¿ç”¨æ„ã•ã‚Œã¦ã„ã‚‹
     friend Integer operator+(Integer lhs, Integer rhs)
     {
         return Integer{ lhs + rhs };
@@ -30,7 +31,7 @@ public:
 
 int main()
 {
-    // ŠÖ”ƒeƒ“ƒvƒŒ[ƒg‚ğInteger‚ÅÀ‘Ì‰»‚µ‚ÄŒÄ‚Ño‚»‚¤‚Æ‚·‚é‚ªAæZ‚ª‚È‚¢‚Ì‚ÅƒGƒ‰[
+    // é–¢æ•°ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’Integerã§å®Ÿä½“åŒ–ã—ã¦å‘¼ã³å‡ºãã†ã¨ã™ã‚‹ãŒã€ä¹—ç®—ãŒãªã„ã®ã§ã‚¨ãƒ©ãƒ¼
     std::cout <<
         fused_multiply_add<Integer>(1, 2, 3).get_value() << std::endl;
 }

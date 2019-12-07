@@ -1,4 +1,4 @@
-#include <new> // std::bad_alloc—áŠO‚É•K—v
+ï»¿#include <new> // std::bad_allocä¾‹å¤–ã«å¿…è¦
 #include <iostream>
 
 int main()
@@ -7,13 +7,13 @@ int main()
     {
         int* ptr = new int;
         
-        // cc // ‰½‚©‚Ìˆ—;
+        // â€¦â€¦ // ä½•ã‹ã®å‡¦ç†;
 
         delete ptr;
     }
-    // ƒƒ‚ƒŠŠ„‚è“–‚Ä‚ª¸”s‚µ‚½ê‡‚Ì—áŠOƒnƒ“ƒhƒ‰[
+    // ãƒ¡ãƒ¢ãƒªå‰²ã‚Šå½“ã¦ãŒå¤±æ•—ã—ãŸå ´åˆã®ä¾‹å¤–ãƒãƒ³ãƒ‰ãƒ©ãƒ¼
     catch (std::bad_alloc & e)
     {
-        std::cout << "ƒƒ‚ƒŠŠ„‚è“–‚Ä‚É¸”s‚µ‚Ü‚µ‚½" << std::endl;
+        std::cout << "ãƒ¡ãƒ¢ãƒªå‰²ã‚Šå½“ã¦ã«å¤±æ•—ã—ã¾ã—ãŸ" << std::endl;
     }
 }

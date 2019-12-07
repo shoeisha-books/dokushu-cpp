@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -6,7 +6,7 @@ public:
     virtual void foo();
 };
 
-void Base::foo() // ’è‹`‚É‚Ívirtual‚Í‘‚©‚È‚¢
+void Base::foo() // å®šç¾©ã«ã¯virtualã¯æ›¸ã‹ãªã„
 {
     std::cout << "Base::foo()" << std::endl;
 }
@@ -14,12 +14,12 @@ void Base::foo() // ’è‹`‚É‚Ívirtual‚Í‘‚©‚È‚¢
 class Derived : public Base
 {
 public:
-    void foo() override; // ”h¶ƒNƒ‰ƒX‚Åƒƒ“ƒo[ŠÖ”‚ğƒI[ƒo[ƒ‰ƒCƒh
-    //void foo(int i) override; // ƒGƒ‰[B‘Î‰‚·‚é‰¼‘zŠÖ”‚ªŠî’êƒNƒ‰ƒX‚É‚È‚¢
-    void foo(int i); // OKB’P‚È‚éƒI[ƒo[ƒ[ƒh‚Í’Ç‰Á‚Å‚«‚é
+    void foo() override; // æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚’ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰
+    //void foo(int i) override; // ã‚¨ãƒ©ãƒ¼ã€‚å¯¾å¿œã™ã‚‹ä»®æƒ³é–¢æ•°ãŒåŸºåº•ã‚¯ãƒ©ã‚¹ã«ãªã„
+    void foo(int i); // OKã€‚å˜ãªã‚‹ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ã¯è¿½åŠ ã§ãã‚‹
 };
 
-void Derived::foo() // ’è‹`‚É‚Íoverride‚Í‘‚©‚È‚¢
+void Derived::foo() // å®šç¾©ã«ã¯overrideã¯æ›¸ã‹ãªã„
 {
     std::cout << "Derived::foo() override" << std::endl;
 }
@@ -32,6 +32,6 @@ void Derived::foo(int i)
 int main()
 {
     Derived derived;
-    derived.foo(); // ‰¼‘zŠÖ”ŒÄ‚Ño‚µ
-    derived.foo(42); // ‰¼‘zŠÖ”‚Å‚Í‚È‚¢ƒI[ƒo[ƒ[ƒh‚ÌŒÄ‚Ño‚µ
+    derived.foo(); // ä»®æƒ³é–¢æ•°å‘¼ã³å‡ºã—
+    derived.foo(42); // ä»®æƒ³é–¢æ•°ã§ã¯ãªã„ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ã®å‘¼ã³å‡ºã—
 }

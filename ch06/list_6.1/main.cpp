@@ -1,17 +1,17 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
     int value;
 
 public:
-    // ‘g‚İ‚İ‚Ì®”Œ^‚Ì‚æ‚¤‚Éˆµ‚¢‚½‚¢‚Ì‚Åexplicit‚Í•t‚¯‚È‚¢
+    // çµ„ã¿è¾¼ã¿ã®æ•´æ•°å‹ã®ã‚ˆã†ã«æ‰±ã„ãŸã„ã®ã§explicitã¯ä»˜ã‘ãªã„
     Integer(int value) : value{ value } { }
 
-    Integer add(const Integer& other) const; // ‰ÁZ
-    Integer sub(const Integer& other) const; // Œ¸Z
-    Integer mul(const Integer& other) const; // æZ
-    Integer div(const Integer& other) const; // œZ
+    Integer add(const Integer& other) const; // åŠ ç®—
+    Integer sub(const Integer& other) const; // æ¸›ç®—
+    Integer mul(const Integer& other) const; // ä¹—ç®—
+    Integer div(const Integer& other) const; // é™¤ç®—
 
     void show() const;
 };

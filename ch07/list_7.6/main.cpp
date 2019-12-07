@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 class Base
 {
@@ -8,7 +8,7 @@ public:
 
 void Base::method()
 {
-    // ���N���X�ł̎����F�h���N���X����Ăяo����邱�Ƃ����҂���
+    // 基底クラスでの実装：派生クラスから呼び出されることを期待する
     std::cout << "Base::method()" << std::endl;
 }
 
@@ -21,12 +21,12 @@ public:
 void Derived::method()
 {
     std::cout << "Derived::method()" << std::endl;
-    Base* base = this; // ���N���X�ւ̃|�C���^�[���擾
-    base->method(); // ���N���X�̃����o�[���Ă�ł���c�c����
+    Base* base = this; // 基底クラスへのポインターを取得
+    base->method(); // 基底クラスのメンバーを呼んでいる……つもり
 }
 
 int main()
 {
     Derived derived;
-    derived.method(); // �I�[�o�[���C�h���������o�[�֐��̌Ăяo��
+    derived.method(); // オーバーライドしたメンバー関数の呼び出し
 }

@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int array[] = { 0, 1, 2, 3 };
 
-    std::cout << "æ“ª‚ÌƒAƒhƒŒƒX: " << &array[0] << std::endl;
+    std::cout << "å…ˆé ­ã®ã‚¢ãƒ‰ãƒ¬ã‚¹: " << &array[0] << std::endl;
 
-    int* ptr = array; // ”z—ñ‚©‚çƒ|ƒCƒ“ƒ^[‚Ö‚ÌˆÃ–Ù•ÏŠ·
+    int* ptr = array; // é…åˆ—ã‹ã‚‰ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã¸ã®æš—é»™å¤‰æ›
 
-    std::cout << "ƒ|ƒCƒ“ƒ^[: " << ptr << std::endl;
-    std::cout << "’l: " << *ptr << std::endl;
+    std::cout << "ãƒã‚¤ãƒ³ã‚¿ãƒ¼: " << ptr << std::endl;
+    std::cout << "å€¤: " << *ptr << std::endl;
 }

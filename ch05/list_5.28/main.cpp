@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// predicate‚ªtrue‚ğ•Ô‚µ‚½—v‘f‚Ì‚İ‚ğƒRƒ“ƒ\[ƒ‹‚Éo—Í‚·‚éŠÖ”
+// predicateãŒtrueã‚’è¿”ã—ãŸè¦ç´ ã®ã¿ã‚’ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«å‡ºåŠ›ã™ã‚‹é–¢æ•°
 void filtered_show(int(&array)[5], bool (*predicate)(int))
 {
     for (int e : array)
@@ -12,13 +12,13 @@ void filtered_show(int(&array)[5], bool (*predicate)(int))
     }
 }
 
-// Šï”‚È‚çtrue‚ğ•Ô‚·ŠÖ”
+// å¥‡æ•°ãªã‚‰trueã‚’è¿”ã™é–¢æ•°
 bool is_odd(int v)
 {
     return (v % 2) == 1;
 }
 
-// 5‚æ‚è¬‚³‚¢‚È‚çtrue‚ğ•Ô‚·ŠÖ”
+// 5ã‚ˆã‚Šå°ã•ã„ãªã‚‰trueã‚’è¿”ã™é–¢æ•°
 bool is_less_than_5(int v)
 {
     return v < 5;

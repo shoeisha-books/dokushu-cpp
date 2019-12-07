@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void throw_zero()
 {
-    throw 0; // intŒ^‚Ì—áŠOƒIƒuƒWƒFƒNƒg‚ğ“Š‚°‚é
+    throw 0; // intå‹ã®ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŠ•ã’ã‚‹
 }
 
 int main()
@@ -11,23 +11,23 @@ int main()
     {
         throw_zero();
     }
-    catch (float f) // intŒ^‚ÌƒIƒuƒWƒFƒNƒg‚Í•ß‚Ü‚¦‚ç‚ê‚È‚¢
+    catch (float f) // intå‹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯æ•ã¾ãˆã‚‰ã‚Œãªã„
     {
-        std::cout << "floatŒ^‚Ì—áŠOƒIƒuƒWƒFƒNƒg‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ ’l = "
+        std::cout << "floatå‹ã®ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ•ã¾ãˆã¾ã—ãŸ å€¤ = "
             << f << std::endl;
     }
     catch (int i)
     {
-        std::cout << "intŒ^‚Ì—áŠOƒIƒuƒWƒFƒNƒg‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ ’l = " << i << std::endl;
+        std::cout << "intå‹ã®ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ•ã¾ãˆã¾ã—ãŸ å€¤ = " << i << std::endl;
     }
     catch (char c)
     {
-        std::cout << "charŒ^‚Ì—áŠOƒIƒuƒWƒFƒNƒg‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ ’l = "
+        std::cout << "charå‹ã®ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ•ã¾ãˆã¾ã—ãŸ å€¤ = "
             << static_cast<int>(c) << std::endl;
     }
-    catch (int i) // intŒ^‚Ìcatchß2‚Â–Ú
+    catch (int i) // intå‹ã®catchç¯€2ã¤ç›®
     {
-        std::cout << "2”Ô–Ú‚ÌintŒ^‚Ìcatch‚Å—áŠOƒIƒuƒWƒFƒNƒg‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ ’l = "
+        std::cout << "2ç•ªç›®ã®intå‹ã®catchã§ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ•ã¾ãˆã¾ã—ãŸ å€¤ = "
             << i << std::endl;
     }
 }

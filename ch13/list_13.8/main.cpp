@@ -1,30 +1,30 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
 {
     std::string s0;
 
-    s0.assign("Hello"); // C•¶Žš—ñ
+    s0.assign("Hello"); // Cæ–‡å­—åˆ—
     std::cout << "s0: " << s0 << std::endl;
 
-    s0.assign("Hello", 4); // C•¶Žš—ñ‚Æ’·‚³
+    s0.assign("Hello", 4); // Cæ–‡å­—åˆ—ã¨é•·ã•
     std::cout << "s0: " << s0 << std::endl;
 
     std::string s1 = "Hello";
     s0.assign(s1); // std::string
     std::cout << "s0: " << s0 << std::endl;
 
-    s0.assign(3, '?'); // ”CˆÓ‚Ì”‚Ìchar
+    s0.assign(3, '?'); // ä»»æ„ã®æ•°ã®char
     std::cout << "s0: " << s0 << std::endl;
 
     // std::initializer_list<char>
     s0.assign({ 'a', 'b', 'c' });
     std::cout << "s0: " << s0 << std::endl;
 
-    s0.assign(s1.begin() + 1, s1.end() - 1); // ƒCƒeƒŒ[ƒ^[‘g
+    s0.assign(s1.begin() + 1, s1.end() - 1); // ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ãƒ¼çµ„
     std::cout << "s0: " << s0 << std::endl;
 
-    s0.assign(s1, 1, 3); // •¶Žš—ñ‚ÆŠJŽnˆÊ’u‚Æ’·‚³
+    s0.assign(s1, 1, 3); // æ–‡å­—åˆ—ã¨é–‹å§‹ä½ç½®ã¨é•·ã•
     std::cout << "s0: " << s0 << std::endl;
 }

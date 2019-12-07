@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 union U
 {
@@ -9,14 +9,13 @@ union U
 
 int main()
 {
-    U u = { 42 }; // �擪�̃����o�[�ŏ���������
+    U u = { 42 }; // 先頭のメンバーで初期化する
+                  // u.aとu.bは同じ場所にあるのでu.bの値はu.aと同じになる
+    std::cout << "u.bの値は " << u.b << std::endl;
 
-                  // u.a��u.b�͓����ꏊ�ɂ���̂�u.b�̒l��u.a�Ɠ����ɂȂ�
-    std::cout << "u.b�̒l�� " << u.b << std::endl;
-
-    // u.c��u.a��u.b�Ɠ����ꏊ�ɂ���̂ŁA
-    // u.c���g���ĕύX����Ƒ��̃����o�[�ϐ����ύX�����
+    // u.cもu.aとu.bと同じ場所にあるので、
+    // u.cを使って変更すると他のメンバー変数も変更される
     u.c = 1024;
 
-    std::cout << "u.a�̒l�� " << u.a << std::endl;
+    std::cout << "u.aの値は " << u.a << std::endl;
 }

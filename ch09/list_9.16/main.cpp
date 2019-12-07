@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 template <typename Type>
 Type lea(Type ptr, Type stride, Type count, Type offset)
@@ -9,7 +9,7 @@ Type lea(Type ptr, Type stride, Type count, Type offset)
 int main()
 {
     int i = 0;
-    // ˆø”‚ÌŒ^‚ª1‚Â‚¾‚¯ˆá‚¤iæ“ª‚Íint*‚Åc‚è‚Íintj‚Ì‚ÅA
-    // ƒRƒ“ƒpƒCƒ‰[‚ª‚Ç‚¿‚ç‚ÌŒ^‚ğType‚É‚µ‚½‚ç‚æ‚¢‚©”»’f‚Å‚«‚¸ƒGƒ‰[
+    // å¼•æ•°ã®å‹ãŒ1ã¤ã ã‘é•ã†ï¼ˆå…ˆé ­ã¯int*ã§æ®‹ã‚Šã¯intï¼‰ã®ã§ã€
+    // ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãƒ¼ãŒã©ã¡ã‚‰ã®å‹ã‚’Typeã«ã—ãŸã‚‰ã‚ˆã„ã‹åˆ¤æ–­ã§ããšã‚¨ãƒ©ãƒ¼
     std::cout << lea(&i, 16, 4, 2) << std::endl;
 }

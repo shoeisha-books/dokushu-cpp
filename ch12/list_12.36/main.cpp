@@ -1,4 +1,4 @@
-#include <vector>
+ï»¿#include <vector>
 #include <algorithm>
 #include <iostream>
 
@@ -6,9 +6,9 @@ int main()
 {
     std::vector v = { 10, -3, 0, 4, 2 };
 
-    auto c = v; // sort()‚Í•ÏX‚·‚é‚Ì‚Å‚¢‚Á‚½‚ñƒRƒs[
+    auto c = v; // sort()ã¯å¤‰æ›´ã™ã‚‹ã®ã§ã„ã£ãŸã‚“ã‚³ãƒ”ãƒ¼
     
-    std::sort(c.begin(), c.end()); // ¸‡‚Åƒ\[ƒg
+    std::sort(c.begin(), c.end()); // æ˜‡é †ã§ã‚½ãƒ¼ãƒˆ
     for (auto e : c)
     {
         std::cout << e << " ";
@@ -16,7 +16,7 @@ int main()
     std::cout << std::endl;
     
     c = v;
-    // ~‡‚Åƒ\[ƒg
+    // é™é †ã§ã‚½ãƒ¼ãƒˆ
     std::sort(c.begin(), c.end(), [](int l, int r) { return l > r; });
     for (auto e : c)
     {

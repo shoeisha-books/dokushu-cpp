@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 class Object
@@ -15,7 +15,7 @@ public:
 
 Object::~Object()
 {
-    std::cout << "Object‚ÌƒfƒXƒgƒ‰ƒNƒ^[" << std::endl;
+    std::cout << "Objectã®ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
 }
 
 void Object::show_name() const
@@ -25,18 +25,18 @@ void Object::show_name() const
 
 int main()
 {
-    // ”z—ñ‚Ìnew‰‰ŽZŽqB–ß‚è’l‚ÌŒ^‚ªƒ|ƒCƒ“ƒ^[‚Å‚ ‚é‚±‚Æ‚É’ˆÓ
+    // é…åˆ—ã®newæ¼”ç®—å­ã€‚æˆ»ã‚Šå€¤ã®åž‹ãŒãƒã‚¤ãƒ³ã‚¿ãƒ¼ã§ã‚ã‚‹ã“ã¨ã«æ³¨æ„
     Object* obj = new Object[10]
     {
         Object{"first"},
         Object{"second"},
-        // ‚±‚êˆÈ~‚Ì—v‘f‚ÍƒfƒtƒHƒ‹ƒgƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚Å‰Šú‰»‚³‚ê‚é
+        // ã“ã‚Œä»¥é™ã®è¦ç´ ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã§åˆæœŸåŒ–ã•ã‚Œã‚‹
     };
 
     obj[0].show_name();
     obj[1].show_name();
     obj[2].show_name();
     
-    // ”z—ñ‚Ìdelete‰‰ŽZŽqBŠe—v‘f‚Ìi‚±‚±‚Å‚Í10ŒÂ‚ÌjƒfƒXƒgƒ‰ƒNƒ^[‚ª‚·‚×‚ÄŒÄ‚Î‚ê‚é
+    // é…åˆ—ã®deleteæ¼”ç®—å­ã€‚å„è¦ç´ ã®ï¼ˆã“ã“ã§ã¯10å€‹ã®ï¼‰ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ãŒã™ã¹ã¦å‘¼ã°ã‚Œã‚‹
     delete[] obj;
 }

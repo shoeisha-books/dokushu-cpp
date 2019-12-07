@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <list>
 #include <iterator>
 
@@ -9,9 +9,9 @@ int main()
     std::list il2 = { 3, 4 };
 
     auto iter = il0.begin();
-    std::advance(iter, 2); // iter‚Í5‚ğw‚·
+    std::advance(iter, 2); // iterã¯5ã‚’æŒ‡ã™
 
-    il0.splice(iter, il1, il1.begin()); // il1‚Ìæ“ª—v‘f‚ğiter‚Ì’¼‘O‚ÉˆÚ“®
+    il0.splice(iter, il1, il1.begin()); // il1ã®å…ˆé ­è¦ç´ ã‚’iterã®ç›´å‰ã«ç§»å‹•
 
     std::cout << "il0:" << std::endl;
     for (auto it = il0.begin(); it != il0.end(); ++it)

@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-class Base // Šî’ê‚Æ‚È‚éƒNƒ‰ƒX
+class Base // åŸºåº•ã¨ãªã‚‹ã‚¯ãƒ©ã‚¹
 {
 public:
     void foo();
@@ -11,10 +11,10 @@ void Base::foo()
     std::cout << "foo()" << std::endl;
 }
 
-class Derived : public Base // Base‚Ìƒƒ“ƒo[‚ğŒp³‚·‚é
+class Derived : public Base // Baseã®ãƒ¡ãƒ³ãƒãƒ¼ã‚’ç¶™æ‰¿ã™ã‚‹
 {
 public:
-    void bar(); // ”h¶ƒNƒ‰ƒX‚Å’Ç‰Á‚µ‚½‹@”\
+    void bar(); // æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§è¿½åŠ ã—ãŸæ©Ÿèƒ½
 };
 
 void Derived::bar()
@@ -25,11 +25,11 @@ void Derived::bar()
 int main()
 {
     Base base;
-    base.foo(); // Šî’êƒNƒ‰ƒX‚Ìfoo‚ªŒÄ‚Î‚ê‚é
-    // base.bar(); // ƒGƒ‰[BŠî’êƒNƒ‰ƒX‚É‚Í”h¶ƒNƒ‰ƒX‚Å’Ç‰Á‚µ‚½
-                   // ƒƒ“ƒo[‚Í‘¶İ‚µ‚Ä‚¢‚È‚¢‚Ì‚ÅŒÄ‚Ño‚¹‚È‚¢
+    base.foo(); // åŸºåº•ã‚¯ãƒ©ã‚¹ã®fooãŒå‘¼ã°ã‚Œã‚‹
+    // base.bar(); // ã‚¨ãƒ©ãƒ¼ã€‚åŸºåº•ã‚¯ãƒ©ã‚¹ã«ã¯æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§è¿½åŠ ã—ãŸ
+                   // ãƒ¡ãƒ³ãƒãƒ¼ã¯å­˜åœ¨ã—ã¦ã„ãªã„ã®ã§å‘¼ã³å‡ºã›ãªã„
     
     Derived derived;
-    derived.foo(); // Šî’êƒNƒ‰ƒX‚Ìfoo‚ªŒÄ‚Î‚ê‚é
-    derived.bar(); // ”h¶ƒNƒ‰ƒX‚Å’Ç‰Á‚µ‚½bar‚ªŒÄ‚Î‚ê‚é
+    derived.foo(); // åŸºåº•ã‚¯ãƒ©ã‚¹ã®fooãŒå‘¼ã°ã‚Œã‚‹
+    derived.bar(); // æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§è¿½åŠ ã—ãŸbarãŒå‘¼ã°ã‚Œã‚‹
 }

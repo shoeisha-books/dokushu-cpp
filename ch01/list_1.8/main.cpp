@@ -1,20 +1,20 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void show_message(int value)
 {
     if (10 <= value && value < 20)
     {
-        std::cout << "10ˆÈã20–¢–ž‚Å‚·" << std::endl;
+        std::cout << "10ä»¥ä¸Š20æœªæº€ã§ã™" << std::endl;
     }
     else
     {
-        std::cout << "10ˆÈã20–¢–ž‚Å‚Í‚ ‚è‚Ü‚¹‚ñ" << std::endl;
+        std::cout << "10ä»¥ä¸Š20æœªæº€ã§ã¯ã‚ã‚Šã¾ã›ã‚“" << std::endl;
     }
 }
 
 int main()
 {
-    show_message(9); // 10–¢–ž‚È‚Ì‚Åelse•¶‚ÌƒƒbƒZ[ƒW‚ª•\Ž¦‚³‚ê‚é
-    show_message(15); // 10ˆÈã20–¢–ž‚È‚Ì‚Åif•¶‚ÌƒƒbƒZ[ƒW‚ª•\Ž¦‚³‚ê‚é
-    show_message(20); // 20ˆÈã‚È‚Ì‚Åelse•¶‚ÌƒƒbƒZ[ƒW‚ª•\Ž¦‚³‚ê‚é
+    show_message(9); // 10æœªæº€ãªã®ã§elseæ–‡ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¡¨ç¤ºã•ã‚Œã‚‹
+    show_message(15); // 10ä»¥ä¸Š20æœªæº€ãªã®ã§ifæ–‡ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¡¨ç¤ºã•ã‚Œã‚‹
+    show_message(20); // 20ä»¥ä¸Šãªã®ã§elseæ–‡ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¡¨ç¤ºã•ã‚Œã‚‹
 }

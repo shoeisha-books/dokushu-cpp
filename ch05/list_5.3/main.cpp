@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
@@ -6,15 +6,15 @@ int main()
 
     int* ptr = array;
 
-    ptr += 2; // 2�Ԗڂ̗v�f�̃A�h���X
+    ptr += 2; // 2番目の要素のアドレス
     std::cout << *ptr << std::endl;
 
-    ++ptr; // 3�Ԗڂ̗v�f�̃A�h���X
+    ++ptr; // 3番目の要素のアドレス
     std::cout << *ptr << std::endl;
 
-    ptr -= 2; // 1�Ԗڂ̗v�f�̃A�h���X
+    ptr -= 2; // 1番目の要素のアドレス
     std::cout << *ptr << std::endl;
 
-    --ptr; // 0�Ԗڂ̗v�f�̃A�h���X
+    --ptr; // 0番目の要素のアドレス
     std::cout << *ptr << std::endl;
 }

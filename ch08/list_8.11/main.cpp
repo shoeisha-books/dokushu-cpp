@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 
 int main()
@@ -14,8 +14,8 @@ int main()
     char c;
     if (!in.get(c).eof())
     {
-        // eof‚ªtrue‚É‚È‚ç‚È‚©‚Á‚½‚ç“ü—Í‚Å‚«‚Ä‚¢‚é
-        std::cout << "1•¶Žš“ü—Í (in.get(c)) : " << c << std::endl;
+        // eofãŒtrueã«ãªã‚‰ãªã‹ã£ãŸã‚‰å…¥åŠ›ã§ãã¦ã„ã‚‹
+        std::cout << "1æ–‡å­—å…¥åŠ› (in.get(c)) : " << c << std::endl;
     }
     else
     {
@@ -25,8 +25,8 @@ int main()
     int ci = in.get();
     if (ci != EOF)
     {
-        // ci‚ªEOF‚Å‚È‚¢‚È‚ç—LŒø‚È•¶Žš‚ð“ü—Í‚Å‚«‚½
-        std::cout << "1•¶Žš“ü—Í (in.get()) : "
+        // ciãŒEOFã§ãªã„ãªã‚‰æœ‰åŠ¹ãªæ–‡å­—ã‚’å…¥åŠ›ã§ããŸ
+        std::cout << "1æ–‡å­—å…¥åŠ› (in.get()) : "
             << static_cast<char>(ci) << std::endl;
     }
     else

@@ -1,13 +1,13 @@
-#include <vector>
+ï»¿#include <vector>
 
-// ƒGƒCƒŠƒAƒXƒeƒ“ƒvƒŒ[ƒg
+// ã‚¨ã‚¤ãƒªã‚¢ã‚¹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
 template <typename T>
-// ‚±‚ÌŒ^‚ÍT‚ÉˆË‘¶‚·‚é‚Ì‚Åtypename‚ª•K—v
+// ã“ã®å‹ã¯Tã«ä¾å­˜ã™ã‚‹ã®ã§typenameãŒå¿…è¦
 using vector_reference = typename std::vector<T>::reference;
 
 template <typename T>
-vector_reference<T> // T‚ğg‚Á‚Ä‚¢‚é‚ªAƒGƒCƒŠƒAƒX‚Ì’†‚ÅˆË‘¶–¼‚ª‰ğŒˆ‚µ‚Ä‚¢‚é‚Ì‚Å
-                    // ‚±‚±‚Å‚Í•s—v
+vector_reference<T> // Tã‚’ä½¿ã£ã¦ã„ã‚‹ãŒã€ã‚¨ã‚¤ãƒªã‚¢ã‚¹ã®ä¸­ã§ä¾å­˜åãŒè§£æ±ºã—ã¦ã„ã‚‹ã®ã§
+                    // ã“ã“ã§ã¯ä¸è¦
 at(std::vector<T>& v, std::size_t i)
 {
     return v[i];

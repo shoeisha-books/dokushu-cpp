@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 class person
@@ -19,13 +19,13 @@ public:
 
 person::person() : m_age(-1)
 {
-    std::cout << "ƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
-// person‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ªŽg‚í‚ê‚È‚­‚È‚Á‚½‚çŒÄ‚Î‚ê‚éƒfƒXƒgƒ‰ƒNƒ^[
+// personã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒä½¿ã‚ã‚Œãªããªã£ãŸã‚‰å‘¼ã°ã‚Œã‚‹ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 person::~person()
 {
-    std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 void person::set_name(std::string name)
@@ -53,7 +53,7 @@ int main()
     person bob;
     bob.set_name("bob");
     bob.set_age(20);
-    std::cout << "main()ŠÖ”‚ÌÅŒã" << std::endl;
+    std::cout << "main()é–¢æ•°ã®æœ€å¾Œ" << std::endl;
 
-    // bob‚Í‚à‚¤Žg‚í‚ê‚È‚¢‚Ì‚Åbob‚ÌƒfƒXƒgƒ‰ƒNƒ^[‚ªŒÄ‚Î‚ê‚é
+    // bobã¯ã‚‚ã†ä½¿ã‚ã‚Œãªã„ã®ã§bobã®ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ãŒå‘¼ã°ã‚Œã‚‹
 }

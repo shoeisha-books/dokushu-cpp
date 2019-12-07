@@ -1,14 +1,14 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <regex>
 
 int main()
 {
-    std::regex re{ R"(A\w*A)" }; // A‚Ån‚Ü‚èA”CˆÓ‚Ì”‚Ì‰p”š‚ª‘±‚«AA‚ÅI‚í‚é
+    std::regex re{ R"(A\w*A)" }; // Aã§å§‹ã¾ã‚Šã€ä»»æ„ã®æ•°ã®è‹±æ•°å­—ãŒç¶šãã€Aã§çµ‚ã‚ã‚‹
     std::string input = "ABRACADABRA";
 
     if (std::regex_match(input, re))
     {
-        std::cout << "ƒ}ƒbƒ`‚µ‚Ü‚µ‚½I " << std::endl;
+        std::cout << "ãƒãƒƒãƒã—ã¾ã—ãŸï¼ " << std::endl;
     }
 }

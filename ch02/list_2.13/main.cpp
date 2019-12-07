@@ -1,25 +1,25 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class data
 {
 public:
-    using integer = int; // ƒNƒ‰ƒX‚Ì’†‚Åg‚¤®”‚É•Ê–¼‚ğ—^‚¦‚é
+    using integer = int; // ã‚¯ãƒ©ã‚¹ã®ä¸­ã§ä½¿ã†æ•´æ•°ã«åˆ¥åã‚’ä¸ãˆã‚‹
 
-                         // ƒNƒ‰ƒX‚Ì’†‚Å‚Í•Ê–¼‚ğ’¼Úg‚¦‚é
+                         // ã‚¯ãƒ©ã‚¹ã®ä¸­ã§ã¯åˆ¥åã‚’ç›´æ¥ä½¿ãˆã‚‹
     integer get_value();
     void set_value(integer mew_value);
 private:
     integer value;
 };
 
-// ƒNƒ‰ƒX‚ÌŠO‚Å‚ÍƒXƒR[ƒv‰ğŒˆ‰‰Zq‚ğg‚¤
+// ã‚¯ãƒ©ã‚¹ã®å¤–ã§ã¯ã‚¹ã‚³ãƒ¼ãƒ—è§£æ±ºæ¼”ç®—å­ã‚’ä½¿ã†
 data::integer data::get_value()
 {
     return value;
 }
 
-// ƒƒ“ƒo[ŠÖ”‚Ì’†‚ÍƒNƒ‰ƒX‚Ì“à‘¤‚Æ‚¢‚¤ˆµ‚¢‚È‚Ì‚ÅA
-// ƒXƒR[ƒv‰ğŒˆ‰‰Zq‚ğg‚í‚È‚­‚Ä‚àƒlƒXƒg‚µ‚½Œ^–¼‚ğg‚¦‚é
+// ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®ä¸­ã¯ã‚¯ãƒ©ã‚¹ã®å†…å´ã¨ã„ã†æ‰±ã„ãªã®ã§ã€
+// ã‚¹ã‚³ãƒ¼ãƒ—è§£æ±ºæ¼”ç®—å­ã‚’ä½¿ã‚ãªãã¦ã‚‚ãƒã‚¹ãƒˆã—ãŸå‹åã‚’ä½¿ãˆã‚‹
 void data::set_value(integer new_value)
 {
     integer tmp = new_value;
@@ -30,10 +30,10 @@ int main()
 {
     data d;
 
-    // ƒlƒXƒg‚µ‚½Œ^–¼‚Í’·‚­‚È‚è‚ª‚¿‚È‚Ì‚ÅA•K—v‚É‰‚¶‚Ä‚³‚ç‚É•Ê–¼‚ğ—^‚¦‚é‚Æ‚æ‚¢
+    // ãƒã‚¹ãƒˆã—ãŸå‹åã¯é•·ããªã‚ŠãŒã¡ãªã®ã§ã€å¿…è¦ã«å¿œã˜ã¦ã•ã‚‰ã«åˆ¥åã‚’ä¸ãˆã‚‹ã¨ã‚ˆã„
     using integer = data::integer;
 
-    integer value = 42; // integer‚Ídata::integer‚Ì•Ê–¼
+    integer value = 42; // integerã¯data::integerã®åˆ¥å
 
     d.set_value(value);
 

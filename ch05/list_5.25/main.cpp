@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <utility>
 
-// ‰Æ‚ğ•\‚·ƒNƒ‰ƒX
+// å®¶ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹
 class home
 {
-    int* m_land; // “y’n
+    int* m_land; // åœŸåœ°
 
 public:
     explicit home(std::size_t size)
@@ -18,10 +18,10 @@ public:
 };
 
 home::home(home&& other)
-    : m_land{ other.m_land } // ‚Ü‚¸ƒ€[ƒuŒ³‚Ìƒ|ƒCƒ“ƒ^[‚ğƒRƒs[‚·‚é
+    : m_land{ other.m_land } // ã¾ãšãƒ ãƒ¼ãƒ–å…ƒã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹
 {
-    // ƒ€[ƒuŒ³‚Ìƒ|ƒCƒ“ƒ^[‚ğ‹ó‚É‚·‚é
-    // ‚±‚ê‚Å‚±‚Ìƒ|ƒCƒ“ƒ^[‚ğ‚Á‚Ä‚¢‚é‚Ì‚Í‚±‚ÌƒIƒuƒWƒFƒNƒg‚¾‚¯‚É‚È‚éiŠ—LŒ ‚ÌˆÚ“®j
+    // ãƒ ãƒ¼ãƒ–å…ƒã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã‚’ç©ºã«ã™ã‚‹
+    // ã“ã‚Œã§ã“ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã‚’æŒã£ã¦ã„ã‚‹ã®ã¯ã“ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã ã‘ã«ãªã‚‹ï¼ˆæ‰€æœ‰æ¨©ã®ç§»å‹•ï¼‰
     other.m_land = nullptr;
 }
 
@@ -29,11 +29,11 @@ int main()
 {
     home A{ 100 };
 
-    std::cout << "A‚Ì“y’n‚ÌƒAƒhƒŒƒX: " << A.land() << std::endl;
+    std::cout << "Aã®åœŸåœ°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹: " << A.land() << std::endl;
 
-    // A‚Í‚à‚¤g‚í‚È‚­‚È‚Á‚½‚Ì‚ÅAA‚©‚çB‚ÉŠ—LŒ ‚ğˆÚ“®
+    // Aã¯ã‚‚ã†ä½¿ã‚ãªããªã£ãŸã®ã§ã€Aã‹ã‚‰Bã«æ‰€æœ‰æ¨©ã‚’ç§»å‹•
     home B{ std::move(A) };
 
-    std::cout << "B‚Ì“y’n‚ÌƒAƒhƒŒƒX: " << B.land() << std::endl;
-    std::cout << "ˆÚ“®Œã‚ÌA‚Ì“y’n‚ÌƒAƒhƒŒƒX: " << A.land() << std::endl;
+    std::cout << "Bã®åœŸåœ°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹: " << B.land() << std::endl;
+    std::cout << "ç§»å‹•å¾Œã®Aã®åœŸåœ°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹: " << A.land() << std::endl;
 }

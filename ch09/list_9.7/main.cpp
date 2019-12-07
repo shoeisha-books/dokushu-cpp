@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -13,8 +13,8 @@ template <typename T>
 class Derived : public Base
 {
 public:
-    // Base‚Ìfoo‚ðƒI[ƒo[ƒ‰ƒCƒh‚µ‚Ä‚¢‚é‚Â‚à‚è‚¾‚ªA
-    // T‚É“n‚³‚ê‚éƒeƒ“ƒvƒŒ[ƒgˆø”‚É‚æ‚Á‚Ä“®ì‚ªˆÙ‚È‚é
+    // Baseã®fooã‚’ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã—ã¦ã„ã‚‹ã¤ã‚‚ã‚Šã ãŒã€
+    // Tã«æ¸¡ã•ã‚Œã‚‹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå¼•æ•°ã«ã‚ˆã£ã¦å‹•ä½œãŒç•°ãªã‚‹
     void foo(T val) override
     {
         std::cout << "Derived::foo()" << std::endl;
@@ -23,11 +23,11 @@ public:
 
 int main()
 {
-    Derived<int> di; // foo‚ªƒI[ƒo[ƒ‰ƒCƒh‚³‚ê‚éê‡
+    Derived<int> di; // fooãŒã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã•ã‚Œã‚‹å ´åˆ
 
-                     // ‰¼‘zŠÖ”‚ðŒo—R‚µ‚½”h¶ƒNƒ‰ƒX‚Ìƒƒ“ƒo[ŒÄ‚Ño‚µ
+                     // ä»®æƒ³é–¢æ•°ã‚’çµŒç”±ã—ãŸæ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã®ãƒ¡ãƒ³ãƒãƒ¼å‘¼ã³å‡ºã—
     static_cast<Base&>(di).foo(0);
 
-    // ƒGƒ‰[B‰¼‘zŠÖ”‚Ì‰¼ˆø”‚ÌŒ^‚ªˆÙ‚È‚Á‚Ä‚µ‚Ü‚¢ƒI[ƒoƒ‰ƒCƒh‚ªŽ¸”s‚·‚é
+    // ã‚¨ãƒ©ãƒ¼ã€‚ä»®æƒ³é–¢æ•°ã®ä»®å¼•æ•°ã®åž‹ãŒç•°ãªã£ã¦ã—ã¾ã„ã‚ªãƒ¼ãƒãƒ©ã‚¤ãƒ‰ãŒå¤±æ•—ã™ã‚‹
     // Derived<float> df;
 }

@@ -1,29 +1,29 @@
-#include <iostream>
-#include <typeinfo> // typeid‰‰ZqAstd::type_info‚É•K—v
+ï»¿#include <iostream>
+#include <typeinfo> // typeidæ¼”ç®—å­ã€std::type_infoã«å¿…è¦
 
 int main()
 {
-    // typeid‰‰Zq‚ª•Ô‚·Œ^‚Íí‚Éstd::type_info‚Ö‚ÌconstQÆ
+    // typeidæ¼”ç®—å­ãŒè¿”ã™å‹ã¯å¸¸ã«std::type_infoã¸ã®constå‚ç…§
 
-    const std::type_info& int_type = typeid(int); // intŒ^‚ÉŠÖ‚·‚éî•ñ‚ğæ“¾
-    const std::type_info& one_type = typeid(1); // 1‚ÉŠÖ‚·‚éŒ^î•ñ‚ğæ“¾
+    const std::type_info& int_type = typeid(int); // intå‹ã«é–¢ã™ã‚‹æƒ…å ±ã‚’å–å¾—
+    const std::type_info& one_type = typeid(1); // 1ã«é–¢ã™ã‚‹å‹æƒ…å ±ã‚’å–å¾—
 
-    if (int_type == one_type) // ‘¼‚ÌŒ^î•ñ‚Æ”äŠr
+    if (int_type == one_type) // ä»–ã®å‹æƒ…å ±ã¨æ¯”è¼ƒ
     {
-        std::cout << "1‚ÍintŒ^‚Å‚·" << std::endl;
+        std::cout << "1ã¯intå‹ã§ã™" << std::endl;
     }
     else
     {
-        std::cout << "1‚ÍintŒ^‚Å‚Í‚ ‚è‚Ü‚¹‚ñ" << std::endl;
+        std::cout << "1ã¯intå‹ã§ã¯ã‚ã‚Šã¾ã›ã‚“" << std::endl;
     }
 
-    const std::type_info& str_type = typeid("hoge"); // •¶š—ñ"hoge"‚ÌŒ^î•ñ‚ğæ“¾
+    const std::type_info& str_type = typeid("hoge"); // æ–‡å­—åˆ—"hoge"ã®å‹æƒ…å ±ã‚’å–å¾—
     if (int_type != str_type)
     {
-        std::cout << "\"hoge\"‚ÍintŒ^‚Å‚Í‚ ‚è‚Ü‚¹‚ñ" << std::endl;
+        std::cout << "\"hoge\"ã¯intå‹ã§ã¯ã‚ã‚Šã¾ã›ã‚“" << std::endl;
     }
     else
     {
-        std::cout << "\"hoge\"‚ÍintŒ^‚Å‚·" << std::endl;
+        std::cout << "\"hoge\"ã¯intå‹ã§ã™" << std::endl;
     }
 }

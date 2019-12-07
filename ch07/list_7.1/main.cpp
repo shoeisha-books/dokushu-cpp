@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
-    // ”í•ÛŒìƒƒ“ƒo[
+    // è¢«ä¿è­·ãƒ¡ãƒ³ãƒãƒ¼
 protected:
     void protected_member()
     {
@@ -18,7 +18,7 @@ public:
 
 void Derived::member_test()
 {
-    // OKBŠî’êƒNƒ‰ƒX‚Ì”í•ÛŒìƒƒ“ƒo[‚É‚Í”h¶ƒNƒ‰ƒX‚©‚çƒAƒNƒZƒX‚Å‚«‚é
+    // OKã€‚åŸºåº•ã‚¯ãƒ©ã‚¹ã®è¢«ä¿è­·ãƒ¡ãƒ³ãƒãƒ¼ã«ã¯æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã‹ã‚‰ã‚¢ã‚¯ã‚»ã‚¹ã§ãã‚‹
     protected_member();
 }
 
@@ -26,9 +26,9 @@ int main()
 {
     Derived derived;
 
-    // ƒGƒ‰[Bpublic‚Å”h¶‚µ‚Ä‚à”í•ÛŒìƒƒ“ƒo[‚ÍŠO•”‚©‚çƒAƒNƒZƒX‚Å‚«‚È‚¢
+    // ã‚¨ãƒ©ãƒ¼ã€‚publicã§æ´¾ç”Ÿã—ã¦ã‚‚è¢«ä¿è­·ãƒ¡ãƒ³ãƒãƒ¼ã¯å¤–éƒ¨ã‹ã‚‰ã‚¢ã‚¯ã‚»ã‚¹ã§ããªã„
     // derived.protected_member();
 
-    // OKBŒöŠJƒƒ“ƒo[‚É‚ÍŠO•”‚©‚ç‚àƒAƒNƒZƒX‚Å‚«‚é
+    // OKã€‚å…¬é–‹ãƒ¡ãƒ³ãƒãƒ¼ã«ã¯å¤–éƒ¨ã‹ã‚‰ã‚‚ã‚¢ã‚¯ã‚»ã‚¹ã§ãã‚‹
     derived.member_test();
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
@@ -7,7 +7,7 @@ class Integer
 public:
     Integer(int value) : value{ value } { }
 
-    bool operator!() const; // ’P€‚Ì˜_—”Û’è‰‰Zq
+    bool operator!() const; // å˜é …ã®è«–ç†å¦å®šæ¼”ç®—å­
 
     bool operator&&(const Integer& rhs) const;
     bool operator||(const Integer& rhs) const;
@@ -36,14 +36,14 @@ int main()
 
     if (x && y)
     {
-        std::cout << "x‚Æy‚Í‚Ç‚¿‚ç‚à0‚Å‚Í‚È‚¢" << std::endl;
+        std::cout << "xã¨yã¯ã©ã¡ã‚‰ã‚‚0ã§ã¯ãªã„" << std::endl;
     }
     if (z || x)
     {
-        std::cout << "z‚Æx‚Ì­‚È‚­‚Æ‚à‚Ç‚¿‚ç‚©‚Í0‚Å‚Í‚È‚¢" << std::endl;
+        std::cout << "zã¨xã®å°‘ãªãã¨ã‚‚ã©ã¡ã‚‰ã‹ã¯0ã§ã¯ãªã„" << std::endl;
     }
     if (!z)
     {
-        std::cout << "z‚Í0" << std::endl;
+        std::cout << "zã¯0" << std::endl;
     }
 }

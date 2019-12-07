@@ -1,14 +1,14 @@
-#include <iostream>
+﻿#include <iostream>
 
 class A
 {
-    union // �^�����Ȃ�
+    union // 型名がない
     {
         int i;
         float f;
-    }; // �ϐ������Ȃ�
+    }; // 変数も作らない
 
-    long l; // �������p�͈̂̔͊O�̃����o�[�ϐ�
+    long l; // 無名共用体の範囲外のメンバー変数
 
 public:
     A();
@@ -20,7 +20,7 @@ public:
 
 A::A() : i(0xdeadbeef), l(0xc0ffee)
 {
-    // �N���X�̃����o�[�ϐ��̂悤�ɃA�N�Z�X�ł���
+    // クラスのメンバー変数のようにアクセスできる
     std::cout << "&f: " << &f << std::endl
         << "&i: " << &i << std::endl
         << "&l: " << &l << std::endl;
@@ -43,9 +43,9 @@ long A::get_l() const
 
 int main()
 {
-    A a; // �f�t�H���g�R���X�g���N�^�[��int�^�ŏ���������
+    A a; // デフォルトコンストラクターがint型で初期化する
     std::cout << "i: " << std::hex << a.get_i() << std::endl;
-    a.set_f(2.71828f); // float�^�̒l��������
+    a.set_f(2.71828f); // float型の値を代入する
     std::cout << "i: " << std::hex << a.get_i() << std::endl;
     std::cout << "l: " << std::hex << a.get_l() << std::endl;
 }

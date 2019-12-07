@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <list>
 #include <iterator>
 
@@ -8,12 +8,12 @@ int main()
 
     auto iter = l.begin();
 
-    std::advance(iter, 1); // iter‚ª1‚Âi‚Şi5‚ğw‚·j
+    std::advance(iter, 1); // iterãŒ1ã¤é€²ã‚€ï¼ˆ5ã‚’æŒ‡ã™ï¼‰
 
-    auto iter2 = std::prev(iter); // iter2‚Í1‚ğw‚·iiter‚Í‚»‚Ì‚Ü‚Üj
+    auto iter2 = std::prev(iter); // iter2ã¯1ã‚’æŒ‡ã™ï¼ˆiterã¯ãã®ã¾ã¾ï¼‰
     std::cout << "*iter2: " << *iter2 << std::endl;
 
-    auto iter3 = std::next(iter, 2); // iter3‚Í13‚ğw‚·iiter‚Í‚»‚Ì‚Ü‚Üj
+    auto iter3 = std::next(iter, 2); // iter3ã¯13ã‚’æŒ‡ã™ï¼ˆiterã¯ãã®ã¾ã¾ï¼‰
     std::cout << "*iter3: " << *iter3 << std::endl;
 
     std::cout << "*iter: " << *iter << std::endl;

@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ƒƒ“ƒo[•Ï”‚ğ3‚Â‚Á‚½\‘¢‘Ì
+// ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã‚’3ã¤æŒã£ãŸæ§‹é€ ä½“
 struct S
 {
     int a;
@@ -12,7 +12,7 @@ int main()
 {
     S s;
 
-    std::cout << "s.a‚ÌƒAƒhƒŒƒX‚Í " << &s.a << std::endl;
-    std::cout << "s.b‚ÌƒAƒhƒŒƒX‚Í " << &s.b << std::endl;
-    std::cout << "s.c‚ÌƒAƒhƒŒƒX‚Í " << &s.c << std::endl;
+    std::cout << "s.aã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ " << &s.a << std::endl;
+    std::cout << "s.bã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ " << &s.b << std::endl;
+    std::cout << "s.cã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ " << &s.c << std::endl;
 }

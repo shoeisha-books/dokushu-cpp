@@ -1,4 +1,4 @@
-#include <memory>
+ï»¿#include <memory>
 #include <utility>
 #include <iostream>
 
@@ -7,12 +7,12 @@ class A
 public:
     A()
     {
-        std::cout << "ƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl;
+        std::cout << "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
     }
 
     ~A()
     {
-        std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[" << std::endl;
+        std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
     }
 };
 
@@ -21,20 +21,20 @@ std::unique_ptr<A> allocate()
     std::cout << "allocate()" << std::endl;
     std::unique_ptr<A> ptr{ new A{} };
 
-    // ƒƒ‚ƒŠ—Ìˆæ‚ÌŠ—LŒ ‚ğ–ß‚è’l‚Æ‚µ‚ÄŠÖ”ƒXƒR[ƒv‚ÌŠO‘¤‚ÉˆÚ“®‚·‚é
+    // ãƒ¡ãƒ¢ãƒªé ˜åŸŸã®æ‰€æœ‰æ¨©ã‚’æˆ»ã‚Šå€¤ã¨ã—ã¦é–¢æ•°ã‚¹ã‚³ãƒ¼ãƒ—ã®å¤–å´ã«ç§»å‹•ã™ã‚‹
     return std::move(ptr);
 }
 
 int main()
 {
     {
-        std::unique_ptr<A> ptr; // ‹ó‚Ìstd::unique_ptrBnullptr‚Å‰Šú‰»‚³‚ê‚é
+        std::unique_ptr<A> ptr; // ç©ºã®std::unique_ptrã€‚nullptrã§åˆæœŸåŒ–ã•ã‚Œã‚‹
 
-        std::cout << "ŠÖ”ŒÄ‚Ño‚µ‚Ì‘O" << std::endl;
+        std::cout << "é–¢æ•°å‘¼ã³å‡ºã—ã®å‰" << std::endl;
 
-        ptr = allocate(); // allocate()‚ªŠm•Û‚µ‚½ƒƒ‚ƒŠ—Ìˆæ‚ÌŠ—LŒ ‚ğó‚¯æ‚é
+        ptr = allocate(); // allocate()ãŒç¢ºä¿ã—ãŸãƒ¡ãƒ¢ãƒªé ˜åŸŸã®æ‰€æœ‰æ¨©ã‚’å—ã‘å–ã‚‹
 
-        std::cout << "ŠÖ”ŒÄ‚Ño‚µ‚Ì‚ ‚Æ" << std::endl;
+        std::cout << "é–¢æ•°å‘¼ã³å‡ºã—ã®ã‚ã¨" << std::endl;
     }
-    std::cout << "ƒXƒR[ƒv‚Ì‚ ‚Æ" << std::endl;
+    std::cout << "ã‚¹ã‚³ãƒ¼ãƒ—ã®ã‚ã¨" << std::endl;
 }

@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int value[] = { -20, 10, 5, -40, 0, 10, -30 };
 
-    for (int elem : value) // ”ÍˆÍfor•¶‚ğg‚Á‚Ä‘–¸
+    for (int elem : value) // ç¯„å›²foræ–‡ã‚’ä½¿ã£ã¦èµ°æŸ»
     {
         if (elem < 0)
         {
@@ -20,5 +20,5 @@ int main()
         std::cout << "elem = " << elem << std::endl;
     }
 
-    std::cout << "ƒ‹[ƒv‚ÌI—¹" << std::endl;
+    std::cout << "ãƒ«ãƒ¼ãƒ—ã®çµ‚äº†" << std::endl;
 }

@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 int main()
 {
     int* p = new int(42);
 
     std::cout <<
-        "¶–½A‰F’ˆA‚»‚µ‚Ä–œ•¨‚É‚Â‚¢‚Ä‚Ì‹†‹É‚Ì‹^–â‚Ì“š‚¦: " <<
+        "ç”Ÿå‘½ã€å®‡å®™ã€ãã—ã¦ä¸‡ç‰©ã«ã¤ã„ã¦ã®ç©¶æ¥µã®ç–‘å•ã®ç­”ãˆ: " <<
         *p << std::endl;
     
-    delete p; // delete‰‰ŽZŽq‚Í’Êí‚Ì‚Ü‚Ü
+    delete p; // deleteæ¼”ç®—å­ã¯é€šå¸¸ã®ã¾ã¾
 }

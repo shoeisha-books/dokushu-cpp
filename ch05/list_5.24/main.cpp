@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <utility>
 
@@ -13,24 +13,24 @@ public:
     person(std::string name, int age)
         : m_name{ name }, m_age{ age } {}
 
-    person(person&& ohter); // ƒ€[ƒuƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+    person(person&& ohter); // ãƒ ãƒ¼ãƒ–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 
     const std::string& name() const { return m_name; }
     int age() const { return m_age; }
 };
 
-// ƒ€[ƒuƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+// ãƒ ãƒ¼ãƒ–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 person::person(person&& other)
     : m_name{ other.m_name }, m_age{ other.m_age }
 {
-    std::cout << "ƒ€[ƒuƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "ãƒ ãƒ¼ãƒ–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 int main()
 {
     person alice{ "alice", 15 };
 
-    // ƒ€[ƒuƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚Å‰Šú‰»
+    // ãƒ ãƒ¼ãƒ–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã§åˆæœŸåŒ–
     person move{ std::move(alice) };
 
     std::cout << move.name() << std::endl;

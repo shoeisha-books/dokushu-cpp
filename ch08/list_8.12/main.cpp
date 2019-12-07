@@ -1,4 +1,4 @@
-#include <fstream>
+ï»¿#include <fstream>
 #include <iostream>
 
 int main()
@@ -6,14 +6,14 @@ int main()
     std::ofstream out{ "hello_binary.bin", std::ios::binary };
 
     const char value[] = { 0, 1, 2 };
-    out.write(value, sizeof(value)); // 3ƒoƒCƒg‚¾‚¯‘‚«‚Ş
+    out.write(value, sizeof(value)); // 3ãƒã‚¤ãƒˆã ã‘æ›¸ãè¾¼ã‚€
 
     out.close();
 
     std::ifstream in{ "hello_binary.bin", std::ios::binary };
 
     char buffer[10];
-    in.read(buffer, 10); // 10ƒoƒCƒg“Ç‚İ‚à‚¤‚Æ‚·‚é
+    in.read(buffer, 10); // 10ãƒã‚¤ãƒˆèª­ã¿è¾¼ã‚‚ã†ã¨ã™ã‚‹
 
-    std::cout << in.gcount() << std::endl; // ÀÛ‚É“Ç‚İ‚ñ‚¾ƒoƒCƒg”
+    std::cout << in.gcount() << std::endl; // å®Ÿéš›ã«èª­ã¿è¾¼ã‚“ã ãƒã‚¤ãƒˆæ•°
 }

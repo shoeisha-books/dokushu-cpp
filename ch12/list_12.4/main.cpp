@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <vector>
 
@@ -6,7 +6,7 @@ int main()
 {
     std::string s = "apple";
 
-    // s‚Ìæ“ª‚©‚ç––”ö‚ğŒ³‚ÉAstd::vector‚ğ¶¬‚·‚é
+    // sã®å…ˆé ­ã‹ã‚‰æœ«å°¾ã‚’å…ƒã«ã€std::vectorã‚’ç”Ÿæˆã™ã‚‹
     std::vector<char> cv{ s.begin(), s.end() };
 
     for (char c : cv)

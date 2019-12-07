@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void show_value(int a)
 {
     std::cout << a << std::endl;
-    return; // ‚±‚±‚É“ž’B‚µ‚½Žž“_‚ÅŒÄ‚Ño‚µŒ³‚Éˆ—‚ª–ß‚é
+    return; // ã“ã“ã«åˆ°é”ã—ãŸæ™‚ç‚¹ã§å‘¼ã³å‡ºã—å…ƒã«å‡¦ç†ãŒæˆ»ã‚‹
 
-    // return•¶‚Åˆ—‚ª–ß‚Á‚Ä‚¢‚é‚½‚ß‚±‚Ìˆ—‚ÍŒÄ‚Î‚ê‚È‚¢
+    // returnæ–‡ã§å‡¦ç†ãŒæˆ»ã£ã¦ã„ã‚‹ãŸã‚ã“ã®å‡¦ç†ã¯å‘¼ã°ã‚Œãªã„
     std::cout << "show value" << std::endl;
 }
 

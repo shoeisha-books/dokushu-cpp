@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 template <typename... T>
 void count_params(T... args)
 {
-    std::cout << "ƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[ƒpƒbƒN‚Ì—v‘f”‚Í " << sizeof...(T)
+    std::cout << "ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ãƒ‘ãƒƒã‚¯ã®è¦ç´ æ•°ã¯ " << sizeof...(T)
         << std::endl;
-    std::cout << "ŠÖ”ƒpƒ‰ƒ[ƒ^[ƒpƒbƒN‚Ì—v‘f”‚Í " << sizeof...(args)
+    std::cout << "é–¢æ•°ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ãƒ‘ãƒƒã‚¯ã®è¦ç´ æ•°ã¯ " << sizeof...(args)
         << std::endl;
 }
 

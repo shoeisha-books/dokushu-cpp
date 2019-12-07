@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     char c = 99;
 
-    // ƒLƒƒƒXƒg‰‰Zq‚ğg‚Á‚ÄintŒ^‚É•ÏŠ·‚µ‚Ä•\¦
+    // ã‚­ãƒ£ã‚¹ãƒˆæ¼”ç®—å­ã‚’ä½¿ã£ã¦intå‹ã«å¤‰æ›ã—ã¦è¡¨ç¤º
     std::cout << static_cast<int>(c) << std::endl;
 }

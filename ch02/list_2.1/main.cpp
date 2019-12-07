@@ -1,25 +1,25 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 struct product
 {
-    int id; // ¤•iID
-    int price; // ’P‰¿
-    int stock; // İŒÉ”
-}; // ‚±‚ÌƒZƒ~ƒRƒƒ“‚ğ–Y‚ê‚ª‚¿‚È‚Ì‚Å’ˆÓ
+    int id; // å•†å“ID
+    int price; // å˜ä¾¡
+    int stock; // åœ¨åº«æ•°
+}; // ã“ã®ã‚»ãƒŸã‚³ãƒ­ãƒ³ã‚’å¿˜ã‚ŒãŒã¡ãªã®ã§æ³¨æ„
 
 int main()
 {
-    product pen; // ƒyƒ“‚ÉŠÖ‚·‚éƒf[ƒ^‚ğ‚Â•Ï”
+    product pen; // ãƒšãƒ³ã«é–¢ã™ã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’æŒã¤å¤‰æ•°
 
-    // ƒhƒbƒg‰‰Zq‚ğg‚Á‚Äƒyƒ“‚ÉŠÖ‚·‚éî•ñ‚ğƒƒ“ƒo[•Ï”‚ÉŠi”[‚·‚é
+    // ãƒ‰ãƒƒãƒˆæ¼”ç®—å­ã‚’ä½¿ã£ã¦ãƒšãƒ³ã«é–¢ã™ã‚‹æƒ…å ±ã‚’ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã«æ ¼ç´ã™ã‚‹
     pen.id = 0;
     pen.price = 100;
     pen.stock = 200;
 
-    product* ptr = &pen; // \‘¢‘Ì•Ï”‚Ö‚Ìƒ|ƒCƒ“ƒ^[
+    product* ptr = &pen; // æ§‹é€ ä½“å¤‰æ•°ã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼
 
-    // ƒAƒ[‰‰Zq‚ğg‚Á‚Äƒƒ“ƒo[•Ï”‚ğæ“¾‚·‚é
-    std::cout << "¤•iID: " << ptr->id << std::endl;
-    std::cout << "’P‰¿: " << ptr->price << std::endl;
-    std::cout << "İŒÉ”: " << ptr->stock << std::endl;
+    // ã‚¢ãƒ­ãƒ¼æ¼”ç®—å­ã‚’ä½¿ã£ã¦ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã‚’å–å¾—ã™ã‚‹
+    std::cout << "å•†å“ID: " << ptr->id << std::endl;
+    std::cout << "å˜ä¾¡: " << ptr->price << std::endl;
+    std::cout << "åœ¨åº«æ•°: " << ptr->stock << std::endl;
 }

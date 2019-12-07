@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int sum_all(int* first, int* last, int val)
 {
     while (first != last)
     {
-        val += *first; // first‚ªw‚·—v‘f‚ÉƒAƒNƒZƒX
-        ++first; // Ÿ‚Ì—v‘f‚Ö
+        val += *first; // firstãŒæŒ‡ã™è¦ç´ ã«ã‚¢ã‚¯ã‚»ã‚¹
+        ++first; // æ¬¡ã®è¦ç´ ã¸
     }
 
     return val;
@@ -19,8 +19,8 @@ int main()
         array[i] = i;
     }
     
-    int* first = &array[0]; // æ“ª—v‘f‚ğw‚·
-    int* last = &array[10]; // ––”ö—v‘f‚ÌŸ‚ğw‚·
+    int* first = &array[0]; // å…ˆé ­è¦ç´ ã‚’æŒ‡ã™
+    int* last = &array[10]; // æœ«å°¾è¦ç´ ã®æ¬¡ã‚’æŒ‡ã™
     
     std::cout << sum_all(first, last, 0) << std::endl;
 }

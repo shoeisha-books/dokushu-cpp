@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ¶•Ó’l‚ğó‚¯æ‚éƒeƒ“ƒvƒŒ[ƒg
+// å·¦è¾ºå€¤ã‚’å—ã‘å–ã‚‹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
 template <typename T>
 void foo(T& value)
 {
     std::cout << "void foo(T& value)" << std::endl;
 }
 
-// ‰E•Ó’l‚ğó‚¯æ‚éƒeƒ“ƒvƒŒ[ƒg
+// å³è¾ºå€¤ã‚’å—ã‘å–ã‚‹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
 template <typename T>
 void foo(T&& value)
 {

@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <regex>
 
 int main()
 {
-    std::regex re{ "[^A]+A" }; // A‚Å‚Í‚È‚¢•¶š‚Ì˜A‘±‚É‘±‚­A
+    std::regex re{ "[^A]+A" }; // Aã§ã¯ãªã„æ–‡å­—ã®é€£ç¶šã«ç¶šãA
     std::string input = "ABRACADABRA";
 
     std::sregex_token_iterator first(input.begin(), input.end(), re);

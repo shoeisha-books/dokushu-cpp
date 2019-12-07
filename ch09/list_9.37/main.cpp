@@ -1,7 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <initializer_list>
 
-// TŒ^‚Ì—v‘f‚ğ‚ÂƒRƒ“ƒeƒi
+// Tå‹ã®è¦ç´ ã‚’æŒã¤ã‚³ãƒ³ãƒ†ãƒŠ
 template <typename T>
 class Container
 {
@@ -9,10 +9,10 @@ class Container
     std::size_t count = 0;
 
 public:
-    // count‚Åw’è‚³‚ê‚½”Ainit‚ğg‚Á‚Ä‰Šú‰»‚·‚é
+    // countã§æŒ‡å®šã•ã‚ŒãŸæ•°ã€initã‚’ä½¿ã£ã¦åˆæœŸåŒ–ã™ã‚‹
     explicit Container(const T& init, std::size_t count);
 
-    // {}‚ğg‚Á‚½‰Šú‰»
+    // {}ã‚’ä½¿ã£ãŸåˆæœŸåŒ–
     Container(std::initializer_list<T> init);
     
     ~Container() { delete[] ptr; }
@@ -52,12 +52,12 @@ void Container<T>::show() const
 
 int main()
 {
-    // –{—ˆ‚Í Container<std::string> ‚Æ‘‚­‚ªAƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚ÌÀˆø”‚©‚çŒ^„˜_‚·‚é
-    // ‘æ1ˆø”‚ªƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[T‚ğg‚Á‚Ä‚¢‚ÄAstd::string‚ª“n‚³‚ê‚¢‚é‚Ì‚Å
-    // T‚Ístd::string‚É„˜_‚³‚ê‚é
+    // æœ¬æ¥ã¯ Container<std::string> ã¨æ›¸ããŒã€ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã®å®Ÿå¼•æ•°ã‹ã‚‰å‹æ¨è«–ã™ã‚‹
+    // ç¬¬1å¼•æ•°ãŒãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼Tã‚’ä½¿ã£ã¦ã„ã¦ã€std::stringãŒæ¸¡ã•ã‚Œã„ã‚‹ã®ã§
+    // Tã¯std::stringã«æ¨è«–ã•ã‚Œã‚‹
     Container s{ std::string{"Hello"}, 3 };
     s.show();
     std::cout << std::endl;
-    Container i = { 0, 1, 2, 3 }; // ‚±‚ê‚à“¯—l‚É‰Šú‰»ƒŠƒXƒg‚©‚çŒ^„˜_‚·‚é
+    Container i = { 0, 1, 2, 3 }; // ã“ã‚Œã‚‚åŒæ§˜ã«åˆæœŸåŒ–ãƒªã‚¹ãƒˆã‹ã‚‰å‹æ¨è«–ã™ã‚‹
     i.show();
 }

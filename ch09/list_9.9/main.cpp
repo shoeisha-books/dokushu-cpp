@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 struct S_shared
 {
     static int value;
 };
 
-// ƒNƒ‰ƒXƒeƒ“ƒvƒŒ[ƒgŠÔ‚Å‹¤—L‚Å‚«‚é•Ï”
+// ã‚¯ãƒ©ã‚¹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆé–“ã§å…±æœ‰ã§ãã‚‹å¤‰æ•°
 int S_shared::value = 0;
 
 template <typename T>
@@ -18,13 +18,13 @@ int main()
     std::cout << "S<int>::value: " << S<int>::value << std::endl;
     std::cout << "S<float>::value: " << S<float>::value << std::endl;
 
-    // ‚»‚ê‚¼‚ê‚Ìstaticƒƒ“ƒo[•Ï”‚ÌƒAƒhƒŒƒX‚ğ•\¦
+    // ãã‚Œãã‚Œã®staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¡¨ç¤º
     std::cout << "&S<int>::value: " << &S<int>::value << std::endl;
     std::cout << "&S<float>::value: " << &S<float>::value << std::endl;
     
-    S<int>::value = 42; // intŒ^‚ÌÀ‘Ì‚ğ’Ê‚µ‚Ästaticƒƒ“ƒo[•Ï”‚ğ•ÏX‚·‚é
+    S<int>::value = 42; // intå‹ã®å®Ÿä½“ã‚’é€šã—ã¦staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã‚’å¤‰æ›´ã™ã‚‹
     
-    // ƒNƒ‰ƒXƒeƒ“ƒvƒŒ[ƒg‚ÌÀ‘Ì‚ÍˆÙ‚È‚é‚ªA‘å–{‚ÌŠî’êƒNƒ‰ƒX‚Í‚½‚¾1‚Â‚È‚Ì‚Å•Ï”‚ª‹¤—L‚³‚ê‚é
+    // ã‚¯ãƒ©ã‚¹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã®å®Ÿä½“ã¯ç•°ãªã‚‹ãŒã€å¤§æœ¬ã®åŸºåº•ã‚¯ãƒ©ã‚¹ã¯ãŸã 1ã¤ãªã®ã§å¤‰æ•°ãŒå…±æœ‰ã•ã‚Œã‚‹
     std::cout << "S<int>::value: " << S<int>::value << std::endl;
     std::cout << "S<float>::value: " << S<float>::value << std::endl;
 }

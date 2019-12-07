@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 template <typename Type>
 Type fused_multiply_add(Type a, Type b, Type c)
@@ -8,12 +8,12 @@ Type fused_multiply_add(Type a, Type b, Type c)
 
 int main()
 {
-    // ˆø”‚©‚çType‚ğint‚Æ„˜_‚µ‚ÄŒÄ‚Ño‚µ
+    // å¼•æ•°ã‹ã‚‰Typeã‚’intã¨æ¨è«–ã—ã¦å‘¼ã³å‡ºã—
     std::cout << fused_multiply_add(1, 2, 3) << std::endl;
 
-    // ˆø”‚©‚çType‚ğfloat‚Æ„˜_‚µ‚ÄŒÄ‚Ño‚µ
+    // å¼•æ•°ã‹ã‚‰Typeã‚’floatã¨æ¨è«–ã—ã¦å‘¼ã³å‡ºã—
     std::cout << fused_multiply_add(1.23456f, 1.23456f, 1.23456f) << std::endl;
 
-    // ˆø”‚©‚çType‚ğdouble‚Æ„˜_‚µ‚ÄŒÄ‚Ño‚µ
+    // å¼•æ•°ã‹ã‚‰Typeã‚’doubleã¨æ¨è«–ã—ã¦å‘¼ã³å‡ºã—
     std::cout << fused_multiply_add(1.23456, 1.23456, 1.23456) << std::endl;
 }

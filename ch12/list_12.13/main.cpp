@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 void print_vector(const std::vector<int>& v)
@@ -30,7 +30,7 @@ public:
 int main()
 {
     std::vector<person> pv;
-    // "alice", 12‚Åperson‚ğiƒRƒ“ƒeƒi“à‚Éj¶¬‚·‚é
+    // "alice", 12ã§personã‚’ï¼ˆã‚³ãƒ³ãƒ†ãƒŠå†…ã«ï¼‰ç”Ÿæˆã™ã‚‹
     pv.emplace(pv.end(), "alice", 12);
 
     for (const auto& p : pv)

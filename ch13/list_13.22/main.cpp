@@ -1,14 +1,14 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <regex>
 
 int main()
 {
-    std::regex re{ "BRA" }; // BRA‚ğŠÜ‚Ş
+    std::regex re{ "BRA" }; // BRAã‚’å«ã‚€
     std::string input = "ABRACADABRA";
 
     if (std::regex_search(input, re))
     {
-        std::cout << "ƒ}ƒbƒ`‚µ‚Ü‚µ‚½I " << std::endl;
+        std::cout << "ãƒãƒƒãƒã—ã¾ã—ãŸï¼ " << std::endl;
     }
 }

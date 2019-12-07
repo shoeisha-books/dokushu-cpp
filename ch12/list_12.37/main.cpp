@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 #include <algorithm>
 
 int main()
 {
     std::vector v = { 10, -3, 2, 0, -1, -5, 4, 2 };
-    std::vector<int> c(v.size()); // ‚ ‚ç‚©‚¶‚ß—Ìˆæ‚ğŠm•Û
+    std::vector<int> c(v.size()); // ã‚ã‚‰ã‹ã˜ã‚é ˜åŸŸã‚’ç¢ºä¿
 
-                                  // –³ğŒ‚Éæ“ª‚©‚çƒRƒs[
+                                  // ç„¡æ¡ä»¶ã«å…ˆé ­ã‹ã‚‰ã‚³ãƒ”ãƒ¼
     std::copy(v.begin(), v.end(), c.begin());
     for (auto e : c)
     {
@@ -15,12 +15,12 @@ int main()
     }
     std::cout << std::endl;
 
-    // ³”‚Ì‚İŒã‚ë‚©‚ç‡”Ô‚ÉƒRƒs[
+    // æ­£æ•°ã®ã¿å¾Œã‚ã‹ã‚‰é †ç•ªã«ã‚³ãƒ”ãƒ¼
     auto last = std::copy_if(v.rbegin(), v.rend(), c.begin(),
         [](int i) { return 0 < i; });
     
-    // •Ô‚³‚ê‚½ƒCƒeƒŒ[ƒ^[‚Ìè‘O‚Ü‚Å‚É‚µ‚©—LŒø‚Èƒf[ƒ^‚Í“ü‚Á‚Ä‚¢‚È‚¢‚Ì‚ÅA
-    // ‚»‚êˆÈŒã‚Ííœ‚·‚é
+    // è¿”ã•ã‚ŒãŸã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ãƒ¼ã®æ‰‹å‰ã¾ã§ã«ã—ã‹æœ‰åŠ¹ãªãƒ‡ãƒ¼ã‚¿ã¯å…¥ã£ã¦ã„ãªã„ã®ã§ã€
+    // ãã‚Œä»¥å¾Œã¯å‰Šé™¤ã™ã‚‹
     c.erase(last, c.end());
     
     for (auto e : c)

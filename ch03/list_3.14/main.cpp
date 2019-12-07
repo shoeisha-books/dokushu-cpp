@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -14,9 +14,9 @@ void Base::foo()
 class Derived : public Base
 {
 public:
-    using Base::foo; // Šî’êƒNƒ‰ƒX‚Ìfoo()‚ğŒÄ‚Ño‚¹‚é‚æ‚¤‚É‚·‚é
+    using Base::foo; // åŸºåº•ã‚¯ãƒ©ã‚¹ã®foo()ã‚’å‘¼ã³å‡ºã›ã‚‹ã‚ˆã†ã«ã™ã‚‹
 
-    void foo(int v); // ”h¶ƒNƒ‰ƒX‚Å’Ç‰Á‚µ‚½ƒI[ƒo[ƒ[ƒh
+    void foo(int v); // æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§è¿½åŠ ã—ãŸã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
 };
 
 void Derived::foo(int v)
@@ -27,6 +27,6 @@ void Derived::foo(int v)
 int main()
 {
     Derived derived;
-    derived.foo(); // Šî’êƒNƒ‰ƒX‚Ìfoo()‚ªŒÄ‚Î‚ê‚é
-    derived.foo(42); // ”h¶ƒNƒ‰ƒX‚Å’Ç‰Á‚µ‚½ƒI[ƒo[ƒ[ƒh‚ªŒÄ‚Î‚ê‚é
+    derived.foo(); // åŸºåº•ã‚¯ãƒ©ã‚¹ã®foo()ãŒå‘¼ã°ã‚Œã‚‹
+    derived.foo(42); // æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã§è¿½åŠ ã—ãŸã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ãŒå‘¼ã°ã‚Œã‚‹
 }

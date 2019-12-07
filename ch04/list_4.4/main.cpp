@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -8,14 +8,14 @@ public:
 
 A::~A()
 {
-    std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 int main()
 {
     if (true)
     {
-        std::cout << "if•¶" << std::endl;
+        std::cout << "ifæ–‡" << std::endl;
         A a;
     }
 
@@ -23,18 +23,18 @@ int main()
 
     for (int i = 0; i < 5; ++i)
     {
-        std::cout << "for•¶(" << i << ")" << std::endl;
+        std::cout << "foræ–‡(" << i << ")" << std::endl;
         A a;
     }
 
     std::cout << std::endl;
 
     {
-        std::cout << "‚½‚¾‚ÌƒXƒR[ƒv" << std::endl;
+        std::cout << "ãŸã ã®ã‚¹ã‚³ãƒ¼ãƒ—" << std::endl;
         A a;
     }
 
     std::cout << std::endl;
 
-    std::cout << "main()ŠÖ”‚ÌÅŒã" << std::endl;
+    std::cout << "main()é–¢æ•°ã®æœ€å¾Œ" << std::endl;
 }

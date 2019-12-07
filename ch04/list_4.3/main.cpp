@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -8,29 +8,29 @@ public:
 
 A::~A()
 {
-    std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 void function_scope(int i)
 {
-    A a; // ŠÖ”ƒXƒR[ƒv‚©‚ç”²‚¯‚é‚ÆƒfƒXƒgƒ‰ƒNƒ^[‚ªŒÄ‚Î‚ê‚é
-    std::cout << "ŠÖ”ƒXƒR[ƒv" << std::endl;
+    A a; // é–¢æ•°ã‚¹ã‚³ãƒ¼ãƒ—ã‹ã‚‰æŠœã‘ã‚‹ã¨ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ãŒå‘¼ã°ã‚Œã‚‹
+    std::cout << "é–¢æ•°ã‚¹ã‚³ãƒ¼ãƒ—" << std::endl;
     
     if (i > 0)
     {
-        return; // ŠÖ”‚Ìˆ—‚ª‚±‚±‚©‚çŒÄ‚Ño‚µŒ³‚ÉˆÚ‚é
+        return; // é–¢æ•°ã®å‡¦ç†ãŒã“ã“ã‹ã‚‰å‘¼ã³å‡ºã—å…ƒã«ç§»ã‚‹
     }
     
-    std::cout << "if•¶‚Ì‚ ‚Æ" << std::endl;
+    std::cout << "ifæ–‡ã®ã‚ã¨" << std::endl;
 }
 
 int main()
 {
-    // if•¶‚ÌğŒ‚ªtrue‚Æ‚È‚é‚Ì‚Åreturn•¶‚Å–ß‚Á‚Ä‚­‚é
+    // ifæ–‡ã®æ¡ä»¶ãŒtrueã¨ãªã‚‹ã®ã§returnæ–‡ã§æˆ»ã£ã¦ãã‚‹
     function_scope(10);
 
     std::cout << std::endl;
 
-    // if•¶‚ÌğŒ‚ªfalse‚Æ‚È‚é‚Ì‚ÅŠÖ”ƒXƒR[ƒv‚ÌI‚í‚è‚É‚½‚Ç‚è’…‚­
+    // ifæ–‡ã®æ¡ä»¶ãŒfalseã¨ãªã‚‹ã®ã§é–¢æ•°ã‚¹ã‚³ãƒ¼ãƒ—ã®çµ‚ã‚ã‚Šã«ãŸã©ã‚Šç€ã
     function_scope(-10);
 }

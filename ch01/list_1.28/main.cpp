@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
@@ -10,19 +10,19 @@ int main()
         if (value[i] < 0)
         {
             std::cout << "continue" << std::endl;
-            ++i; // d—v
-            continue; // ðŒ•¶‚É”ò‚Ô
+            ++i; // é‡è¦
+            continue; // æ¡ä»¶æ–‡ã«é£›ã¶
         }
     
         if (value[i] == 0)
         {
             std::cout << "break" << std::endl;
-            break; // ƒ‹[ƒv‚ðI—¹‚·‚é
+            break; // ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†ã™ã‚‹
         }
         
         std::cout << "elem = " << value[i] << std::endl;
-        ++i; // ”z—ñ‚ÌƒCƒ“ƒfƒbƒNƒX‚ð1‚Âi‚ß‚é
+        ++i; // é…åˆ—ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’1ã¤é€²ã‚ã‚‹
     } while (i < 7);
 
-    std::cout << "ƒ‹[ƒv‚ÌI—¹" << std::endl;
+    std::cout << "ãƒ«ãƒ¼ãƒ—ã®çµ‚äº†" << std::endl;
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 template <typename T>
 class A
 {
@@ -10,7 +10,7 @@ public:
     T& get_value() { return value; }
 };
 
-// T‚ªQÆŒ^‚Å‚ ‚Á‚Ä‚à’l‚ğƒRƒs[‚µ‚½ƒNƒ‰ƒXA‚ğ•Ô‚·‚æ‚¤‚É‚·‚é
+// TãŒå‚ç…§å‹ã§ã‚ã£ã¦ã‚‚å€¤ã‚’ã‚³ãƒ”ãƒ¼ã—ãŸã‚¯ãƒ©ã‚¹Aã‚’è¿”ã™ã‚ˆã†ã«ã™ã‚‹
 template <typename T>
 A<std::remove_const_t<std::remove_reference_t<T>>> make_A(T value)
 {
@@ -26,7 +26,7 @@ int main()
     
     std::cout << &r.get_value() << std::endl;
     
-    // –¾¦“I‚ÉQÆ‚ğg‚Á‚ÄÀ‘Ì‰»‚µ‚Ä‚àAŒ^“Á«ƒeƒ“ƒvƒŒ[ƒg‚É‚æ‚Á‚Ä’l‚Å•Ô‚·‚æ‚¤‚É‚È‚é
+    // æ˜ç¤ºçš„ã«å‚ç…§ã‚’ä½¿ã£ã¦å®Ÿä½“åŒ–ã—ã¦ã‚‚ã€å‹ç‰¹æ€§ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã«ã‚ˆã£ã¦å€¤ã§è¿”ã™ã‚ˆã†ã«ãªã‚‹
     auto x = make_A<int&>(i);
     std::cout << &x.get_value() << std::endl;
 }

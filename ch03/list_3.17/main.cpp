@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -11,8 +11,8 @@ public:
 
 void A::set_value(int value)
 {
-    // value = value; // ƒGƒ‰[‚Å‚Í‚È‚¢‚ªA‚Ç‚¿‚ç‚àˆø”‚Ìvalue‚Ì‚±‚Æ
-    this->value = value; // ƒƒ“ƒo[•Ï”‚Ìvalue‚É‘ã“ü‚µ‚Ä‚¢‚é
+    // value = value; // ã‚¨ãƒ©ãƒ¼ã§ã¯ãªã„ãŒã€ã©ã¡ã‚‰ã‚‚å¼•æ•°ã®valueã®ã“ã¨
+    this->value = value; // ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®valueã«ä»£å…¥ã—ã¦ã„ã‚‹
 }
 
 int A::get_value() const

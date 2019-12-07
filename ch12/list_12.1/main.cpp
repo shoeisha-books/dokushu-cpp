@@ -1,11 +1,11 @@
-int main()
+ï»¿int main()
 {
-    int size = 1000; // —v‘f”
+    int size = 1000; // è¦ç´ æ•°
     int* darray = new int[size];
 
-    // cc
+    // â€¦â€¦
 
-    // —v‘f”size‚ğnew_size‚É•ÏX‚·‚é
+    // è¦ç´ æ•°sizeã‚’new_sizeã«å¤‰æ›´ã™ã‚‹
     {
         int* tmp = new int[new_size];
         int copy_size = (size < new_size) ? size : new_size;
@@ -13,12 +13,12 @@ int main()
         {
         tmp[i] = darray[i];
         }
-        delete[] darray; // ‹Œ—Ìˆæ‚ğ”jŠü
-        darray = tmp; // V—Ìˆæ‚É·‚µ‘Ö‚¦
-        size = new_size; // —v‘f”‚ğ•ÏX
+        delete[] darray; // æ—§é ˜åŸŸã‚’ç ´æ£„
+        darray = tmp; // æ–°é ˜åŸŸã«å·®ã—æ›¿ãˆ
+        size = new_size; // è¦ç´ æ•°ã‚’å¤‰æ›´
     }
     
-    // cc
+    // â€¦â€¦
     
     delete[] darray;
 }

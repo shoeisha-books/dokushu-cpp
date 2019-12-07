@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 class Base
 {
@@ -20,14 +20,14 @@ public:
 
 Base* allocate()
 {
-    // �h���N���X�𓮓I�m�ۂ��邪�A
-    // �֐��̖߂�l�̌^�����N���X�ւ̃|�C���^�[�ɂȂ��Ă���̂�
-    // �Öٕϊ��ɂ���Ċ��N���X�ւ̃|�C���^�[���Ԃ����
+    // 派生クラスを動的確保するが、
+    // 関数の戻り値の型が基底クラスへのポインターになっているので
+    // 暗黙変換によって基底クラスへのポインターが返される
     return new Derived{};
 }
 
 int main()
 {
-    auto ptr = allocate(); // ���N���X�ւ̃|�C���^�[���Ԃ����
-    delete ptr; // ���ӁB�R���p�C���ł��邪��肪����R�[�h
+    auto ptr = allocate(); // 基底クラスへのポインターが返される
+    delete ptr; // 注意。コンパイルできるが問題があるコード
 }

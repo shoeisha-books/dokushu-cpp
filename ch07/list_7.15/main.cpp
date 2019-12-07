@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -9,7 +9,7 @@ public:
     }
 };
 
-// DerivedA‚Í‰¼‘zŠî’êƒNƒ‰ƒX‚Æ‚µ‚ÄBase‚ğŒp³‚·‚é
+// DerivedAã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹ã¨ã—ã¦Baseã‚’ç¶™æ‰¿ã™ã‚‹
 class DerivedA : virtual public Base
 {
 public:
@@ -19,7 +19,7 @@ public:
     }
 };
 
-// DerivedB‚Í‰¼‘zŠî’êƒNƒ‰ƒX‚Æ‚µ‚ÄBase‚ğŒp³‚·‚é
+// DerivedBã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹ã¨ã—ã¦Baseã‚’ç¶™æ‰¿ã™ã‚‹
 class DerivedB : virtual public Base
 {
 public:
@@ -29,9 +29,9 @@ public:
     }
 };
 
-// DerivedA‚àDerivedB‚àBase‚©‚ç”h¶‚µ‚Ä‚¢‚é‚ªA
-// Base‚Í‰¼‘zŠî’êƒNƒ‰ƒXw’è‚³‚ê‚Ä‚¢‚é‚Ì‚Å
-// MoreDerived‚É‚ÍBase‚Í‚½‚¾1‚Â‚µ‚©‘¶İ‚µ‚È‚¢
+// DerivedAã‚‚DerivedBã‚‚Baseã‹ã‚‰æ´¾ç”Ÿã—ã¦ã„ã‚‹ãŒã€
+// Baseã¯ä»®æƒ³åŸºåº•ã‚¯ãƒ©ã‚¹æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã®ã§
+// MoreDerivedã«ã¯Baseã¯ãŸã 1ã¤ã—ã‹å­˜åœ¨ã—ãªã„
 class MoreDerived : public DerivedA, public DerivedB
 {
 public:

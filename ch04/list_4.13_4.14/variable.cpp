@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-int value = 42; // •Ï”‚ÌÀ‘Ì‚ÌéŒ¾A‰Šú‰»‚Í‚±‚±‚Å‚µ‚©‚Å‚«‚È‚¢
+int value = 42; // å¤‰æ•°ã®å®Ÿä½“ã®å®£è¨€ã€åˆæœŸåŒ–ã¯ã“ã“ã§ã—ã‹ã§ããªã„
 
 void show_extern_variable()
 {
-    std::cout << "extern•Ï”‚ÌƒAƒhƒŒƒX: " << &value << std::endl;
-    std::cout << "extern•Ï”‚Ì’l: " << value << std::endl;
+    std::cout << "externå¤‰æ•°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹: " << &value << std::endl;
+    std::cout << "externå¤‰æ•°ã®å€¤: " << value << std::endl;
 }

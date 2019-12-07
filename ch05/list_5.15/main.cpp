@@ -1,5 +1,5 @@
-#include <iostream>
-#include <initializer_list> // std::initializer_list‚ğg‚¤‚Ì‚É•K—v
+ï»¿#include <iostream>
+#include <initializer_list> // std::initializer_listã‚’ä½¿ã†ã®ã«å¿…è¦
 
 class int_vector
 {
@@ -21,12 +21,12 @@ public:
     }
 };
 
-// std::initializer_list‚ğó‚¯æ‚éƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+// std::initializer_listã‚’å—ã‘å–ã‚‹ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 int_vector::int_vector(std::initializer_list<int> init)
     : m_size{ init.size() }, m_array{ new int[init.size()] }
 {
     std::size_t i = 0;
-    // std::initializer_list‚Ì’†g‚ğg‚Á‚Ä“®“I”z—ñ‚ğ‰Šú‰»‚·‚é
+    // std::initializer_listã®ä¸­èº«ã‚’ä½¿ã£ã¦å‹•çš„é…åˆ—ã‚’åˆæœŸåŒ–ã™ã‚‹
     for (int e : init)
     {
         m_array[i] = e;
@@ -41,7 +41,7 @@ int_vector::~int_vector()
 
 int main()
 {
-    // ”z—ñ‚Ì‚æ‚¤‚Éstd::initializer_list‚ğg‚Á‚Ä‰Šú‰»
+    // é…åˆ—ã®ã‚ˆã†ã«std::initializer_listã‚’ä½¿ã£ã¦åˆæœŸåŒ–
     int_vector iv = { 0, 1, 2, 3, 4, 5 };
     std::cout << "iv.size() = " << iv.size() << std::endl;
     std::cout << "iv.at(3) = " << iv.at(3) << std::endl;

@@ -1,16 +1,16 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <typeinfo>
 
 class Base
 {
 };
 
-// Œp³ŠÖŒW
+// ç¶™æ‰¿é–¢ä¿‚
 class Derived : public Base
 {
 };
 
-// •ïŠÜŠÖŒW
+// åŒ…å«é–¢ä¿‚
 class Composed
 {
     Base base;
@@ -18,23 +18,23 @@ class Composed
 
 int main()
 {
-    // Œp³ŠÖŒW‚ª‚ ‚Á‚Ä‚à•Ê‚ÌŒ^‚Æ‚µ‚Äˆµ‚í‚ê‚é
+    // ç¶™æ‰¿é–¢ä¿‚ãŒã‚ã£ã¦ã‚‚åˆ¥ã®å‹ã¨ã—ã¦æ‰±ã‚ã‚Œã‚‹
     if (typeid(Base) == typeid(Derived))
     {
-        std::cout << "Base‚ÆDerived‚Í“¯‚¶ƒNƒ‰ƒX‚Å‚·" << std::endl;
+        std::cout << "Baseã¨Derivedã¯åŒã˜ã‚¯ãƒ©ã‚¹ã§ã™" << std::endl;
     }
     else
     {
-        std::cout << "Base‚ÆDerived‚ÍˆÙ‚È‚éƒNƒ‰ƒX‚Å‚·" << std::endl;
+        std::cout << "Baseã¨Derivedã¯ç•°ãªã‚‹ã‚¯ãƒ©ã‚¹ã§ã™" << std::endl;
     }
 
-    // •ïŠÜŠÖŒW‚à‚â‚Í‚è•Ê‚ÌŒ^‚Æ‚µ‚Äˆµ‚í‚ê‚é
+    // åŒ…å«é–¢ä¿‚ã‚‚ã‚„ã¯ã‚Šåˆ¥ã®å‹ã¨ã—ã¦æ‰±ã‚ã‚Œã‚‹
     if (typeid(Base) == typeid(Composed))
     {
-        std::cout << "Base‚ÆComposed‚Í“¯‚¶ƒNƒ‰ƒX‚Å‚·" << std::endl;
+        std::cout << "Baseã¨Composedã¯åŒã˜ã‚¯ãƒ©ã‚¹ã§ã™" << std::endl;
     }
     else
     {
-        std::cout << "Base‚ÆComposed‚ÍˆÙ‚È‚éƒNƒ‰ƒX‚Å‚·" << std::endl;
+        std::cout << "Baseã¨Composedã¯ç•°ãªã‚‹ã‚¯ãƒ©ã‚¹ã§ã™" << std::endl;
     }
 }

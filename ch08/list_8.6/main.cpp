@@ -1,28 +1,28 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <iomanip>
-#include <fstream> // ƒtƒ@ƒCƒ‹‚Ì“üo—Í‚É‚Í<fstream>ƒwƒbƒ_[‚ğg—p‚·‚é
+#include <fstream> // ãƒ•ã‚¡ã‚¤ãƒ«ã®å…¥å‡ºåŠ›ã«ã¯<fstream>ãƒ˜ãƒƒãƒ€ãƒ¼ã‚’ä½¿ç”¨ã™ã‚‹
 #include <string>
 
 int main()
 {
-    std::ofstream out; // ƒtƒ@ƒCƒ‹o—Í—p‚ÌƒIƒuƒWƒFƒNƒg‚ğì¬‚·‚é
-    out.open("hello_file.txt"); // ƒtƒ@ƒCƒ‹‚ğƒI[ƒvƒ“‚·‚é
+    std::ofstream out; // ãƒ•ã‚¡ã‚¤ãƒ«å‡ºåŠ›ç”¨ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã™ã‚‹
+    out.open("hello_file.txt"); // ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã™ã‚‹
 
-    out << "Hello, File IO" << std::endl; // ƒtƒ@ƒCƒ‹‚É•¶š—ñ‚ğo—Í‚·‚é
+    out << "Hello, File IO" << std::endl; // ãƒ•ã‚¡ã‚¤ãƒ«ã«æ–‡å­—åˆ—ã‚’å‡ºåŠ›ã™ã‚‹
     out << std::setprecision(4) << std::scientific << 12.34567f << std::endl;
 
-    out.close(); // ‘€ì‚ªI‚í‚Á‚½‚Ì‚ÅƒNƒ[ƒY
+    out.close(); // æ“ä½œãŒçµ‚ã‚ã£ãŸã®ã§ã‚¯ãƒ­ãƒ¼ã‚º
 
-    // “ü—Í—p‚ÌƒIƒuƒWƒFƒNƒg‚ğì¬‚·‚é‚Ì‚Æ“¯‚ÉƒI[ƒvƒ“‚à‚Å‚«‚éiofstream‚Å‚à“¯‚¶j
+    // å…¥åŠ›ç”¨ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã™ã‚‹ã®ã¨åŒæ™‚ã«ã‚ªãƒ¼ãƒ—ãƒ³ã‚‚ã§ãã‚‹ï¼ˆofstreamã§ã‚‚åŒã˜ï¼‰
     std::ifstream in{ "hello_file.txt" };
 
     std::string line;
-    std::getline(in, line); // ƒtƒ@ƒCƒ‹‚©‚ç1s“ü—Í‚·‚é
+    std::getline(in, line); // ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰1è¡Œå…¥åŠ›ã™ã‚‹
     float f;
     in >> f;
 
-    std::cout << line << std::endl; // ƒtƒ@ƒCƒ‹‚©‚ç“Ç‚İ‚ñ‚¾1s‚ğ‰æ–Ê‚Éo—Í‚·‚é
-    std::cout << f << std::endl; // “Ç‚İ‚ñ‚¾•‚“®¬”“_”‚ào—Í
+    std::cout << line << std::endl; // ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã‚“ã 1è¡Œã‚’ç”»é¢ã«å‡ºåŠ›ã™ã‚‹
+    std::cout << f << std::endl; // èª­ã¿è¾¼ã‚“ã æµ®å‹•å°æ•°ç‚¹æ•°ã‚‚å‡ºåŠ›
 
-    // in.close(); ‚ğŒÄ‚Î‚È‚­‚Ä‚àAƒfƒXƒgƒ‰ƒNƒ^[‚ª©“®‚ÅƒNƒ[ƒY‚·‚é
+    // in.close(); ã‚’å‘¼ã°ãªãã¦ã‚‚ã€ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ãŒè‡ªå‹•ã§ã‚¯ãƒ­ãƒ¼ã‚ºã™ã‚‹
 }

@@ -1,21 +1,21 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int array[5] = { 0, 1, 2, 3, 4 };;
 
-    int(*ptr)[5] = &array; // ”z—ñ‚Ö‚Ìƒ|ƒCƒ“ƒ^[
+    int(*ptr)[5] = &array; // é…åˆ—ã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼
 
-    for (int e : *ptr) // ƒ|ƒCƒ“ƒ^[‚È‚Ì‚ÅŠÔÚQÆ‰‰Zq‚ª•K—v
+    for (int e : *ptr) // ãƒã‚¤ãƒ³ã‚¿ãƒ¼ãªã®ã§é–“æ¥å‚ç…§æ¼”ç®—å­ãŒå¿…è¦
     {
         std::cout << e << std::endl;
     }
 
     std::cout << std::endl;
 
-    int(&ref)[5] = array; // ”z—ñ‚Ö‚ÌQÆ
+    int(&ref)[5] = array; // é…åˆ—ã¸ã®å‚ç…§
 
-    for (int e : ref) // QÆ‚È‚Ì‚ÅŠÔÚQÆ‰‰Zq‚Í•s—v
+    for (int e : ref) // å‚ç…§ãªã®ã§é–“æ¥å‚ç…§æ¼”ç®—å­ã¯ä¸è¦
     {
         std::cout << e << std::endl;
     }

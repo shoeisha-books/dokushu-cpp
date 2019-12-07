@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Book
 {
@@ -12,13 +12,13 @@ public:
     void show() const;
 };
 
-// page‚Íƒƒ“ƒo[‰Šú‰»ƒŠƒXƒg‚ÅÈ—ª‚µ‚½‚Ì‚ÅNSDMI‚ÌƒfƒtƒHƒ‹ƒg’l‚ğg‚Á‚Ä‰Šú‰»‚³‚ê‚é
+// pageã¯ãƒ¡ãƒ³ãƒãƒ¼åˆæœŸåŒ–ãƒªã‚¹ãƒˆã§çœç•¥ã—ãŸã®ã§NSDMIã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’ä½¿ã£ã¦åˆæœŸåŒ–ã•ã‚Œã‚‹
 Book::Book()
     : title("untitled")
 {
 }
 
-// ƒƒ“ƒo[‰Šú‰»ƒŠƒXƒg‚Å—^‚¦‚½‰Šú’l‚ªg‚í‚ê‚é
+// ãƒ¡ãƒ³ãƒãƒ¼åˆæœŸåŒ–ãƒªã‚¹ãƒˆã§ä¸ãˆãŸåˆæœŸå€¤ãŒä½¿ã‚ã‚Œã‚‹
 Book::Book(std::string title, int page)
     : title(title), page(page)
 {
@@ -26,7 +26,7 @@ Book::Book(std::string title, int page)
 
 void Book::show() const
 {
-    std::cout << title << " " << page << "ƒy[ƒW" << std::endl;
+    std::cout << title << " " << page << "ãƒšãƒ¼ã‚¸" << std::endl;
 }
 
 int main()
@@ -35,7 +35,7 @@ int main()
 
     nsdmi.show();
 
-    Book old_edition{ "“ÆKC++ ‘æ4”Å", 568 };
+    Book old_edition{ "ç‹¬ç¿’C++ ç¬¬4ç‰ˆ", 568 };
 
     old_edition.show();
 }

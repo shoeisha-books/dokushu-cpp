@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 #define HOGE
 
 int main()
 {
 #if defined(HOGE)
-    std::cout << "defined(HOGE)‚Ítrue‚Å‚·B" << std::endl; // ‡@
+    std::cout << "defined(HOGE)ã¯trueã§ã™ã€‚" << std::endl; // â‘ 
 #else
-    std::cout << "defined(HOGE)‚Ífalse‚Å‚·B" << std::endl; // ‡A
+    std::cout << "defined(HOGE)ã¯falseã§ã™ã€‚" << std::endl; // â‘¡
 #endif
 }

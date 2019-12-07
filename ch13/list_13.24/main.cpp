@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <regex>
 
 int main()
 {
-    std::regex re{ "([^A]+A)([^A]+A)" }; // A‚Å‚È‚¢•¶š‚Ì˜A‘±‚É‘±‚­(A)~2
+    std::regex re{ "([^A]+A)([^A]+A)" }; // Aã§ãªã„æ–‡å­—ã®é€£ç¶šã«ç¶šã(A)Ã—2
     std::string input = "ABRACADABRA";
     std::smatch match;
 

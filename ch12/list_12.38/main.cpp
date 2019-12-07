@@ -1,4 +1,4 @@
-#include <iterator>
+ï»¿#include <iterator>
 #include <vector>
 #include <list>
 #include <iostream>
@@ -7,9 +7,9 @@
 int main()
 {
     std::vector v = { 10, -3, 2, -1, -5, 4, 2 };
-    std::vector<int> c; // ƒRƒs[æ‚Í‹ó‚Ì‚Ü‚Ü‚Å‚æ‚¢
+    std::vector<int> c; // ã‚³ãƒ”ãƒ¼å…ˆã¯ç©ºã®ã¾ã¾ã§ã‚ˆã„
 
-    // push_back()‚ğg‚Á‚Ä‡”Ô‚ÉƒRƒs[‚µ‚Ä‚¢‚­
+    // push_back()ã‚’ä½¿ã£ã¦é †ç•ªã«ã‚³ãƒ”ãƒ¼ã—ã¦ã„ã
     std::copy(v.begin(), v.end(), std::back_inserter(c));
 
     for (auto e : c)
@@ -18,11 +18,11 @@ int main()
     }
     std::cout << std::endl;
  
-    // std::vector‚Ípush_front()‚ğ‚½‚È‚¢‚Ì‚Ålist‚ğg‚¤
+    // std::vectorã¯push_front()ã‚’æŒãŸãªã„ã®ã§listã‚’ä½¿ã†
     std::list<int> l;
     
-    // push_front()‚ğg‚Á‚Ä‡”Ô‚ÉƒRƒs[‚µ‚Ä‚¢‚­
-    // ƒRƒs[‚Ì“x‚Éæ“ª‚É‘}“ü‚·‚é‚Ì‚Å‹t‡‚É‚È‚é
+    // push_front()ã‚’ä½¿ã£ã¦é †ç•ªã«ã‚³ãƒ”ãƒ¼ã—ã¦ã„ã
+    // ã‚³ãƒ”ãƒ¼ã®åº¦ã«å…ˆé ­ã«æŒ¿å…¥ã™ã‚‹ã®ã§é€†é †ã«ãªã‚‹
     std::copy(v.begin(), v.end(), std::front_inserter(l));
     
     for (auto e : l)
@@ -33,7 +33,7 @@ int main()
     
     c = { 0, 0 };
     
-    // insert()‚ğg‚Á‚Ä^‚ñ’†‚É‡”Ô‚É‘}“ü‚µ‚Ä‚¢‚­
+    // insert()ã‚’ä½¿ã£ã¦çœŸã‚“ä¸­ã«é †ç•ªã«æŒ¿å…¥ã—ã¦ã„ã
     std::copy(v.begin(), v.end(), std::inserter(c, c.begin() + 1));
     
     for (auto e : c)

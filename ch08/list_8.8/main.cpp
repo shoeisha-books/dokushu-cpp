@@ -1,17 +1,17 @@
-#include <fstream>
+﻿#include <fstream>
 #include <iostream>
 
 int main()
 {
-    // �ǂݍ��݂݂̂̃t�@�C�����������݂ŃI�[�v�����悤�Ƃ��Ă���
+    // 読み込みのみのファイルを書き込みでオープンしようとしている
     std::ofstream of{ "readonly.txt" };
 
-    if (of.is_open()) // �t�@�C���I�u�W�F�N�g�����ۂɃI�[�v���ł����̂����m���߂�
+    if (of.is_open()) // ファイルオブジェクトが実際にオープンできたのかを確かめる
     {
-        std::cout << "�I�[�v������" << std::endl;
+        std::cout << "オープン成功" << std::endl;
     }
     else
     {
-        std::cout << "�I�[�v�����s" << std::endl;
+        std::cout << "オープン失敗" << std::endl;
     }
 }

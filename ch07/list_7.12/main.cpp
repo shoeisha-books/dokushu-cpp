@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -27,7 +27,7 @@ public:
     DerivedB(int value) : Base{ value } { }
 };
 
-// DerivedA‚àDerivedB‚àBase‚©‚ç”h¶‚µ‚Ä‚¢‚é‚±‚Æ‚É’ˆÓ
+// DerivedAã‚‚DerivedBã‚‚Baseã‹ã‚‰æ´¾ç”Ÿã—ã¦ã„ã‚‹ã“ã¨ã«æ³¨æ„
 class MoreDerived : public DerivedA, public DerivedB
 {
 public:
@@ -41,10 +41,10 @@ int main()
 {
     MoreDerived more_derived{ 42, 72 };
 
-    // DerivedA‚ÆDerivedBA‚Ç‚¿‚ç‚ÌBase::show()‚ªg‚í‚ê‚éH
+    // DerivedAã¨DerivedBã€ã©ã¡ã‚‰ã®Base::show()ãŒä½¿ã‚ã‚Œã‚‹ï¼Ÿ
     more_derived.show();
 
-    // DerivedA‚ÆDerivedBA‚Ç‚¿‚ç‚ÌBase‚Ö‚ÌQÆ‚ª‘ã“ü‚³‚ê‚éH
+    // DerivedAã¨DerivedBã€ã©ã¡ã‚‰ã®Baseã¸ã®å‚ç…§ãŒä»£å…¥ã•ã‚Œã‚‹ï¼Ÿ
     Base& base = more_derived;
 
     base.show();

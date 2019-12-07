@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 template <typename T>
@@ -7,12 +7,12 @@ class A
 public:
     std::string name() const
     {
-        return "A‚Ìƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg";
+        return "Aã®ãƒ—ãƒ©ã‚¤ãƒãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ";
     }
 
     void common_method()
     {
-        std::cout << "‹¤’Ê“®ì" << std::endl;
+        std::cout << "å…±é€šå‹•ä½œ" << std::endl;
     }
 };
 
@@ -22,24 +22,24 @@ class A<int>
 public:
     std::string name() const
     {
-        return "A‚ğint‚Å–¾¦“I“Áê‰»‚µ‚½ƒeƒ“ƒvƒŒ[ƒg";
+        return "Aã‚’intã§æ˜ç¤ºçš„ç‰¹æ®ŠåŒ–ã—ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ";
     }
     
-    // ƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg‚Æ‚Ü‚Á‚½‚­“¯‚¶“®ì‚ğ‚·‚éê‡‚Å‚àA
-    // –¾¦“I“Áê‰»‚µ‚½ƒeƒ“ƒvƒŒ[ƒg‚Å‚à’è‹`‚·‚é•K—v‚ª‚ ‚é
+    // ãƒ—ãƒ©ã‚¤ãƒãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã¨ã¾ã£ãŸãåŒã˜å‹•ä½œã‚’ã™ã‚‹å ´åˆã§ã‚‚ã€
+    // æ˜ç¤ºçš„ç‰¹æ®ŠåŒ–ã—ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã§ã‚‚å®šç¾©ã™ã‚‹å¿…è¦ãŒã‚ã‚‹
     void common_method()
     {
-        std::cout << "‹¤’Ê“®ì" << std::endl;
+        std::cout << "å…±é€šå‹•ä½œ" << std::endl;
     }
 };
 
 int main()
 {
-    A<float> f; // ƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg‚ªg‚í‚ê‚é
+    A<float> f; // ãƒ—ãƒ©ã‚¤ãƒãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãŒä½¿ã‚ã‚Œã‚‹
     
     std::cout << f.name() << std::endl;
     
-    A<int> i; // –¾¦“I“Áê‰»‚µ‚½ƒeƒ“ƒvƒŒ[ƒg‚ªg‚í‚ê‚é
+    A<int> i; // æ˜ç¤ºçš„ç‰¹æ®ŠåŒ–ã—ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãŒä½¿ã‚ã‚Œã‚‹
     
     std::cout << i.name() << std::endl;
 }

@@ -1,17 +1,17 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
 {
     std::string str = "abc";
 
-    // C•¶š—ñ‚ğæ“¾
+    // Cæ–‡å­—åˆ—ã‚’å–å¾—
     const char* c_str = str.c_str();
 
     int pos = 0;
     while (true)
     {
-        // ––”ö‚É‚Í•K‚¸ƒkƒ‹•¶š‚ª—ˆ‚é
+        // æœ«å°¾ã«ã¯å¿…ãšãƒŒãƒ«æ–‡å­—ãŒæ¥ã‚‹
         if (c_str[pos] == '\0')
         {
             std::cout << "[\\0]" << std::endl;

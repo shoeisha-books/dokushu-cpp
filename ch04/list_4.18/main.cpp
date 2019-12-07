@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-namespace // –³–¼–¼‘O‹óŠÔ
+namespace // ç„¡ååå‰ç©ºé–“
 {
     void say_hello()
     {
@@ -10,5 +10,5 @@ namespace // –³–¼–¼‘O‹óŠÔ
 
 int main()
 {
-    say_hello(); // –³–¼–¼‘O‹óŠÔ‚Í–¼‘O‹óŠÔ‚Ìw’è‚ª‚È‚¢
+    say_hello(); // ç„¡ååå‰ç©ºé–“ã¯åå‰ç©ºé–“ã®æŒ‡å®šãŒãªã„
 }

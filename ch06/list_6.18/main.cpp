@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class vector4d
 {
@@ -31,13 +31,13 @@ public:
     explicit vector3d(float x, float y, float z)
         : x{ x }, y{ y }, z{ z } {}
     
-    // vector3d‚ğvector4d‚É•ÏŠ·‚·‚é•ÏŠ·ŠÖ”
+    // vector3dã‚’vector4dã«å¤‰æ›ã™ã‚‹å¤‰æ›é–¢æ•°
     operator vector4d() const;
 };
 
 vector3d::operator vector4d() const
 {
-    // 3ŸŒ³ƒxƒNƒgƒ‹‚ğ‘Î‰‚·‚é4ŸŒ³ƒxƒNƒgƒ‹‚É•ÏŠ·‚·‚é
+    // 3æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã‚’å¯¾å¿œã™ã‚‹4æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã«å¤‰æ›ã™ã‚‹
     vector4d ret{ x, y, z, 0.0f };
     return ret;
 }
@@ -46,8 +46,8 @@ int main()
 {
     vector3d v1{ 1, 2, 3 }, v2{ 0, 1, 0 };
     
-    vector4d a = v1; // vector3d‚ğvector4d‚É•ÏŠ·‚·‚éi‡@j
+    vector4d a = v1; // vector3dã‚’vector4dã«å¤‰æ›ã™ã‚‹ï¼ˆâ‘ ï¼‰
 
-                     // OKBvector4d‚ÌƒtƒŒƒ“ƒhŠÖ”‚ªŒÄ‚Î‚ê‚éi‡Aj
+                     // OKã€‚vector4dã®ãƒ•ãƒ¬ãƒ³ãƒ‰é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹ï¼ˆâ‘¡ï¼‰
     vector4d b = add(v1, v2);
 }

@@ -1,4 +1,4 @@
-#include <set>
+ï»¿#include <set>
 #include <iostream>
 int main()
 {
@@ -8,14 +8,14 @@ int main()
     ims.insert(2); // {1, 1, 2, 2, 2, 5}
     
     auto range = ims.equal_range(2);
-    // equal_range(v)‚Ív‚Æ“™‚µ‚¢—v‘f‚Ì”ÍˆÍ‚ğstd::pair‚Å•Ô‚·
+    // equal_range(v)ã¯vã¨ç­‰ã—ã„è¦ç´ ã®ç¯„å›²ã‚’std::pairã§è¿”ã™
     for (auto iter = range.first; iter != range.second; ++iter)
     {
         std::cout << *iter << ' ';
     }
     std::cout << std::endl;
     
-    // 2‚ği‚·‚×‚Äjíœ‚µAíœ‚³‚ê‚½—v‘f”‚ğ•Ô‚·
+    // 2ã‚’ï¼ˆã™ã¹ã¦ï¼‰å‰Šé™¤ã—ã€å‰Šé™¤ã•ã‚ŒãŸè¦ç´ æ•°ã‚’è¿”ã™
     std::size_t erased = ims.erase(2);
     std::cout << "elements num:" << erased << std::endl;
 

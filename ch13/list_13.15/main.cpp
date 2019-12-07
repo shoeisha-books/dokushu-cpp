@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
@@ -11,12 +11,12 @@ int main()
     s0.append(s1);
     std::cout << "s0: " << s0 << std::endl;
     
-    s0.insert(4, "ka"); // 4•¶Žš–Ú‚Ì‘O‚É‘}“ü
+    s0.insert(4, "ka"); // 4æ–‡å­—ç›®ã®å‰ã«æŒ¿å…¥
     std::cout << "s0: " << s0 << std::endl;
     
-    s0.erase(0, 4); // 0•¶Žš–ÚˆÈ~4•¶Žš‚ðíœ
+    s0.erase(0, 4); // 0æ–‡å­—ç›®ä»¥é™4æ–‡å­—ã‚’å‰Šé™¤
     std::cout << "s0: " << s0 << std::endl;
     
-    s0.replace(4, 5, "me"); // 4•¶Žš–ÚˆÈ~5•¶Žš‚ð’uŠ·
+    s0.replace(4, 5, "me"); // 4æ–‡å­—ç›®ä»¥é™5æ–‡å­—ã‚’ç½®æ›
     std::cout << "s0: " << s0 << std::endl;
 }

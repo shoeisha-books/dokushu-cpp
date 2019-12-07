@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -8,27 +8,27 @@ public:
 
 void Base::method()
 {
-    std::cout << "Base‚Ìƒƒ“ƒo[ŠÖ”" << std::endl;
+    std::cout << "Baseã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°" << std::endl;
 }
 
 class Derived : public Base
 {
 public:
-    // Base::method()‚ðƒI[ƒo[ƒ‰ƒCƒh
+    // Base::method()ã‚’ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰
     void method() override;
 };
 
 void Derived::method()
 {
-    std::cout << "Derived‚ÅƒI[ƒo[ƒ‰ƒCƒh‚µ‚½ƒƒ“ƒo[ŠÖ”" << std::endl;
+    std::cout << "Derivedã§ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã—ãŸãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°" << std::endl;
 }
 
 int main()
 {
     Derived derived;
-    Base& base = derived; // Šî’êƒNƒ‰ƒX‚Ö‚ÌŽQÆ‚ðŽæ“¾
+    Base& base = derived; // åŸºåº•ã‚¯ãƒ©ã‚¹ã¸ã®å‚ç…§ã‚’å–å¾—
 
-    // Šî’êƒNƒ‰ƒX‚Ö‚ÌŽQÆŒo—R‚Å‚ ‚Á‚Ä‚àA
-    // ‰¼‘zŠÖ”‚ÍDerived‚ÅƒI[ƒo[ƒ‰ƒCƒh‚µ‚½‚Ù‚¤‚ªŒÄ‚Î‚ê‚é
+    // åŸºåº•ã‚¯ãƒ©ã‚¹ã¸ã®å‚ç…§çµŒç”±ã§ã‚ã£ã¦ã‚‚ã€
+    // ä»®æƒ³é–¢æ•°ã¯Derivedã§ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã—ãŸã»ã†ãŒå‘¼ã°ã‚Œã‚‹
     base.method();
 }

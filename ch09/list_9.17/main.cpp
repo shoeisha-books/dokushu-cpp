@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ˆø”‚ª‚»‚ê‚¼‚êˆá‚Á‚½ƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ğg‚Á‚Ä‚¢‚é
+// å¼•æ•°ãŒãã‚Œãã‚Œé•ã£ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’ä½¿ã£ã¦ã„ã‚‹
 template <typename P, typename S, typename C, typename O>
 auto lea(P ptr, S stride, C count, O offset)
 {
@@ -11,6 +11,6 @@ int main()
 {
     int i = 0;
 
-    // int*, int, int, int‚Å‚»‚ê‚¼‚ê„˜_‚³‚ê‚éi–ß‚è’l‚ÌŒ^‚Íauto‚Å„˜_‚³‚êAint*‚Æ‚È‚éj
+    // int*, int, int, intã§ãã‚Œãã‚Œæ¨è«–ã•ã‚Œã‚‹ï¼ˆæˆ»ã‚Šå€¤ã®å‹ã¯autoã§æ¨è«–ã•ã‚Œã€int*ã¨ãªã‚‹ï¼‰
     std::cout << lea(&i, 16, 4, 2) << std::endl;
 }

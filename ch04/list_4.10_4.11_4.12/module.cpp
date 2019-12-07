@@ -1,4 +1,4 @@
-// ���̃\�[�X�t�@�C���Ŏg���錾���܂܂�邽�߃C���N���[�h����
+﻿// このソースファイルで使う宣言が含まれるためインクルードする
 #include "module.hpp"
 
 #include <iostream>

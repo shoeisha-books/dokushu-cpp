@@ -1,11 +1,11 @@
-#include <iostream>
+﻿#include <iostream>
 
 class A
 {
 public:
     A()
     {
-        // �R���X�g���N�^�[�ŗ�O�𓊂���
+        // コンストラクターで例外を投げる
         throw 0;
     }
 };
@@ -14,16 +14,16 @@ int main()
 {
     try
     {
-        // �R���X�g���N�^�[�œ�����ꂽ��O��new���Z�q��ʂ��ē�������
+        // コンストラクターで投げられた例外はnew演算子を通して投げられる
         A* ptr = new A;
         
-        // �c�c // �����̏���
+        // …… // 何かの処理
         
         delete ptr;
     }
     catch (int e)
     {
-        // �I�u�W�F�N�g�̂��߂Ɋm�ۂ���Ă����̈�͎����ŉ������邽�ߓ��ʂȏ����͕s�v
-        std::cout << "��O���������܂��� �l = " << e << std::endl;
+        // オブジェクトのために確保されていた領域は自動で解放されるため特別な処理は不要
+        std::cout << "例外が投げられました 値 = " << e << std::endl;
     }
 }

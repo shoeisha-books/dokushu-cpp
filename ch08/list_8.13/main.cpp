@@ -1,4 +1,4 @@
-#include <fstream>
+ï»¿#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -8,17 +8,17 @@ int main()
 
     out << "Hello, File IO" << std::endl;
 
-    std::cout << "Œ»ÝˆÊ’u: " << out.tellp() << std::endl;
+    std::cout << "ç¾åœ¨ä½ç½®: " << out.tellp() << std::endl;
 
-    out.seekp(7); // 7ƒoƒCƒg–Ú‚ÉˆÚ“®
+    out.seekp(7); // 7ãƒã‚¤ãƒˆç›®ã«ç§»å‹•
 
-    out << "File Seek" << std::endl; // ã‘‚«
+    out << "File Seek" << std::endl; // ä¸Šæ›¸ã
 
     out.close();
 
     std::ifstream in{ "hello_seek.txt" };
 
-    in.seekg(in.tellg() + std::streamoff{ 12 }); // Œ»Ý‚ÌˆÊ’u‚©‚ç12ƒoƒCƒgŒã‚ë‚ÉƒV[ƒN
+    in.seekg(in.tellg() + std::streamoff{ 12 }); // ç¾åœ¨ã®ä½ç½®ã‹ã‚‰12ãƒã‚¤ãƒˆå¾Œã‚ã«ã‚·ãƒ¼ã‚¯
 
     std::string line;
     std::getline(in, line);

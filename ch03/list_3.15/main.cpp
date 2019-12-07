@@ -1,20 +1,20 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// –ÊÏ‚âüˆÍ’·‚Æ‚¢‚Á‚½‚à‚Ì‚ÍAOŠpŒ`‚âlŠpŒ`A
-// ‰~‚Å‚·‚×‚ÄŒvZ•û–@‚ªˆá‚¤‚Ì‚ÅŠî’êƒNƒ‰ƒX‚Å‹¤’Ê‰»‚Å‚«‚È‚¢
+// é¢ç©ã‚„å‘¨å›²é•·ã¨ã„ã£ãŸã‚‚ã®ã¯ã€ä¸‰è§’å½¢ã‚„å››è§’å½¢ã€
+// å††ã§ã™ã¹ã¦è¨ˆç®—æ–¹æ³•ãŒé•ã†ã®ã§åŸºåº•ã‚¯ãƒ©ã‚¹ã§å…±é€šåŒ–ã§ããªã„
 class Shape
 {
 public:
-    virtual float area() const = 0; // –ÊÏ‚ğ‹‚ß‚éƒˆ‰¼‘zŠÖ”
-    virtual float perimeter() const = 0; // üˆÍ’·‚ğ‹‚ß‚éƒˆ‰¼‘zŠÖ”
+    virtual float area() const = 0; // é¢ç©ã‚’æ±‚ã‚ã‚‹ç´”ç²‹ä»®æƒ³é–¢æ•°
+    virtual float perimeter() const = 0; // å‘¨å›²é•·ã‚’æ±‚ã‚ã‚‹ç´”ç²‹ä»®æƒ³é–¢æ•°
 };
 
-// ƒˆ‰¼‘zŠÖ”‚ÍŠÖ”–{‘Ì‚ğ‚½‚È‚¢‚Ì‚ÅAƒƒ“ƒo[ŠÖ”‚Ì’è‹`‚Í‚È‚¢
-// ’·•ûŒ`‚ğˆµ‚¤ƒNƒ‰ƒX
+// ç´”ç²‹ä»®æƒ³é–¢æ•°ã¯é–¢æ•°æœ¬ä½“ã‚’æŒãŸãªã„ã®ã§ã€ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å®šç¾©ã¯ãªã„
+// é•·æ–¹å½¢ã‚’æ‰±ã†ã‚¯ãƒ©ã‚¹
 class Rectangle : public Shape
 {
-    float height; // ‚‚³
-    float width; // •
+    float height; // é«˜ã•
+    float width; // å¹…
 
 public:
     explicit Rectangle(float height, float width);
@@ -39,7 +39,7 @@ float Rectangle::perimeter() const
 
 class Circle : public Shape
 {
-    float r; // ”¼Œa
+    float r; // åŠå¾„
 
 public:
     explicit Circle(float r);

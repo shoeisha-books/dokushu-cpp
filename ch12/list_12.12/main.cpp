@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 void print_vector(const std::vector<int>& v)
@@ -14,16 +14,16 @@ int main()
 {
     std::vector v = { 1, 5, 9 };
 
-    v.insert(v.begin(), 0); // æ“ª‚É0‚ğ‘}“ü
+    v.insert(v.begin(), 0); // å…ˆé ­ã«0ã‚’æŒ¿å…¥
     print_vector(v);
 
-    v.insert(v.end(), 10); // ––”ö‚É10‚ğ‘}“ü
+    v.insert(v.end(), 10); // æœ«å°¾ã«10ã‚’æŒ¿å…¥
     print_vector(v);
 
-    v.insert(v.begin() + 2, 2, 3); // æ“ª‚©‚ç2”Ô–Úi5j‚Ìè‘O‚É2ŒÂ‚Ì3‚ğ‘}“ü
+    v.insert(v.begin() + 2, 2, 3); // å…ˆé ­ã‹ã‚‰2ç•ªç›®ï¼ˆ5ï¼‰ã®æ‰‹å‰ã«2å€‹ã®3ã‚’æŒ¿å…¥
     print_vector(v);
 
     int ia[] = { 6, 7, 8 };
-    v.insert(v.end() - 2, ia, ia + 3); // ƒCƒeƒŒ[ƒ^[‚ªw‚·”ÍˆÍ‚ğ‘}“ü
+    v.insert(v.end() - 2, ia, ia + 3); // ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ãƒ¼ãŒæŒ‡ã™ç¯„å›²ã‚’æŒ¿å…¥
     print_vector(v);
 }

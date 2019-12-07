@@ -1,4 +1,4 @@
-#include <algorithm>
+ï»¿#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -7,13 +7,13 @@ int main()
     std::vector v = { 1, 2, 3 };
 
     auto iter = std::find(v.begin(), v.end(), 2);
-    if (iter != v.end()) // Œ©‚Â‚©‚ç‚È‚¯‚ê‚Îv.end()‚ª•Ô‚Á‚Ä‚­‚é
+    if (iter != v.end()) // è¦‹ã¤ã‹ã‚‰ãªã‘ã‚Œã°v.end()ãŒè¿”ã£ã¦ãã‚‹
     {
         std::cout << "*iter = " << *iter << std::endl;
     }
 
     iter = std::find_if(v.begin(), v.end(), [](int v) { return v == 3; });
-    if (iter != v.end()) // ‚±‚¿‚ç‚à“¯—l
+    if (iter != v.end()) // ã“ã¡ã‚‰ã‚‚åŒæ§˜
     {
         std::cout << "*iter = " << *iter << std::endl;
     }

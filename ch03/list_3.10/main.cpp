@@ -1,15 +1,15 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class S
 {
 public:
     int answer = 42; // NSDMI
-    float pi{ 3.14159265f }; // ‚±‚ê‚àNSDMI
+    float pi{ 3.14159265f }; // ã“ã‚Œã‚‚NSDMI
 };
 
 int main()
 {
-    S s; // NSDMI‚É‚æ‚Á‚ÄƒfƒtƒHƒ‹ƒg’l‚Å‰Šú‰»‚³‚ê‚é
+    S s; // NSDMIã«ã‚ˆã£ã¦ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã§åˆæœŸåŒ–ã•ã‚Œã‚‹
 
     std::cout << "s.answer: " << s.answer << std::endl;
 

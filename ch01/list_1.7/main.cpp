@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int a = 9;
-    if (10 < a) // •Ï”a‚Æ10‚ð”äŠr
+    if (10 < a) // å¤‰æ•°aã¨10ã‚’æ¯”è¼ƒ
     {
-        std::cout << "•Ï”a‚Í10‚æ‚è‘å‚«‚¢‚Å‚·" << std::endl;
+        std::cout << "å¤‰æ•°aã¯10ã‚ˆã‚Šå¤§ãã„ã§ã™" << std::endl;
     }
-    std::cout << "if•¶‚Ì‚ ‚Æ" << std::endl;
+    std::cout << "ifæ–‡ã®ã‚ã¨" << std::endl;
 }

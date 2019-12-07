@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-extern int value; // extern•Ï”
+extern int value; // externå¤‰æ•°
 
-void show_extern_variable(); // ‘¼‚Ìƒtƒ@ƒCƒ‹‚ÌŠÖ”‚ÌéŒ¾
+void show_extern_variable(); // ä»–ã®ãƒ•ã‚¡ã‚¤ãƒ«ã®é–¢æ•°ã®å®£è¨€
 
 int main()
 {
-    std::cout << "main: extern•Ï”‚ÌƒAƒhƒŒƒX: " << &value << std::endl;
-    std::cout << "main: extern•Ï”‚Ì’l: " << value << std::endl;
+    std::cout << "main: externå¤‰æ•°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹: " << &value << std::endl;
+    std::cout << "main: externå¤‰æ•°ã®å€¤: " << value << std::endl;
 
     value = 0;
 

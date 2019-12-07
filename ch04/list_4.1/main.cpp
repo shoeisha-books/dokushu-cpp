@@ -1,22 +1,22 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    // ‚±‚Ìƒ\[ƒXƒtƒ@ƒCƒ‹–¼‚ğo—Í
-    std::cout << "__FILE__F" << __FILE__ << std::endl;
+    // ã“ã®ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å‡ºåŠ›
+    std::cout << "__FILE__ï¼š" << __FILE__ << std::endl;
 
-    // ‚±‚Ìs‚Ìs”Ô†‚ğo—Í
-    std::cout << "__LINE__F" << __LINE__ << std::endl;
+    // ã“ã®è¡Œã®è¡Œç•ªå·ã‚’å‡ºåŠ›
+    std::cout << "__LINE__ï¼š" << __LINE__ << std::endl;
 
-    // ‚±‚ÌŠÖ”‚ÌŠÖ”–¼‚ğo—Í
-    std::cout << "__func__F" << __func__ << std::endl;
+    // ã“ã®é–¢æ•°ã®é–¢æ•°åã‚’å‡ºåŠ›
+    std::cout << "__func__ï¼š" << __func__ << std::endl;
 
-    // QÆ‚µ‚Ä‚¢‚éC++‚Ìƒo[ƒWƒ‡ƒ“‚ğo—Í
-    std::cout << "__cplusplusF" << __cplusplus << std::endl;
+    // å‚ç…§ã—ã¦ã„ã‚‹C++ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’å‡ºåŠ›
+    std::cout << "__cplusplusï¼š" << __cplusplus << std::endl;
 
-    int line = __LINE__; // •Ï”‚ÉŒ»İ‚Ìs”Ô†‚ğŠi”[
+    int line = __LINE__; // å¤‰æ•°ã«ç¾åœ¨ã®è¡Œç•ªå·ã‚’æ ¼ç´
 
-    // line‚ÍŒ»İ‚Ìs”Ô†‚Å‚Í‚È‚­A•Ï”‚ÉŠi”[‚³‚ê‚½‚Æ‚«‚Ìs”Ô†‚ª•\¦‚³‚ê‚é‚±‚Æ‚É’ˆÓ
-    std::cout << "lineF" << line << ", __LINE__F" << __LINE__
+    // lineã¯ç¾åœ¨ã®è¡Œç•ªå·ã§ã¯ãªãã€å¤‰æ•°ã«æ ¼ç´ã•ã‚ŒãŸã¨ãã®è¡Œç•ªå·ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã“ã¨ã«æ³¨æ„
+    std::cout << "lineï¼š" << line << ", __LINE__ï¼š" << __LINE__
         << std::endl;
 }

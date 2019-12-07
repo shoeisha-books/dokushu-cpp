@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
 public:
-    virtual ~Base() {} // ‰¼‘zƒfƒXƒgƒ‰ƒNƒ^[‚ğ’è‹`‚µ‚Äƒ|ƒŠƒ‚[ƒtƒBƒbƒN‚É‚·‚é
+    virtual ~Base() {} // ä»®æƒ³ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚’å®šç¾©ã—ã¦ãƒãƒªãƒ¢ãƒ¼ãƒ•ã‚£ãƒƒã‚¯ã«ã™ã‚‹
 
-                       // virtual‚Å‚Í‚È‚¢ƒƒ“ƒo[ŠÖ”
+                       // virtualã§ã¯ãªã„ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°
     const char* get_class_name() const { return "Base"; }
 };
 
@@ -23,29 +23,29 @@ public:
 
 int main()
 {
-    Derived d; // ÀÛ‚ÌƒIƒuƒWƒFƒNƒg‚ÍDerivedŒ^
+    Derived d; // å®Ÿéš›ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯Derivedå‹
 
-    Base* pb = &d; // BaseŒ^‚Ö‚Ìƒ|ƒCƒ“ƒ^[‚É‚·‚é
+    Base* pb = &d; // Baseå‹ã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã«ã™ã‚‹
 
-                   // BaseŒ^‚Ö‚Ìƒ|ƒCƒ“ƒ^[‚ğg‚Á‚Ä‚¢‚é‚Ì‚ÅBaseŒ^‚Ìƒƒ“ƒo[ŠÖ”‚ªŒÄ‚Î‚ê‚é
+                   // Baseå‹ã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã‚’ä½¿ã£ã¦ã„ã‚‹ã®ã§Baseå‹ã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
     std::cout << pb->get_class_name() << std::endl;
 
-    Derived* pd = dynamic_cast<Derived*>(pb); // BaseŒ^‚©‚çDerivedŒ^‚ÖƒLƒƒƒXƒg
+    Derived* pd = dynamic_cast<Derived*>(pb); // Baseå‹ã‹ã‚‰Derivedå‹ã¸ã‚­ãƒ£ã‚¹ãƒˆ
 
     if (pd)
     {
-        // ƒLƒƒƒXƒg¬Œ÷
-        // ƒ|ƒCƒ“ƒ^[‚ÍDerivedŒ^‚È‚Ì‚ÅDerivedŒ^‚Ìƒƒ“ƒo[ŠÖ”‚ªŒÄ‚Î‚ê‚é
+        // ã‚­ãƒ£ã‚¹ãƒˆæˆåŠŸ
+        // ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã¯Derivedå‹ãªã®ã§Derivedå‹ã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
         std::cout << pd->get_class_name() << std::endl;
     }
     else
     {
-        // ƒLƒƒƒXƒg¸”s
-        // ƒ|ƒCƒ“ƒ^[‚Å‚ÌƒLƒƒƒXƒg‚É¸”s‚µ‚½ê‡Adynamic_cast‚Ínullptr‚ğ•Ô‚·
-        std::cout << "dynamic_cast¸”s" << std::endl;
+        // ã‚­ãƒ£ã‚¹ãƒˆå¤±æ•—
+        // ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã§ã®ã‚­ãƒ£ã‚¹ãƒˆã«å¤±æ•—ã—ãŸå ´åˆã€dynamic_castã¯nullptrã‚’è¿”ã™
+        std::cout << "dynamic_castå¤±æ•—" << std::endl;
     }
 
-    // ÀÛ‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ÌŒ^‚ÍDerivedŒ^‚È‚Ì‚ÅƒLƒƒƒXƒg‚Í¸”s‚·‚é
+    // å®Ÿéš›ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®å‹ã¯Derivedå‹ãªã®ã§ã‚­ãƒ£ã‚¹ãƒˆã¯å¤±æ•—ã™ã‚‹
     MoreDerived* pmd = dynamic_cast<MoreDerived*>(pb);
 
     if (pmd)
@@ -54,6 +54,6 @@ int main()
     }
     else
     {
-        std::cout << "dynamic_cast¸”s" << std::endl;
+        std::cout << "dynamic_castå¤±æ•—" << std::endl;
     }
 }

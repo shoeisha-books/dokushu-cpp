@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
@@ -7,10 +7,10 @@ class Integer
 public:
     explicit Integer(int value) : value{ value } { }
 
-    // ƒƒ“ƒo[ŠÖ”‚ÅÀ‘•‚·‚é‚±‚Æ‚à‚Å‚«‚é
+    // ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã§å®Ÿè£…ã™ã‚‹ã“ã¨ã‚‚ã§ãã‚‹
     friend Integer operator+(const Integer&, int);
 
-    // ƒƒ“ƒo[ŠÖ”‚Å‚ÍÀ‘•‚Å‚«‚È‚¢
+    // ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã§ã¯å®Ÿè£…ã§ããªã„
     friend Integer operator+(int, const Integer&);
 
     friend Integer operator-(const Integer&, int);
@@ -21,11 +21,11 @@ public:
 
 Integer operator+(const Integer& lhs, int rhs)
 {
-    // ƒtƒŒƒ“ƒhŠÖ”‚È‚Ì‚ÅAƒvƒ‰ƒCƒx[ƒgƒƒ“ƒo[‚ÉƒAƒNƒZƒX‚Å‚«‚é
+    // ãƒ•ãƒ¬ãƒ³ãƒ‰é–¢æ•°ãªã®ã§ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ¡ãƒ³ãƒãƒ¼ã«ã‚¢ã‚¯ã‚»ã‚¹ã§ãã‚‹
     return Integer{ lhs.value + rhs };
 }
 
-// Integer‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ª‰E•Ó‚É‚­‚é+‚Í‚±‚ÌƒI[ƒo[ƒ[ƒh‚ªg—p‚³‚ê‚é
+// Integerã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒå³è¾ºã«ãã‚‹+ã¯ã“ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ãŒä½¿ç”¨ã•ã‚Œã‚‹
 Integer operator+(int lhs, const Integer& rhs)
 {
     return Integer{ lhs + rhs.value };

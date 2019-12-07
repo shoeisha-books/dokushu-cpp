@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class int_observer_ptr
 {
@@ -8,11 +8,11 @@ public:
     explicit int_observer_ptr(int* pointer)
         : pointer{ pointer } { }
 
-    int& operator*() const; // ŠÔÚQÆ‰‰Zq
+    int& operator*() const; // é–“æ¥å‚ç…§æ¼”ç®—å­
 };
 
-// ƒ|ƒCƒ“ƒ^[ƒNƒ‰ƒX©‘Ì‚Íconst‚Å‚ ‚Á‚Ä‚àA
-// ƒ|ƒCƒ“ƒ^[‚ªw‚µ¦‚·æ‚Íconst‚Å‚Í‚È‚¢‚Ì‚Å”ñconstQÆ‚ğ•Ô‚·
+// ãƒã‚¤ãƒ³ã‚¿ãƒ¼ã‚¯ãƒ©ã‚¹è‡ªä½“ã¯constã§ã‚ã£ã¦ã‚‚ã€
+// ãƒã‚¤ãƒ³ã‚¿ãƒ¼ãŒæŒ‡ã—ç¤ºã™å…ˆã¯constã§ã¯ãªã„ã®ã§éconstå‚ç…§ã‚’è¿”ã™
 int& int_observer_ptr::operator*() const
 {
     return *pointer;

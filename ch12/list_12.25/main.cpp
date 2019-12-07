@@ -1,13 +1,13 @@
-#include <tuple>
+ï»¿#include <tuple>
 #include <iostream>
 
 int main()
 {
-    // ƒNƒ‰ƒXƒeƒ“ƒvƒŒ[ƒg‚ÌŒ^„˜_‚ğ‚³‚¹‚é
+    // ã‚¯ãƒ©ã‚¹ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã®å‹æ¨è«–ã‚’ã•ã›ã‚‹
     // std::tuple<std::string, int, const char*>
     std::tuple t{ std::string{"structured"}, 42, "binding" };
 
-    auto [a, b, c] = t; // \‘¢‰»‘©”›BŠe—v‘f‚ğƒRƒs[‚·‚é
+    auto [a, b, c] = t; // æ§‹é€ åŒ–æŸç¸›ã€‚å„è¦ç´ ã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹
     
     std::cout << a << std::endl;
     std::cout << b << std::endl;
@@ -15,7 +15,7 @@ int main()
     
     std::cout << std::endl;
     
-    auto& [x, y, z] = t; // \‘¢‰»‘©”›B‚½‚¾‚µŠe—v‘f‚Ö‚ÌQÆ‚ğ‚Â
+    auto& [x, y, z] = t; // æ§‹é€ åŒ–æŸç¸›ã€‚ãŸã ã—å„è¦ç´ ã¸ã®å‚ç…§ã‚’æŒã¤
     
     std::cout << x << std::endl;
     std::cout << y << std::endl;
@@ -23,6 +23,6 @@ int main()
     
     std::cout << std::endl;
     
-    x = "update"; // QÆ‚ğg‚Á‚Äƒ^ƒvƒ‹‚Ì—v‘f‚ğ•ÏX‚·‚é
+    x = "update"; // å‚ç…§ã‚’ä½¿ã£ã¦ã‚¿ãƒ—ãƒ«ã®è¦ç´ ã‚’å¤‰æ›´ã™ã‚‹
     std::cout << std::get<0>(t) << std::endl;
 }

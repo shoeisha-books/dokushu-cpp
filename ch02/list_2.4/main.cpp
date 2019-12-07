@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ƒƒ“ƒo[•Ï”‚ğ3‚Â‚Á‚½‹¤—p‘Ì
+// ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã‚’3ã¤æŒã£ãŸå…±ç”¨ä½“
 union U
 {
     int a;
@@ -12,7 +12,7 @@ int main()
 {
     U u;
 
-    std::cout << "u.a‚ÌƒAƒhƒŒƒX‚Í " << &u.a << std::endl;
-    std::cout << "u.b‚ÌƒAƒhƒŒƒX‚Í " << &u.b << std::endl;
-    std::cout << "u.c‚ÌƒAƒhƒŒƒX‚Í " << &u.c << std::endl;
+    std::cout << "u.aã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ " << &u.a << std::endl;
+    std::cout << "u.bã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ " << &u.b << std::endl;
+    std::cout << "u.cã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ " << &u.c << std::endl;
 }

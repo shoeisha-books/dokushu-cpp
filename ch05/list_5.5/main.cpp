@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 class Triangle
 {
-    int m_height; // ‚‚³
-    int m_base_length; // ’ê•Ó‚Ì’·‚³
+    int m_height; // é«˜ã•
+    int m_base_length; // åº•è¾ºã®é•·ã•
 
 public:
     explicit Triangle(int height, int base_length);
@@ -29,14 +29,14 @@ int main()
 {
     Triangle triangles[] =
     {
-        Triangle{10, 20}, // ”z—ñ‚ÌŠe—v‘f‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚É‚»‚ê‚¼‚êˆø”‚ğ“n‚µ‚Ä‚¢‚é
+        Triangle{10, 20}, // é…åˆ—ã®å„è¦ç´ ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã«ãã‚Œãã‚Œå¼•æ•°ã‚’æ¸¡ã—ã¦ã„ã‚‹
         Triangle{20, 30},
         Triangle{40, 50},
     };
 
     for (auto& tri : triangles)
     {
-        std::cout << "–ÊÏ: " << (tri.base_length() * tri.height() / 2)
+        std::cout << "é¢ç©: " << (tri.base_length() * tri.height() / 2)
             << std::endl;
     }
 }

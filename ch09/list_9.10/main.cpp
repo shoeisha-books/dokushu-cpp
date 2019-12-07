@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ƒf[ƒ^‚¾‚¯‚ðŽ‚Á‚Ä‚¢‚é2ŽŸŒ³ƒxƒNƒgƒ‹‚Ì\‘¢‘Ì
+// ãƒ‡ãƒ¼ã‚¿ã ã‘ã‚’æŒã£ã¦ã„ã‚‹2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã®æ§‹é€ ä½“
 struct vector2d
 {
     int x;
     int y;
 };
 
-// getter / setter‚ðŒo—R‚·‚é2ŽŸŒ³ƒxƒNƒgƒ‹ƒNƒ‰ƒX
+// getter / setterã‚’çµŒç”±ã™ã‚‹2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã‚¯ãƒ©ã‚¹
 class Vec2
 {
     int m_x;
@@ -21,25 +21,25 @@ public:
     void setY(int y) { m_y = y; }
 };
 
-// ƒeƒ“ƒvƒŒ[ƒg‚Ì‘O•ûéŒ¾
+// ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã®å‰æ–¹å®£è¨€
 template <typename Vector>
 void show_vector(Vector v);
 
-// 2ŽŸŒ³ƒxƒNƒgƒ‹ƒNƒ‰ƒX‚Å–¾Ž¦“I“ÁŽê‰»‚µ‚½ƒeƒ“ƒvƒŒ[ƒg
-// ‘O•ûéŒ¾‚ª‚ ‚ê‚Îƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg‚ª‚È‚­‚Ä‚à“ÁŽê‰»‚Í‚Å‚«‚é
+// 2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã‚¯ãƒ©ã‚¹ã§æ˜Žç¤ºçš„ç‰¹æ®ŠåŒ–ã—ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
+// å‰æ–¹å®£è¨€ãŒã‚ã‚Œã°ãƒ—ãƒ©ã‚¤ãƒžãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãŒãªãã¦ã‚‚ç‰¹æ®ŠåŒ–ã¯ã§ãã‚‹
 template <>
 void show_vector<Vec2>(Vec2 v)
 {
-    // Vec2‚ªŽ‚Âƒƒ“ƒo[ŠÖ”‚ðŒo—R‚µ‚ÄŽæ“¾
+    // Vec2ãŒæŒã¤ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚’çµŒç”±ã—ã¦å–å¾—
     std::cout << "Vec2{x: " << v.getX() << ", y: " << v.getY() << "}"
         << std::endl;
 }
 
-// ƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg‚Í“ÁŽê‰»‚Ì‚ ‚Æ‚Å‚à’è‹`‚Å‚«‚é
+// ãƒ—ãƒ©ã‚¤ãƒžãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã¯ç‰¹æ®ŠåŒ–ã®ã‚ã¨ã§ã‚‚å®šç¾©ã§ãã‚‹
 template <typename Vector>
 void show_vector(Vector v)
 {
-    // ƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg‚Íx‚Æy‚Ìƒƒ“ƒo[•Ï”‚É’¼ÚƒAƒNƒZƒX‚·‚é‘O’ñ
+    // ãƒ—ãƒ©ã‚¤ãƒžãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã¯xã¨yã®ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã«ç›´æŽ¥ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹å‰æ
     std::cout << "{x: " << v.x << ", y: " << v.y << "}" << std::endl;
 }
 
@@ -47,11 +47,11 @@ int main()
 {
     vector2d st{ 10, 20 };
 
-    show_vector<vector2d>(st); // ƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg‚ª‘I‘ð‚³‚ê‚é
+    show_vector<vector2d>(st); // ãƒ—ãƒ©ã‚¤ãƒžãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãŒé¸æŠžã•ã‚Œã‚‹
 
     Vec2 cl;
     cl.setX(-20);
     cl.setY(-10);
 
-    show_vector<Vec2>(cl); // –¾Ž¦“I“ÁŽê‰»‚µ‚½ƒeƒ“ƒvƒŒ[ƒg‚ª‘I‘ð‚³‚ê‚é
+    show_vector<Vec2>(cl); // æ˜Žç¤ºçš„ç‰¹æ®ŠåŒ–ã—ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãŒé¸æŠžã•ã‚Œã‚‹
 }

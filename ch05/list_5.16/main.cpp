@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Marker
 {
@@ -9,12 +9,12 @@ public:
 
 Marker::Marker()
 {
-    std::cout << "ƒRƒ“ƒXƒgƒ‰ƒNƒ^[: " << this << std::endl;
+    std::cout << "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼: " << this << std::endl;
 }
 
 Marker::~Marker()
 {
-    std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[: " << this << std::endl;
+    std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼: " << this << std::endl;
 }
 
 void copy(Marker m)
@@ -31,11 +31,11 @@ int main()
 {
     Marker m;
 
-    std::cout << "’l“n‚µ‘O" << std::endl;
+    std::cout << "å€¤æ¸¡ã—å‰" << std::endl;
     copy(m);
-    std::cout << "’l“n‚µŒã" << std::endl;
+    std::cout << "å€¤æ¸¡ã—å¾Œ" << std::endl;
 
-    std::cout << "QÆ“n‚µ‘O" << std::endl;
+    std::cout << "å‚ç…§æ¸¡ã—å‰" << std::endl;
     reference(m);
-    std::cout << "QÆ“n‚µŒã" << std::endl;
+    std::cout << "å‚ç…§æ¸¡ã—å¾Œ" << std::endl;
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 class person
@@ -12,7 +12,7 @@ public:
     person();
     person(std::string name, int age);
 
-    person(const person& other); // ƒRƒs[ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+    person(const person& other); // ã‚³ãƒ”ãƒ¼ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 
     void set_name(std::string name);
     void set_age(int age);
@@ -23,25 +23,25 @@ public:
 
 person::person(int age) : m_age(age)
 {
-    std::cout << "‹¤’ÊƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "å…±é€šã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 person::person() : person(-1)
 {
-    std::cout << "ˆø”‚È‚µƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "å¼•æ•°ãªã—ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
 }
 
 person::person(std::string name, int age) : person(age)
 {
-    std::cout << "ˆø”•t‚«ƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
+    std::cout << "å¼•æ•°ä»˜ãã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
     set_name(name);
 }
 
-// ƒRƒs[ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+// ã‚³ãƒ”ãƒ¼ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 person::person(const person& other)
 {
-    std::cout << "ƒRƒs[ƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ" << std::endl;
-    // –¼‘O‚ğƒRƒs[‚·‚é
+    std::cout << "ã‚³ãƒ”ãƒ¼ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—" << std::endl;
+    // åå‰ã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹
     set_name(other.name());
     set_age(other.age());
 }
@@ -70,7 +70,7 @@ int main()
 {
     person alice("alice", 15);
 
-    person copy(alice); // ƒRƒs[ƒRƒ“ƒXƒgƒ‰ƒNƒ^[ŒÄ‚Ño‚µ
+    person copy(alice); // ã‚³ãƒ”ãƒ¼ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼å‘¼ã³å‡ºã—
     std::cout << copy.name() << std::endl;
     std::cout << alice.name() << std::endl;
 }

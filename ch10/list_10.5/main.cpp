@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void show_message(const char* message)
 {
@@ -8,23 +8,23 @@ void show_message(const char* message)
 
 void echo_message()
 {
-    // 99•¶š‚Ü‚Å“ü‚éƒoƒbƒtƒ@[‚ğ—pˆÓ‚µ‚Ä•W€“ü—Í‚©‚ç‚ÌƒƒbƒZ[ƒW‚ğ“Ç‚İ‚Ş
+    // 99æ–‡å­—ã¾ã§å…¥ã‚‹ãƒãƒƒãƒ•ã‚¡ãƒ¼ã‚’ç”¨æ„ã—ã¦æ¨™æº–å…¥åŠ›ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’èª­ã¿è¾¼ã‚€
     char* buffer = new char[100];
 
     std::cin.get(buffer, 100);
 
     try
     {
-        // —áŠO‚ª“Š‚°‚ç‚ê‚é‚©‚à‚µ‚ê‚È‚¢ˆ—
+        // ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã‚‹ã‹ã‚‚ã—ã‚Œãªã„å‡¦ç†
         show_message(buffer);
     }
     catch (...)
     {
-        std::cout << "—áŠO‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ (echo_message)" << std::endl;
-        delete[] buffer; // ƒoƒbƒtƒ@[‚ğ‰ğ•ú‚·‚é
+        std::cout << "ä¾‹å¤–ã‚’æ•ã¾ãˆã¾ã—ãŸ (echo_message)" << std::endl;
+        delete[] buffer; // ãƒãƒƒãƒ•ã‚¡ãƒ¼ã‚’è§£æ”¾ã™ã‚‹
 
-        throw; // —áŠO‚ÌÄ‘—o
-               // ‹ï‘Ì“I‚È—áŠOƒIƒuƒWƒFƒNƒg‚É‚Â‚¢‚Ä’m‚ç‚È‚­‚Ä‚àÄ‘—o‚Å‚«‚é
+        throw; // ä¾‹å¤–ã®å†é€å‡º
+               // å…·ä½“çš„ãªä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã¤ã„ã¦çŸ¥ã‚‰ãªãã¦ã‚‚å†é€å‡ºã§ãã‚‹
     }
     delete[] buffer;
 }
@@ -37,10 +37,10 @@ int main()
     }
     catch (int e)
     {
-        std::cout << "intŒ^‚Ì—áŠO‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ (main)" << std::endl;
+        std::cout << "intå‹ã®ä¾‹å¤–ã‚’æ•ã¾ãˆã¾ã—ãŸ (main)" << std::endl;
     }
     catch (...)
     {
-        std::cout << "—áŠO‚ğ•ß‚Ü‚¦‚Ü‚µ‚½ (main)" << std::endl;
+        std::cout << "ä¾‹å¤–ã‚’æ•ã¾ãˆã¾ã—ãŸ (main)" << std::endl;
     }
 }

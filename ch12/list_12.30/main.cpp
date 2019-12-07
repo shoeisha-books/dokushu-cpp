@@ -1,24 +1,24 @@
-#include <map>
+ï»¿#include <map>
 #include <iostream>
 
 int main()
 {
-    std::map<std::string, float> w; // ‘Š‘ÎŒ´q¿—Ê
-    w["H"] = 1.00f; // …‘f
-    w["O"] = 15.99f; // _‘f
-    w["Cl"] = 34.97f; // ‰–‘f
+    std::map<std::string, float> w; // ç›¸å¯¾åŸå­è³ªé‡
+    w["H"] = 1.00f; // æ°´ç´ 
+    w["O"] = 15.99f; // é…¸ç´ 
+    w["Cl"] = 34.97f; // å¡©ç´ 
     w["?"];
 
-    // ƒiƒgƒŠƒEƒ€Astd::pair‚Ìƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚Í„˜_‚µ‚Ä‚¢‚é
+    // ãƒŠãƒˆãƒªã‚¦ãƒ ã€std::pairã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã¯æ¨è«–ã—ã¦ã„ã‚‹
     w.insert(std::pair{ "Na", 22.99f });
 
-    // \‘¢‰»‘©”›‚ğg‚¤‚Æpair‚ğg‚í‚¸‚É’¼Ú—v‘f‚ğ“WŠJ‚Å‚«‚é
+    // æ§‹é€ åŒ–æŸç¸›ã‚’ä½¿ã†ã¨pairã‚’ä½¿ã‚ãšã«ç›´æ¥è¦ç´ ã‚’å±•é–‹ã§ãã‚‹
     // for (const std::pair<const std::string, int>& item : w)
     for (const auto& [key, value] : w)
     {
         std::cout << key << ':' << value << std::endl;
     }
 
-    // …_‰»ƒiƒgƒŠƒEƒ€‚Ì•ªq—Ê
+    // æ°´é…¸åŒ–ãƒŠãƒˆãƒªã‚¦ãƒ ã®åˆ†å­é‡
     std::cout << "NaOH = " << w["Na"] + w["O"] + w["H"] << std::endl;
 }

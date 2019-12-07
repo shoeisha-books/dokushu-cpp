@@ -1,24 +1,24 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <utility> // std::move
 
 void show_value_category(int& value)
 {
-    std::cout << "QÆ" << std::endl;
+    std::cout << "å‚ç…§" << std::endl;
 }
 
 void show_value_category(int&& value)
 {
-    std::cout << "‰E•Ó’lQÆ" << std::endl;
+    std::cout << "å³è¾ºå€¤å‚ç…§" << std::endl;
 }
 
-// ƒtƒHƒ[ƒfƒBƒ“ƒOQÆ‚Ì‰¼ˆø”‚ğ‚»‚Ì‚Ü‚Ü“n‚·
+// ãƒ•ã‚©ãƒ¯ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°å‚ç…§ã®ä»®å¼•æ•°ã‚’ãã®ã¾ã¾æ¸¡ã™
 template <typename T>
 void direct(T&& value)
 {
     show_value_category(value);
 }
 
-// ƒtƒHƒ[ƒfƒBƒ“ƒOQÆ‚Ì‰¼ˆø”‚ğstd::move()ŠÖ”‚ğ’Ê‚µ‚Ä“n‚·
+// ãƒ•ã‚©ãƒ¯ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°å‚ç…§ã®ä»®å¼•æ•°ã‚’std::move()é–¢æ•°ã‚’é€šã—ã¦æ¸¡ã™
 template <typename T>
 void move(T&& value)
 {

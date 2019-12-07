@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <regex>
 
 int main()
 {
-    std::regex re{ "(A.*)C(.*A)" }; // A‚Ån‚Ü‚èC‚ğ‹²‚ñ‚ÅA‚ÅI‚í‚é
+    std::regex re{ "(A.*)C(.*A)" }; // Aã§å§‹ã¾ã‚ŠCã‚’æŒŸã‚“ã§Aã§çµ‚ã‚ã‚‹
     std::string input = "ABRACADABRA";
     std::smatch match;
 

@@ -1,14 +1,14 @@
-#include <vector>
+ï»¿#include <vector>
 
 template <typename T>
-typename std::vector<T>::reference // T‚ğg‚Á‚Ä‚¢‚é‚Ì‚Åtypename‚ª•K—v
+typename std::vector<T>::reference // Tã‚’ä½¿ã£ã¦ã„ã‚‹ã®ã§typenameãŒå¿…è¦
 at(std::vector<T>& v, std::size_t i)
 {
     return v[i];
 }
 
 template <typename T>
-typename std::size_t // T‚ÉˆË‘¶‚µ‚Ä‚È‚¢‚Ì‚Å–{—ˆ‚Ítypename‚Í•s—v‚¾‚ªAƒGƒ‰[‚Å‚Í‚È‚¢
+typename std::size_t // Tã«ä¾å­˜ã—ã¦ãªã„ã®ã§æœ¬æ¥ã¯typenameã¯ä¸è¦ã ãŒã€ã‚¨ãƒ©ãƒ¼ã§ã¯ãªã„
 size(const std::vector<T>& v)
 {
     return v.size();
@@ -18,7 +18,7 @@ int main()
 {
     std::vector<int> v = { 0, 1, 2, 3 };
 
-    // std::vector©‘Ì‚Íƒeƒ“ƒvƒŒ[ƒg‚¾‚ªAmain()ŠÖ”‚ÍŠÖ”ƒeƒ“ƒvƒŒ[ƒg‚Å‚Í‚È‚­A
-    // ƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ğg‚Á‚Ä‚¢‚é‚í‚¯‚Å‚Í‚È‚¢‚Ì‚ÅA‚±‚ê‚ÍˆË‘¶–¼‚Å‚Í‚È‚¢
+    // std::vectorè‡ªä½“ã¯ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã ãŒã€main()é–¢æ•°ã¯é–¢æ•°ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã§ã¯ãªãã€
+    // ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’ä½¿ã£ã¦ã„ã‚‹ã‚ã‘ã§ã¯ãªã„ã®ã§ã€ã“ã‚Œã¯ä¾å­˜åã§ã¯ãªã„
     std::vector<int>::reference r = at(v, 0);
 }

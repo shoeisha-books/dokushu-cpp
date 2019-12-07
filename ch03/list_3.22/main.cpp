@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class S
 {
 public:
-    static int num; // staticƒƒ“ƒo[•Ï”‚ÌéŒ¾
+    static int num; // staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®å®£è¨€
 };
 
-int S::num = 123; // staticƒƒ“ƒo[•Ï”‚Ì’è‹`‚Æ‰Šú‰»
+int S::num = 123; // staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®å®šç¾©ã¨åˆæœŸåŒ–
 
 int main()
 {
@@ -16,6 +16,6 @@ int main()
 
     S s;
 
-    // “Á’è‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğŒo—R‚µ‚Ä‚àƒAƒNƒZƒX‚Å‚«‚é‚ªAÀ‘Ì‚Í“¯‚¶‚à‚Ì‚ğw‚µ‚Ä‚¢‚é
+    // ç‰¹å®šã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’çµŒç”±ã—ã¦ã‚‚ã‚¢ã‚¯ã‚»ã‚¹ã§ãã‚‹ãŒã€å®Ÿä½“ã¯åŒã˜ã‚‚ã®ã‚’æŒ‡ã—ã¦ã„ã‚‹
     std::cout << s.num << std::endl;
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -21,13 +21,13 @@ int A::v() const
 
 int main()
 {
-    A x = 42; // A::A(int)‚ğŒÄ‚Ño‚µ‚Ä‚¢‚é
+    A x = 42; // A::A(int)ã‚’å‘¼ã³å‡ºã—ã¦ã„ã‚‹
     if (x.v() == 42)
     {
-        std::cout << "A.v()‚Í42‚Å‚·" << std::endl;
+        std::cout << "A.v()ã¯42ã§ã™" << std::endl;
     }
     else
     {
-        std::cout << "A.v()‚Í42‚Å‚Í‚ ‚è‚Ü‚¹‚ñ" << std::endl;
+        std::cout << "A.v()ã¯42ã§ã¯ã‚ã‚Šã¾ã›ã‚“" << std::endl;
     }
 }

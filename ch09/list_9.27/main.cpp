@@ -1,4 +1,4 @@
-struct vector2d
+ï»¿struct vector2d
 {
     using value_type = float;
     float x;
@@ -6,7 +6,7 @@ struct vector2d
 };
 
 template <typename Vector>
-Vector::value_type // ˆË‘¶–¼
+Vector::value_type // ä¾å­˜å
 dot_product(const Vector& lhs, const Vector& rhs)
 {
     return lhs.x * rhs.x + lhs.y * rhs.y;

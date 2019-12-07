@@ -1,26 +1,26 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-namespace A // –¼‘O‹óŠÔA
+namespace A // åå‰ç©ºé–“A
 {
-    struct S // –¼‘O‹óŠÔA‚Ì\‘¢‘ÌS
+    struct S // åå‰ç©ºé–“Aã®æ§‹é€ ä½“S
     {
         int a;
     };
 
-    void foo() // –¼‘O‹óŠÔA‚ÌŠÖ”foo()
+    void foo() // åå‰ç©ºé–“Aã®é–¢æ•°foo()
     {
         std::cout << "A::foo()" << std::endl;
     }
 }
 
-namespace B // –¼‘O‹óŠÔB
+namespace B // åå‰ç©ºé–“B
 {
-    struct S // –¼‘O‹óŠÔB‚Ì\‘¢‘ÌS
+    struct S // åå‰ç©ºé–“Bã®æ§‹é€ ä½“S
     {
         int b;
     };
 
-    void foo() // –¼‘O‹óŠÔB‚ÌŠÖ”foo()
+    void foo() // åå‰ç©ºé–“Bã®é–¢æ•°foo()
     {
         std::cout << "B::foo()" << std::endl;
     }
@@ -28,13 +28,13 @@ namespace B // –¼‘O‹óŠÔB
 
 int main()
 {
-    A::foo(); // –¼‘O‹óŠÔA‚É‚ ‚éŠÖ”foo()‚ÌŒÄ‚Ño‚µ
+    A::foo(); // åå‰ç©ºé–“Aã«ã‚ã‚‹é–¢æ•°foo()ã®å‘¼ã³å‡ºã—
 
-    B::foo(); // –¼‘O‹óŠÔB‚É‚ ‚éŠÖ”foo()‚ÌŒÄ‚Ño‚µ
+    B::foo(); // åå‰ç©ºé–“Bã«ã‚ã‚‹é–¢æ•°foo()ã®å‘¼ã³å‡ºã—
 
-    A::S as; // –¼‘O‹óŠÔA‚Ì\‘¢‘ÌS
+    A::S as; // åå‰ç©ºé–“Aã®æ§‹é€ ä½“S
 
-    B::S bs; // –¼‘O‹óŠÔB‚Ì\‘¢‘ÌS
+    B::S bs; // åå‰ç©ºé–“Bã®æ§‹é€ ä½“S
 
-    // as = bs; // ƒGƒ‰[B–¼‘O‹óŠÔ‚ªˆÙ‚È‚é‚Ì‚Å•Ê‚ÌŒ^‚Æ‚µ‚Äˆµ‚í‚ê‚é
+    // as = bs; // ã‚¨ãƒ©ãƒ¼ã€‚åå‰ç©ºé–“ãŒç•°ãªã‚‹ã®ã§åˆ¥ã®å‹ã¨ã—ã¦æ‰±ã‚ã‚Œã‚‹
 }

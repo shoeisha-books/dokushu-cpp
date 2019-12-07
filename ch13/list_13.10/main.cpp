@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 
 int main()
@@ -12,6 +12,6 @@ int main()
         std::cout << "empty." << std::endl;
     }
     
-    str = "Š¿Žš";
+    str = "æ¼¢å­—";
     std::cout << str.length() << std::endl;
 }

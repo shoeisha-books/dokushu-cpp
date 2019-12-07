@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 template <typename A, typename B, typename C>
 auto fused_multiply_add(A a, B b, C c)
@@ -8,12 +8,12 @@ auto fused_multiply_add(A a, B b, C c)
 
 int main()
 {
-    // 2‚Â–Ú‚Ìƒeƒ“ƒvƒŒ[ƒgˆø”iBj‚ğfloatŒ^‚É‚µ‚½‚¢‚ªA
-    // ‚»‚Ì‚½‚ß‚É‚ÍA‚Ìƒeƒ“ƒvƒŒ[ƒgˆø”‚àw’è‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢
+    // 2ã¤ç›®ã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå¼•æ•°ï¼ˆBï¼‰ã‚’floatå‹ã«ã—ãŸã„ãŒã€
+    // ãã®ãŸã‚ã«ã¯Aã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå¼•æ•°ã‚‚æŒ‡å®šã—ãªã‘ã‚Œã°ãªã‚‰ãªã„
     std::cout << fused_multiply_add<float, float>(1.23456f, 2, 3) << std::endl;
 
-    // A‚Ìƒeƒ“ƒvƒŒ[ƒgˆø”‚ğ„˜_‚³‚¹‚½‚¢‚Ì‚ÅA2‚Â–Ú‚Ìƒeƒ“ƒvƒŒ[ƒgˆø”‚ğw’è‚Å‚Í‚È‚­A
-    // ˆø”©‘Ì‚ğƒLƒƒƒXƒg‚µ‚Ä„˜_‚³‚¹‚é
+    // Aã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå¼•æ•°ã‚’æ¨è«–ã•ã›ãŸã„ã®ã§ã€2ã¤ç›®ã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆå¼•æ•°ã‚’æŒ‡å®šã§ã¯ãªãã€
+    // å¼•æ•°è‡ªä½“ã‚’ã‚­ãƒ£ã‚¹ãƒˆã—ã¦æ¨è«–ã•ã›ã‚‹
     std::cout << fused_multiply_add(1.23456f, static_cast<float>(2), 3)
         << std::endl;
 }

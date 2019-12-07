@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
@@ -7,37 +7,37 @@ class Integer
 public:
     Integer(int value) : value{ value } { }
 
-    Integer& operator++(); // ‘O’uƒCƒ“ƒNƒŠƒƒ“ƒg‰‰Zq
-    Integer& operator--(); // ‘O’uƒfƒNƒŠƒƒ“ƒg‰‰Zq
+    Integer& operator++(); // å‰ç½®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆæ¼”ç®—å­
+    Integer& operator--(); // å‰ç½®ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆæ¼”ç®—å­
 
-    // Œã’u‚Í‘æ2€‚ÉintŒ^‚ğó‚¯æ‚éŠÖ”‚Æ‚µ‚ÄƒI[ƒo[ƒ[ƒh
-    Integer operator++(int); // Œã’uƒCƒ“ƒNƒŠƒƒ“ƒg‰‰Zq
-    Integer operator--(int); // Œã’uƒfƒNƒŠƒƒ“ƒg‰‰Zq
+    // å¾Œç½®ã¯ç¬¬2é …ã«intå‹ã‚’å—ã‘å–ã‚‹é–¢æ•°ã¨ã—ã¦ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
+    Integer operator++(int); // å¾Œç½®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆæ¼”ç®—å­
+    Integer operator--(int); // å¾Œç½®ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆæ¼”ç®—å­
     
     void show() const;
 };
 
 Integer& Integer::operator++()
 {
-    // ‘O’u‚Í•ÏX‚µ‚½‚ ‚Æ‚Ì’li‚Â‚Ü‚è©•ª©gj‚ğ•Ô‚·‚Ì‚ÅA
-    // ƒƒ“ƒo[•Ï”‚ğ•ÏX‚µ‚Ä‚©‚ç©•ª©g‚ğQÆ‚Å•Ô‚·
+    // å‰ç½®ã¯å¤‰æ›´ã—ãŸã‚ã¨ã®å€¤ï¼ˆã¤ã¾ã‚Šè‡ªåˆ†è‡ªèº«ï¼‰ã‚’è¿”ã™ã®ã§ã€
+    // ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã‚’å¤‰æ›´ã—ã¦ã‹ã‚‰è‡ªåˆ†è‡ªèº«ã‚’å‚ç…§ã§è¿”ã™
     ++value;
     return *this;
 }
 
 Integer& Integer::operator--()
 {
-    --value; // ƒfƒNƒŠƒƒ“ƒg‚Í‘«‚·‘ã‚í‚è‚Éˆø‚­
+    --value; // ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã¯è¶³ã™ä»£ã‚ã‚Šã«å¼•ã
     return *this;
 }
 
 Integer Integer::operator++(int)
 {
-    // Œã’u‚Í•ÏX‘O‚Ì’l‚ğ•Ô‚³‚È‚¢‚Æ‚¢‚¯‚È‚¢‚Ì‚ÅA
-    // æ‚É©•ª©g‚ÌƒRƒs[‚ğì‚Á‚Ä‚¨‚­
+    // å¾Œç½®ã¯å¤‰æ›´å‰ã®å€¤ã‚’è¿”ã•ãªã„ã¨ã„ã‘ãªã„ã®ã§ã€
+    // å…ˆã«è‡ªåˆ†è‡ªèº«ã®ã‚³ãƒ”ãƒ¼ã‚’ä½œã£ã¦ãŠã
     auto tmp = *this;
-    ++* this; // “®ì‚ÉˆêŠÑ«‚ğ‚½‚¹‚é‚½‚ß‘O’u‚ğŒÄ‚Ño‚·
-    return tmp; // ƒRƒs[‚µ‚Ä‚¨‚¢‚½•ÏX‘O‚Ì’l‚ğ•Ô‚·
+    ++* this; // å‹•ä½œã«ä¸€è²«æ€§ã‚’æŒãŸã›ã‚‹ãŸã‚å‰ç½®ã‚’å‘¼ã³å‡ºã™
+    return tmp; // ã‚³ãƒ”ãƒ¼ã—ã¦ãŠã„ãŸå¤‰æ›´å‰ã®å€¤ã‚’è¿”ã™
 }
 
 Integer Integer::operator--(int)

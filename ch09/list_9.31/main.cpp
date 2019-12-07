@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 template <typename T>
 class A
@@ -28,12 +28,12 @@ public:
 template <typename U, typename T>
 void call_foo(A<T>& a)
 {
-    // template����q���g���Ă��Ă��A�ˑ������^���̏ꍇ�ɂ�typename�L�[���[�h���K�v
+    // template限定子を使っていても、依存名が型名の場合にはtypenameキーワードが必要
     typename A<T>::template rebind<U> b = a;
     
-    b.template foo<int>(); // �ˑ����̃����o�[�֐��Ăяo��
+    b.template foo<int>(); // 依存名のメンバー関数呼び出し
     
-                           // �ˑ������e���v���[�g�ł����Ă��^���_���g����Ƃ��ɂ�template����q�͕s�v
+                           // 依存名がテンプレートであっても型推論が使われるときにはtemplate限定子は不要
     b.bar(42);
 }
 

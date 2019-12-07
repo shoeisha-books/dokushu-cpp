@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     const char* message = "Hello, C-style cast";
 
-    // OKBCŒ`®ƒLƒƒƒXƒg‚ÍconstCüq‚ğ–³‹‚µ‚½ƒLƒƒƒXƒg‚ª‚Å‚«‚é
+    // OKã€‚Cå½¢å¼ã‚­ãƒ£ã‚¹ãƒˆã¯constä¿®é£¾å­ã‚’ç„¡è¦–ã—ãŸã‚­ãƒ£ã‚¹ãƒˆãŒã§ãã‚‹
     void* ptr = (void*)message;
 
     std::cout << (char*)ptr << std::endl;

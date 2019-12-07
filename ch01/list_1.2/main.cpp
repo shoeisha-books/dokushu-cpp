@@ -1,12 +1,12 @@
-#include <iostream>
+﻿#include <iostream>
 
-// �����������󂯎�炸�A�����߂�l��Ԃ��Ȃ��֐�
+// 何も引数を受け取らず、何も戻り値を返さない関数
 void hello_world()
 {
     std::cout << "Hello, world" << std::endl;
 }
 
-// a��b��2�������Ƃ��Ď󂯎��A�����𑫂������ʂ�\������֐�
+// aとbの2つを引数として受け取り、それらを足した結果を表示する関数
 void show_sum(int a, int b)
 {
     int c = a + b;
@@ -15,6 +15,6 @@ void show_sum(int a, int b)
 
 int main()
 {
-    hello_world(); // �����������n�����Ɋ֐����Ăяo��
-    show_sum(1, 2); // a��1���Ab��2��n���Ċ֐����Ăяo��
+    hello_world(); // 引数を何も渡さずに関数を呼び出す
+    show_sum(1, 2); // aに1を、bに2を渡して関数を呼び出す
 }

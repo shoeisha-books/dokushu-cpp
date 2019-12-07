@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ó‚¯æ‚Á‚½QÆ‚ğ‚»‚Ì‚Ü‚Ü•Ô‚·ŠÖ”
+// å—ã‘å–ã£ãŸå‚ç…§ã‚’ãã®ã¾ã¾è¿”ã™é–¢æ•°
 int& id(int& i)
 {
     return i;
@@ -10,9 +10,9 @@ int main()
 {
     int i = 42;
 
-    auto& j = id(i); // QÆ‚ÉŒ^„˜_
+    auto& j = id(i); // å‚ç…§ã«å‹æ¨è«–
 
-    j = 0; // QÆ‚È‚Ì‚Åi‚ª•Ï‚í‚é
+    j = 0; // å‚ç…§ãªã®ã§iãŒå¤‰ã‚ã‚‹
 
     std::cout << i << std::endl;
 }

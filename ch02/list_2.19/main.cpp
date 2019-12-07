@@ -1,25 +1,25 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// 2ŸŒ³ƒxƒNƒgƒ‹‚ğ•\‚·\‘¢‘Ì
+// 2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ã‚’è¡¨ã™æ§‹é€ ä½“
 struct vector2d
 {
     int x;
     int y;
 };
 
-// ®”—p‚ÌƒI[ƒo[ƒ[ƒh
+// æ•´æ•°ç”¨ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
 int add(int left, int right)
 {
     return left + right;
 }
 
-// •‚“®¬”“_”—p‚ÌƒI[ƒo[ƒ[ƒh
+// æµ®å‹•å°æ•°ç‚¹æ•°ç”¨ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
 double add(double left, double right)
 {
     return left + right;
 }
 
-// 2ŸŒ³ƒxƒNƒgƒ‹—p‚ÌƒI[ƒo[ƒ[ƒh
+// 2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ç”¨ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
 vector2d add(vector2d left, vector2d right)
 {
     vector2d v;
@@ -30,16 +30,16 @@ vector2d add(vector2d left, vector2d right)
 
 int main()
 {
-    int integer = add(1, 2); // ®”—p‚ÌƒI[ƒo[ƒ[ƒh‚ªŒÄ‚Î‚ê‚é
+    int integer = add(1, 2); // æ•´æ•°ç”¨ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ãŒå‘¼ã°ã‚Œã‚‹
     std::cout << integer << std::endl;
 
-    // •‚“®¬”“_”—p‚ÌƒI[ƒo[ƒ[ƒh‚ªŒÄ‚Î‚ê‚é
+    // æµ®å‹•å°æ•°ç‚¹æ•°ç”¨ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ãŒå‘¼ã°ã‚Œã‚‹
     double floating = add(3.14, 42.195);
     std::cout << floating << std::endl;
 
     vector2d v = { 1, 2 };
     vector2d u = { -3, 4 };
 
-    vector2d w = add(v, u); // 2ŸŒ³ƒxƒNƒgƒ‹—p‚ÌƒI[ƒo[ƒ[ƒh‚ªŒÄ‚Î‚ê‚é
+    vector2d w = add(v, u); // 2æ¬¡å…ƒãƒ™ã‚¯ãƒˆãƒ«ç”¨ã®ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ãŒå‘¼ã°ã‚Œã‚‹
     std::cout << w.x << ", " << w.y << std::endl;
 }

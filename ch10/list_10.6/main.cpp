@@ -1,6 +1,6 @@
-#include <iostream>
+﻿#include <iostream>
 
-// ���̊֐������O�����ŗ��邱�Ƃ͂Ȃ�
+// この関数から例外が飛んで来ることはない
 void no_throw_exception() noexcept
 {
     try
@@ -9,13 +9,13 @@ void no_throw_exception() noexcept
     }
     catch (...)
     {
-        // noexcept�w�肵���֐��ł��A�����ł����ƕ߂܂��Ă���Ζ��Ȃ�
-        std::cout << "��O��߂܂��܂���" << std::endl;
+        // noexcept指定した関数でも、内部でちゃんと捕まえていれば問題ない
+        std::cout << "例外を捕まえました" << std::endl;
     }
 }
 
 int main()
 {
-    // ���̊֐������O�����ŗ��邱�Ƃ͂Ȃ�
+    // この関数から例外が飛んで来ることはない
     no_throw_exception();
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class A
 {
@@ -11,12 +11,12 @@ class B
     A a;
 
 public:
-    // ƒƒ“ƒo[•Ï”‚Ìa‚ğ•Ô‚·•ÏŠ·ŠÖ”
+    // ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®aã‚’è¿”ã™å¤‰æ›é–¢æ•°
     operator A& () { return a; }
 };
 
 int main()
 {
     B b;
-    b.foo(); // ƒGƒ‰[BB‚Ífoo‚Æ‚¢‚¤ƒƒ“ƒo[ŠÖ”‚ğ‚½‚È‚¢
+    b.foo(); // ã‚¨ãƒ©ãƒ¼ã€‚Bã¯fooã¨ã„ã†ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚’æŒãŸãªã„
 }

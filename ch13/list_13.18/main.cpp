@@ -1,37 +1,37 @@
-#include <charconv>
+ï»¿#include <charconv>
 #include <iostream>
 
 int main()
 {
     char buffer[16] = {};
 
-    // 10i”‚Ì®”‚Æ‚µ‚Ä•¶š—ñ‚Ö•ÏŠ·
+    // 10é€²æ•°ã®æ•´æ•°ã¨ã—ã¦æ–‡å­—åˆ—ã¸å¤‰æ›
     auto result = std::to_chars(buffer, buffer + 15, 10);
-    *result.ptr = '\0'; // ƒkƒ‹•¶š‚ÅI’[
+    *result.ptr = '\0'; // ãƒŒãƒ«æ–‡å­—ã§çµ‚ç«¯
     std::cout << buffer << std::endl;
 
     int val = 0;
-    // 10i”‚Ì®”‚Æ‚µ‚Ä•¶š—ñ‚©‚ç•ÏŠ·
+    // 10é€²æ•°ã®æ•´æ•°ã¨ã—ã¦æ–‡å­—åˆ—ã‹ã‚‰å¤‰æ›
     std::from_chars(buffer, buffer + 16, val);
     std::cout << val << std::endl;
 
-    // 16i”‚Ì®”‚Æ‚µ‚Ä•¶š—ñ‚Ö•ÏŠ·
+    // 16é€²æ•°ã®æ•´æ•°ã¨ã—ã¦æ–‡å­—åˆ—ã¸å¤‰æ›
     result = std::to_chars(buffer, buffer + 15, 0xdeadbeef, 16);
-    *result.ptr = '\0'; // ƒkƒ‹•¶š‚ÅI’[
+    *result.ptr = '\0'; // ãƒŒãƒ«æ–‡å­—ã§çµ‚ç«¯
     std::cout << buffer << std::endl;
     
-    // 16i”‚Ì®”‚Æ‚µ‚Ä•¶š—ñ‚©‚ç•ÏŠ·
+    // 16é€²æ•°ã®æ•´æ•°ã¨ã—ã¦æ–‡å­—åˆ—ã‹ã‚‰å¤‰æ›
     std::to_chars(buffer, buffer + 16, val, 16);
     std::cout << val << std::endl;
     
-    // ‰ÈŠw‹Zp•\‹L‚Ì•‚“®¬”“_”‚Æ‚µ‚Ä•¶š—ñ‚É•ÏŠ·
+    // ç§‘å­¦æŠ€è¡“è¡¨è¨˜ã®æµ®å‹•å°æ•°ç‚¹æ•°ã¨ã—ã¦æ–‡å­—åˆ—ã«å¤‰æ›
     result = std::to_chars(buffer, buffer + 15, 3.14,
         std::chars_format::scientific);
-    *result.ptr = '\0'; // ƒkƒ‹•¶š‚ÅI’[
+    *result.ptr = '\0'; // ãƒŒãƒ«æ–‡å­—ã§çµ‚ç«¯
     std::cout << buffer << std::endl;
     
     double fval = 0;
-        // ©“®‚ÅƒtƒH[ƒ}ƒbƒg‚ğŒŸo‚µ‚Ä•¶š—ñ‚©‚ç•ÏŠ·
+        // è‡ªå‹•ã§ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’æ¤œå‡ºã—ã¦æ–‡å­—åˆ—ã‹ã‚‰å¤‰æ›
     std::from_chars(buffer, buffer + 16, fval);
     std::cout << val << std::endl;
 }

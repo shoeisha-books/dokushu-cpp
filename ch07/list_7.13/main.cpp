@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -27,7 +27,7 @@ public:
     DerivedB(int value) : Base{ value } { }
 };
 
-// DerivedA‚àDerivedB‚àBase‚©‚ç”h¶‚µ‚Ä‚¢‚é‚±‚Æ‚É’ˆÓ
+// DerivedAã‚‚DerivedBã‚‚Baseã‹ã‚‰æ´¾ç”Ÿã—ã¦ã„ã‚‹ã“ã¨ã«æ³¨æ„
 class MoreDerived : public DerivedA, public DerivedB
 {
 public:
@@ -41,21 +41,21 @@ int main()
 {
     MoreDerived more_derived{ 42, 72 };
 
-    // DerivedA‚ªŒp³‚µ‚½Base::show()‚ÌŒÄ‚Ño‚µ
+    // DerivedAãŒç¶™æ‰¿ã—ãŸBase::show()ã®å‘¼ã³å‡ºã—
     more_derived.DerivedA::show();
 
-    // DerivedB‚ªŒp³‚µ‚½Base::show()‚ÌŒÄ‚Ño‚µ
+    // DerivedBãŒç¶™æ‰¿ã—ãŸBase::show()ã®å‘¼ã³å‡ºã—
     more_derived.DerivedB::show();
     
-    // DerivedA‚ÌQÆ‚ğŒo—R‚µ‚ÄBase‚Ö‚ÌQÆ‚ğæ“¾
+    // DerivedAã®å‚ç…§ã‚’çµŒç”±ã—ã¦Baseã¸ã®å‚ç…§ã‚’å–å¾—
     Base& base1 = static_cast<DerivedA&>(more_derived);
     
-    // DerivedA‚ÌQÆ‚ğŒo—R‚µ‚½‚Ì‚ÅADerivedA‚ªŒp³‚µ‚½Base::show()‚ÌŒÄ‚Ño‚µ
+    // DerivedAã®å‚ç…§ã‚’çµŒç”±ã—ãŸã®ã§ã€DerivedAãŒç¶™æ‰¿ã—ãŸBase::show()ã®å‘¼ã³å‡ºã—
     base1.show();
     
-    // DerivedB‚ÌQÆ‚ğŒo—R‚µ‚ÄBase‚Ö‚ÌQÆ‚ğæ“¾
+    // DerivedBã®å‚ç…§ã‚’çµŒç”±ã—ã¦Baseã¸ã®å‚ç…§ã‚’å–å¾—
     Base& base2 = static_cast<DerivedB&>(more_derived);
     
-    // DerivedB‚ÌQÆ‚ğŒo—R‚µ‚½‚Ì‚ÅADerivedB‚ªŒp³‚µ‚½Base::show()‚ÌŒÄ‚Ño‚µ
+    // DerivedBã®å‚ç…§ã‚’çµŒç”±ã—ãŸã®ã§ã€DerivedBãŒç¶™æ‰¿ã—ãŸBase::show()ã®å‘¼ã³å‡ºã—
     base2.show();
 }

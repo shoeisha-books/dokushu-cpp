@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// ƒvƒ‰ƒCƒ}ƒŠƒeƒ“ƒvƒŒ[ƒg
+// ãƒ—ãƒ©ã‚¤ãƒžãƒªãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ
 template <typename A, typename B, typename C>
 struct Tuple
 {
@@ -14,10 +14,10 @@ struct Tuple
     }
 };
 
-// 2”Ô–Ú‚Ìƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ðvoidŒÀ’è‚µ‚½•”•ª“ÁŽê‰»
-template <typename A, typename C> // ŒÀ’è‚µ‚Ä‚¢‚È‚¢•”•ª‚ð–„‚ß‚é‚½‚ß‚Ì
-                                  // ƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[
-struct Tuple<A, void, C> // ŒÀ’è‚µ‚È‚©‚Á‚½•”•ª‚Íƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ðŽg‚¤
+// 2ç•ªç›®ã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’voidé™å®šã—ãŸéƒ¨åˆ†ç‰¹æ®ŠåŒ–
+template <typename A, typename C> // é™å®šã—ã¦ã„ãªã„éƒ¨åˆ†ã‚’åŸ‹ã‚ã‚‹ãŸã‚ã®
+                                  // ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼
+struct Tuple<A, void, C> // é™å®šã—ãªã‹ã£ãŸéƒ¨åˆ†ã¯ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’ä½¿ã†
 {
     A a;
     C c;
@@ -30,7 +30,7 @@ struct Tuple<A, void, C> // ŒÀ’è‚µ‚È‚©‚Á‚½•”•ª‚Íƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ðŽg‚¤
 
 int main()
 {
-    // 2”Ô–Ú‚Ìƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚ªvoid‚È‚Ì‚ÅA•”•ª“ÁŽê‰»‚ªŽg‚í‚ê‚é
+    // 2ç•ªç›®ã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ãŒvoidãªã®ã§ã€éƒ¨åˆ†ç‰¹æ®ŠåŒ–ãŒä½¿ã‚ã‚Œã‚‹
     Tuple<int, void, float> t = { 42, 3.1415 };
 
     t.show();

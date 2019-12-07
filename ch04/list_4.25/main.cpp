@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void hello()
 {
     std::cout << "hello, macro" << std::endl;
 }
 
-#define id(name) name // ˆø”‚ÅŽó‚¯Žæ‚Á‚½‚à‚Ì‚É‚»‚Ì‚Ü‚Ü’u‚«Š·‚¦‚é
+#define id(name) name // å¼•æ•°ã§å—ã‘å–ã£ãŸã‚‚ã®ã«ãã®ã¾ã¾ç½®ãæ›ãˆã‚‹
 
 int main()
 {
-    id(hello)(); // ŠÖ”ŒÄ‚Ño‚µ‚Ì‚æ‚¤‚ÉŠÖ”Œ`Ž®ƒ}ƒNƒid‚ðŒÄ‚Ño‚·
+    id(hello)(); // é–¢æ•°å‘¼ã³å‡ºã—ã®ã‚ˆã†ã«é–¢æ•°å½¢å¼ãƒžã‚¯ãƒ­idã‚’å‘¼ã³å‡ºã™
 }

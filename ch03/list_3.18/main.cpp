@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -19,22 +19,22 @@ int Base::get_value() const
     return value;
 }
 
-// \‘¢‘Ì‚ªƒNƒ‰ƒX‚©‚ç”h¶‚·‚é‚±‚Æ‚à‚Å‚«‚éiƒfƒtƒHƒ‹ƒg‚ÌƒAƒNƒZƒXw’èq‚Ípublicj
+// æ§‹é€ ä½“ãŒã‚¯ãƒ©ã‚¹ã‹ã‚‰æ´¾ç”Ÿã™ã‚‹ã“ã¨ã‚‚ã§ãã‚‹ï¼ˆãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚¢ã‚¯ã‚»ã‚¹æŒ‡å®šå­ã¯publicï¼‰
 struct Derived : Base
 {
-    // ƒRƒ“ƒXƒgƒ‰ƒNƒ^[‚àƒfƒXƒgƒ‰ƒNƒ^[‚à‚Ä‚é
+    // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚‚ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ã‚‚æŒã¦ã‚‹
     Derived();
     ~Derived();
 };
 
 Derived::Derived()
 {
-    std::cout << "ƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl;
+    std::cout << "ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
 }
 
 Derived::~Derived()
 {
-    std::cout << "ƒfƒXƒgƒ‰ƒNƒ^[" << std::endl;
+    std::cout << "ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl;
 }
 
 int main()

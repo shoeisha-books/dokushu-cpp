@@ -1,12 +1,12 @@
-#include <vector>
+ï»¿#include <vector>
 #include <iostream>
 
 int main()
 {
     std::vector<int> list;
 
-    list.push_back(42); // ––”ö‚É42‚ğ’Ç‰Á
-    list.push_back(0); // ––”ö‚É0‚ğ’Ç‰Á
+    list.push_back(42); // æœ«å°¾ã«42ã‚’è¿½åŠ 
+    list.push_back(0); // æœ«å°¾ã«0ã‚’è¿½åŠ 
 
     for (int e : list)
     {
@@ -15,8 +15,8 @@ int main()
 
     std::cout << std::endl;
 
-    list.pop_back(); // ÅŒã‚Ì—v‘f‚ğíœ
-    list.push_back(-10); // ––”ö‚É-10‚ğ’Ç‰Á
+    list.pop_back(); // æœ€å¾Œã®è¦ç´ ã‚’å‰Šé™¤
+    list.push_back(-10); // æœ«å°¾ã«-10ã‚’è¿½åŠ 
 
     for (int e : list)
     {

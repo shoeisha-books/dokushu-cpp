@@ -1,22 +1,22 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
 {
-    // •¶š—ñ‚ğ10i”‚Æ‚µ‚ÄintŒ^‚É•ÏŠ·
+    // æ–‡å­—åˆ—ã‚’10é€²æ•°ã¨ã—ã¦intå‹ã«å¤‰æ›
     std::cout << std::stoi("-10") << std::endl;
 
-    // •¶š—ñ‚ğ16i”‚Æ‚µ‚Äunsigned longŒ^‚É•ÏŠ·
+    // æ–‡å­—åˆ—ã‚’16é€²æ•°ã¨ã—ã¦unsigned longå‹ã«å¤‰æ›
     std::cout << std::stoul("deadbeef", nullptr, 16) << std::endl;
 
-    // •¶š—ñ‚©‚çŠî”‚ğ”»’è‚µ‚ÄlongŒ^‚É•ÏŠ·
+    // æ–‡å­—åˆ—ã‹ã‚‰åŸºæ•°ã‚’åˆ¤å®šã—ã¦longå‹ã«å¤‰æ›
     std::cout << std::stol("0755", nullptr, 0) << std::endl;
 
-    // •¶š—ñ‚ğ•‚“®¬”“_”‚Æ‚µ‚ÄdoubleŒ^‚É•ÏŠ·
+    // æ–‡å­—åˆ—ã‚’æµ®å‹•å°æ•°ç‚¹æ•°ã¨ã—ã¦doubleå‹ã«å¤‰æ›
     std::cout << std::stod("3.1415926") << std::endl;
 
     std::size_t idx = 0;
-    // •¶š—ñ‚ğ10i”‚Æ‚µ‚ÄintŒ^‚É•ÏŠ·‚µA•ÏŠ·‚Å‚«‚È‚©‚Á‚½•¶š‚ÌƒCƒ“ƒfƒbƒNƒX‚ğidx‚ÉŠi”[
+    // æ–‡å­—åˆ—ã‚’10é€²æ•°ã¨ã—ã¦intå‹ã«å¤‰æ›ã—ã€å¤‰æ›ã§ããªã‹ã£ãŸæ–‡å­—ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’idxã«æ ¼ç´
     int integer = std::stoi("42.195", &idx);
     
     std::cout << integer << "; idx = " << idx << std::endl;

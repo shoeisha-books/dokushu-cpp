@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 int main()
@@ -7,7 +7,7 @@ int main()
     std::vector v1 = { 1, 3, 5, 7, 9 };
 
     v1 = v0;
-    v0 = { 2, 3, 5 }; // std::initializer_list<int>‚©‚ç‚Ì‘ã“ü
+    v0 = { 2, 3, 5 }; // std::initializer_list<int>ã‹ã‚‰ã®ä»£å…¥
 
     std::cout << "v0:" << std::endl;
     for (int i : v0)

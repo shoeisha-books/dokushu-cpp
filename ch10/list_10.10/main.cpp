@@ -1,5 +1,5 @@
-#include <iostream>
-#include <exception> // std::exception‚É•K—v
+ï»¿#include <iostream>
+#include <exception> // std::exceptionã«å¿…è¦
 
 class my_exception : public std::exception
 {
@@ -7,10 +7,10 @@ class my_exception : public std::exception
 
 public:
     explicit my_exception(const char* message);
-    const char* what() const noexcept override; // —áŠO‚ÉŠÖ‚·‚éƒƒbƒZ[ƒW‚ğ•Ô‚·
+    const char* what() const noexcept override; // ä¾‹å¤–ã«é–¢ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¿”ã™
 };
 
-// ó‚¯æ‚Á‚½ƒƒbƒZ[ƒW‚ğ‚Á‚Ä‚¨‚­
+// å—ã‘å–ã£ãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒã£ã¦ãŠã
 my_exception::my_exception(const char* message)
     : message{ message }
 {
@@ -18,7 +18,7 @@ my_exception::my_exception(const char* message)
 
 const char* my_exception::what() const noexcept
 {
-    // ‚Á‚Ä‚¢‚½ƒƒbƒZ[ƒW‚ğ•Ô‚·
+    // æŒã£ã¦ã„ãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¿”ã™
     return message;
 }
 
@@ -26,7 +26,7 @@ int main()
 {
     try
     {
-        // ©•ª‚Å—pˆÓ‚µ‚½“Æ©‚Ì—áŠO‚ğƒƒbƒZ[ƒW‚Æ‚Æ‚à‚É“Š‚°‚é
+        // è‡ªåˆ†ã§ç”¨æ„ã—ãŸç‹¬è‡ªã®ä¾‹å¤–ã‚’ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¨ã¨ã‚‚ã«æŠ•ã’ã‚‹
         throw my_exception{ "My Exception" };
     }
     catch (my_exception & e)

@@ -1,15 +1,15 @@
-#include <vector>
+ï»¿#include <vector>
 #include <iostream>
 
 int main()
 {
-    std::vector<int> empty; // ‹ó‚Ì“®“I”z—ñ
+    std::vector<int> empty; // ç©ºã®å‹•çš„é…åˆ—
     std::cout << "empty.size(): " << empty.size() << std::endl;
 
-    std::vector<int> array = { 10, 20, 30, 40, 50 }; // {}‚ğg‚Á‚Ä‰Šú‰»
+    std::vector<int> array = { 10, 20, 30, 40, 50 }; // {}ã‚’ä½¿ã£ã¦åˆæœŸåŒ–
     std::cout << "array.size(): " << array.size() << std::endl;
 
-    // ”ÍˆÍfor•¶‚Å‘–¸‚à‚Å‚«‚é
+    // ç¯„å›²foræ–‡ã§èµ°æŸ»ã‚‚ã§ãã‚‹
     for (int e : array)
     {
         std::cout << e << std::endl;

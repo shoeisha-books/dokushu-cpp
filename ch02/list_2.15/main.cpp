@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 int main()
 {
     std::string s;
 
-    std::cout << "•¶Žš—ñ‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢> ";
+    std::cout << "æ–‡å­—åˆ—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„> ";
 
     std::cin >> s;
 
-    std::cout << "“ü—Í‚³‚ê‚½•¶Žš—ñ‚Í\"" << s << "\"‚Å‚·" << std::endl;
+    std::cout << "å…¥åŠ›ã•ã‚ŒãŸæ–‡å­—åˆ—ã¯\"" << s << "\"ã§ã™" << std::endl;
 }

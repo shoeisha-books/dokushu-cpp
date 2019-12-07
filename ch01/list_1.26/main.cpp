@@ -1,25 +1,25 @@
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
     int value[] = { -20, 10, 5, -40, 0, 10, -30 };
 
-    // �C���f�b�N�X�ϐ��̐錾�ƁA�������ƁA�i�߂鏈����1�J���ɋL�q�ł���
+    // インデックス変数の宣言と、条件文と、進める処理を1カ所に記述できる
     for (int i = 0; i < 7; ++i)
     {
         if (value[i] < 0)
         {
             std::cout << "continue" << std::endl;
-            continue; // ���̉�̃��[�v�͂����ŏI��邪�A�K��i��1�i�߂���
+            continue; // この回のループはここで終わるが、必ずiは1進められる
         }
         if (value[i] == 0)
         {
             std::cout << "break" << std::endl;
-            break; // while�̂Ƃ��Ɠ����ł��̃��[�v�����S�̂𒆒f����
+            break; // whileのときと同じでこのループ処理全体を中断する
         }
 
         std::cout << "elem = " << value[i] << std::endl;
     }
 
-    std::cout << "���[�v�̏I��" << std::endl;
+    std::cout << "ループの終了" << std::endl;
 }

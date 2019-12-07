@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-// predicate‚ªtrue‚ğ•Ô‚µ‚½—v‘f‚Ì‚İ‚ğƒRƒ“ƒ\[ƒ‹‚Éo—Í‚·‚éŠÖ”
+// predicateãŒtrueã‚’è¿”ã—ãŸè¦ç´ ã®ã¿ã‚’ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«å‡ºåŠ›ã™ã‚‹é–¢æ•°
 template <typename P>
 void filtered_show(int(&array)[5], P predicate)
 {
@@ -13,7 +13,7 @@ void filtered_show(int(&array)[5], P predicate)
     }
 }
 
-// 5‚æ‚è¬‚³‚¢‚È‚çtrue‚ğ•Ô‚·ŠÖ”ƒIƒuƒWƒFƒNƒg
+// 5ã‚ˆã‚Šå°ã•ã„ãªã‚‰trueã‚’è¿”ã™é–¢æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 class is_less_than_5
 {
 public:
@@ -27,11 +27,11 @@ int main()
 {
     int array[] = { 5, 10, 3, 0, 1 };
 
-    // ƒ‰ƒ€ƒ_®‚ğ“n‚·
+    // ãƒ©ãƒ ãƒ€å¼ã‚’æ¸¡ã™
     filtered_show(array, [](int v) { return (v % 2) == 1; });
 
     std::cout << std::endl;
 
-    // ©•ª‚Å’è‹`‚µ‚½ŠÖ”ƒIƒuƒWƒFƒNƒg‚à“n‚·‚±‚Æ‚ª‚Å‚«‚é
+    // è‡ªåˆ†ã§å®šç¾©ã—ãŸé–¢æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚‚æ¸¡ã™ã“ã¨ãŒã§ãã‚‹
     filtered_show(array, is_less_than_5{});
 }

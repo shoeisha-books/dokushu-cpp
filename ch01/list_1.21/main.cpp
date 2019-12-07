@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int array[10] = {};
 
-    // ”z—ñ‚Ì—v‘f‚ðŽg‚¦‚ÎAŒ^‚ª•ÏX‚³‚ê‚Ä‚à—v‘f‚ÌŒ^‚à“¯‚¶‚­•ÏX‚³‚ê‚é‚Ì‚Å
-    // ³‚µ‚­’·‚³‚ªŒvŽZ‚Å‚«‚é
+    // é…åˆ—ã®è¦ç´ ã‚’ä½¿ãˆã°ã€åž‹ãŒå¤‰æ›´ã•ã‚Œã¦ã‚‚è¦ç´ ã®åž‹ã‚‚åŒã˜ãå¤‰æ›´ã•ã‚Œã‚‹ã®ã§
+    // æ­£ã—ãé•·ã•ãŒè¨ˆç®—ã§ãã‚‹
     std::size_t length = sizeof(array) / sizeof(array[0]);
     
     std::cout << "array[" << length << "]" << std::endl;

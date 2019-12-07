@@ -1,21 +1,21 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 #include <regex>
 
 int main()
 {
-    std::regex re{ "(.)‚à‚à" };
+    std::regex re{ "(.)ã‚‚ã‚‚" };
 
-    std::string input = "‚·‚à‚à‚à‚à‚à‚à‚à‚à‚Ì‚¤‚¿";
-    std::string fmt = "$1‚¤‚Ç‚ñ";
+    std::string input = "ã™ã‚‚ã‚‚ã‚‚ã‚‚ã‚‚ã‚‚ã‚‚ã‚‚ã®ã†ã¡";
+    std::string fmt = "$1ã†ã©ã‚“";
     std::string output;
 
-    // ’uŠ·
-    std::regex_replace(std::back_inserter(output), // o—Íæ
-        input.begin(), // “ü—Í‚Ìæ“ª
-        input.end(), // “ü—Í‚Ì––”ö
-        re, // ³‹K•\Œ»
-        fmt); // ’uŠ·ƒtƒH[ƒ}ƒbƒg
+    // ç½®æ›
+    std::regex_replace(std::back_inserter(output), // å‡ºåŠ›å…ˆ
+        input.begin(), // å…¥åŠ›ã®å…ˆé ­
+        input.end(), // å…¥åŠ›ã®æœ«å°¾
+        re, // æ­£è¦è¡¨ç¾
+        fmt); // ç½®æ›ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
 
     std::cout << output << std::endl;
 }

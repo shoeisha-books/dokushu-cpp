@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 template <typename T>
 struct A
@@ -6,7 +6,7 @@ struct A
     T value;
 };
 
-// Àˆø”‚©‚çƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[T‚ª„˜_‚³‚ê‚é
+// å®Ÿå¼•æ•°ã‹ã‚‰ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼TãŒæ¨è«–ã•ã‚Œã‚‹
 template <typename T>
 T get_value(A<T> a)
 {
@@ -17,11 +17,11 @@ int main()
 {
     A<int> ai{ 42 };
 
-    // A<int>‚©‚çƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚Íint‚É„˜_‚³‚ê‚é
+    // A<int>ã‹ã‚‰ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã¯intã«æ¨è«–ã•ã‚Œã‚‹
     std::cout << get_value(ai) << std::endl;
 
     A<double> ad{ 3.1415 };
 
-    // A<double>‚©‚çƒeƒ“ƒvƒŒ[ƒgƒpƒ‰ƒ[ƒ^[‚Ídouble‚É„˜_‚³‚ê‚é
+    // A<double>ã‹ã‚‰ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼ã¯doubleã«æ¨è«–ã•ã‚Œã‚‹
     std::cout << get_value(ad) << std::endl;
 }

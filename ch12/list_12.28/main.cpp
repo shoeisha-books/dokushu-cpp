@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <set>
 
 void print_set(const std::set<int>& l)
@@ -18,6 +18,6 @@ int main()
     is.insert(5);
     print_set(is);
 
-    is.insert(2); // 2‚Íid•¡‚·‚é‚Ì‚Åj‘}“ü‚³‚ê‚È‚¢
+    is.insert(2); // 2ã¯ï¼ˆé‡è¤‡ã™ã‚‹ã®ã§ï¼‰æŒ¿å…¥ã•ã‚Œãªã„
     print_set(is);
 }

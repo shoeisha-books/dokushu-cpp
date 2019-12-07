@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Integer
 {
@@ -23,7 +23,7 @@ bool Integer::operator==(const Integer& rhs) const
 
 bool Integer::operator!=(const Integer& rhs) const
 {
-    // ==‚ğŒÄ‚Ño‚µ‚Ä‚»‚Ì”Û’è‚ğ•Ô‚·
+    // ==ã‚’å‘¼ã³å‡ºã—ã¦ãã®å¦å®šã‚’è¿”ã™
     return !(*this == rhs);
 }
 
@@ -34,20 +34,20 @@ bool Integer::operator<(const Integer& rhs) const
 
 bool Integer::operator>(const Integer& rhs) const
 {
-    // ¶‰E‚ğ“ü‚ê‘Ö‚¦‚Ä¬‚È‚è‚ğŒÄ‚Ô‚Æ‘å‚È‚è‚ÌŒ‹‰Ê‚É‚È‚é
+    // å·¦å³ã‚’å…¥ã‚Œæ›¿ãˆã¦å°ãªã‚Šã‚’å‘¼ã¶ã¨å¤§ãªã‚Šã®çµæœã«ãªã‚‹
     return rhs < *this;
 }
 
 bool Integer::operator<=(const Integer& rhs) const
 {
-    // ‘å‚È‚è‚ğ”Û’è‚µ‚½Œ‹‰Ê‚ª¬‚È‚èƒCƒR[ƒ‹‚ÌŒ‹‰Ê‚É‚È‚é
+    // å¤§ãªã‚Šã‚’å¦å®šã—ãŸçµæœãŒå°ãªã‚Šã‚¤ã‚³ãƒ¼ãƒ«ã®çµæœã«ãªã‚‹
     return !(rhs < *this);
 }
 
 bool Integer::operator>=(const Integer& rhs) const
 {
-    // ¶‰E‚ğ“ü‚ê‘Ö‚¦‚Ä¬‚È‚èƒCƒR[ƒ‹‚ğŒÄ‚Ô‚Æ
-    // ‘å‚È‚èƒCƒR[ƒ‹‚ÌŒ‹‰Ê‚É‚È‚é
+    // å·¦å³ã‚’å…¥ã‚Œæ›¿ãˆã¦å°ãªã‚Šã‚¤ã‚³ãƒ¼ãƒ«ã‚’å‘¼ã¶ã¨
+    // å¤§ãªã‚Šã‚¤ã‚³ãƒ¼ãƒ«ã®çµæœã«ãªã‚‹
     return rhs <= *this;
 }
 
@@ -58,19 +58,19 @@ int main()
 
     if (x != y)
     {
-        std::cout << "x != y ‚Ítrue" << std::endl;
+        std::cout << "x != y ã¯true" << std::endl;
     }
     else
     {
-        std::cout << "x != y ‚Ífalse" << std::endl;
+        std::cout << "x != y ã¯false" << std::endl;
     }
 
     if (y >= x)
     {
-        std::cout << "y >= x ‚Ítrue" << std::endl;
+        std::cout << "y >= x ã¯true" << std::endl;
     }
     else
     {
-        std::cout << "y >= x ‚Ífalse" << std::endl;
+        std::cout << "y >= x ã¯false" << std::endl;
     }
 }

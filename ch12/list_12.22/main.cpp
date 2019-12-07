@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <list>
 
 void print_list(const std::list<int>& l)
@@ -14,11 +14,11 @@ int main()
 {
     std::list il = { 2, 4, 6, 8, 2, 4, 6, 8 };
 
-    il.sort(); // ¸‡ƒ\[ƒg
+    il.sort(); // æ˜‡é †ã‚½ãƒ¼ãƒˆ
     print_list(il);
 
     // il.sort(f);
-    // f(x, y)‚ªtrue‚È‚çx‚ªy‚æ‚èæ“ªŠñ‚è‚Éƒ\[ƒg‚³‚ê‚é
+    // f(x, y)ãŒtrueãªã‚‰xãŒyã‚ˆã‚Šå…ˆé ­å¯„ã‚Šã«ã‚½ãƒ¼ãƒˆã•ã‚Œã‚‹
     auto greater = [](int x, int y) {return x > y; };
     il.sort(greater);
     print_list(il);
@@ -27,6 +27,6 @@ int main()
     il2.sort(greater);
     print_list(il2);
 
-    il.merge(il2, greater); // •¹‡Fil2‚Í‹ó‚É‚È‚é
+    il.merge(il2, greater); // ä½µåˆï¼šil2ã¯ç©ºã«ãªã‚‹
     print_list(il);
 }

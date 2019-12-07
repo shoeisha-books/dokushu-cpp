@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int* ptr = nullptr;
 
-    *ptr = 42; // ƒkƒ‹QÆ
+    *ptr = 42; // ãƒŒãƒ«å‚ç…§
 
-    std::cout << "ƒkƒ‹QÆ‚Ì‚ ‚Æ" << std::endl;
+    std::cout << "ãƒŒãƒ«å‚ç…§ã®ã‚ã¨" << std::endl;
 }

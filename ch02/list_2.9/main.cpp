@@ -1,38 +1,38 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    int value = 42; // intŒ^‚Ì•Ï”
-    int other = 0; // •Ê‚Ì•Ï”
-    int* pointer = &value; // •Ï”value‚Ö‚Ìƒ|ƒCƒ“ƒ^[
-    int& reference = value; // •Ï”value‚Ö‚ÌQÆ
+    int value = 42; // intå‹ã®å¤‰æ•°
+    int other = 0; // åˆ¥ã®å¤‰æ•°
+    int* pointer = &value; // å¤‰æ•°valueã¸ã®ãƒã‚¤ãƒ³ã‚¿ãƒ¼
+    int& reference = value; // å¤‰æ•°valueã¸ã®å‚ç…§
 
-    std::cout << "value‚ÌƒAƒhƒŒƒX‚Í" << &value << "‚ÅA’l‚Í" << value <<
-        "‚Å‚·" << std::endl;
+    std::cout << "valueã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &value << "ã§ã€å€¤ã¯" << value <<
+        "ã§ã™" << std::endl;
 
-    std::cout << "other‚ÌƒAƒhƒŒƒX‚Í" << &other << "‚ÅA’l‚Í" << other <<
-        "‚Å‚·" << std::endl;
+    std::cout << "otherã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &other << "ã§ã€å€¤ã¯" << other <<
+        "ã§ã™" << std::endl;
 
-    std::cout << "pointer‚Ì‚ÂƒAƒhƒŒƒX‚Í" << pointer << "‚ÅA’l‚Í" <<
-        *pointer << "‚Å‚·" << std::endl;
+    std::cout << "pointerã®æŒã¤ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << pointer << "ã§ã€å€¤ã¯" <<
+        *pointer << "ã§ã™" << std::endl;
 
-    std::cout << "reference‚ÌƒAƒhƒŒƒX‚Í" << &reference << "‚ÅA’l‚Í" <<
-        reference << "‚Å‚·" << std::endl;
+    std::cout << "referenceã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &reference << "ã§ã€å€¤ã¯" <<
+        reference << "ã§ã™" << std::endl;
 
-    pointer = &other; // ƒ|ƒCƒ“ƒ^[‚ª‚ÂƒAƒhƒŒƒX‚ğother‚ÌƒAƒhƒŒƒX‚É•ÏX
-    reference = other; // QÆæ‚ğvalue‚©‚çother‚Ö•Ï‚¦‚½‚Â‚à‚è
+    pointer = &other; // ãƒã‚¤ãƒ³ã‚¿ãƒ¼ãŒæŒã¤ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’otherã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å¤‰æ›´
+    reference = other; // å‚ç…§å…ˆã‚’valueã‹ã‚‰otherã¸å¤‰ãˆãŸã¤ã‚‚ã‚Š
     
-    std::cout << std::endl; // 1s‹ós‚ğ“ü‚ê‚é
+    std::cout << std::endl; // 1è¡Œç©ºè¡Œã‚’å…¥ã‚Œã‚‹
     
-    std::cout << "value‚ÌƒAƒhƒŒƒX‚Í" << &value << "‚ÅA’l‚Í" << value <<
-        "‚Å‚·" << std::endl;
+    std::cout << "valueã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &value << "ã§ã€å€¤ã¯" << value <<
+        "ã§ã™" << std::endl;
     
-    std::cout << "other‚ÌƒAƒhƒŒƒX‚Í" << &other << "‚ÅA’l‚Í" << other <<
-        "‚Å‚·" << std::endl;
+    std::cout << "otherã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &other << "ã§ã€å€¤ã¯" << other <<
+        "ã§ã™" << std::endl;
     
-    std::cout << "pointer‚Ì‚ÂƒAƒhƒŒƒX‚Í" << pointer << "‚ÅA’l‚Í" <<
-        *pointer << "‚Å‚·" << std::endl;
+    std::cout << "pointerã®æŒã¤ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << pointer << "ã§ã€å€¤ã¯" <<
+        *pointer << "ã§ã™" << std::endl;
     
-    std::cout << "reference‚ÌƒAƒhƒŒƒX‚Í" << &reference << "‚ÅA’l‚Í" <<
-        reference << "‚Å‚·" << std::endl;
+    std::cout << "referenceã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &reference << "ã§ã€å€¤ã¯" <<
+        reference << "ã§ã™" << std::endl;
 }

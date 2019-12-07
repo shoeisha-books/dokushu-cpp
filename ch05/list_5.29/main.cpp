@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class C
 {
@@ -7,14 +7,14 @@ class C
 public:
     explicit C(int a) : a{ a } { }
 
-    void copy_and_set(int value) const // constƒƒ“ƒo[ŠÖ”‚È‚Ì‚Å
-    // ƒƒ“ƒo[•Ï”‚Í•ÏX‚Å‚«‚È‚¢
+    void copy_and_set(int value) const // constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãªã®ã§
+    // ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã¯å¤‰æ›´ã§ããªã„
     {
         std::cout << "copy_and_set: a == " << a << std::endl;
-        [*this, value] () mutable // this‚ªw‚µ¦‚·æ‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğŠÛ‚²‚ÆƒRƒs[
+        [*this, value] () mutable // thisãŒæŒ‡ã—ç¤ºã™å…ˆã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä¸¸ã”ã¨ã‚³ãƒ”ãƒ¼
         {
             std::cout << "lambda: a == " << a << std::endl;
-            a = value; // OKB‚½‚¾‚µAa‚ÍƒRƒs[‚³‚ê‚½ƒCƒ“ƒXƒ^ƒ“ƒX‚Ìa‚ğ•ÏX‚·‚é
+            a = value; // OKã€‚ãŸã ã—ã€aã¯ã‚³ãƒ”ãƒ¼ã•ã‚ŒãŸã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®aã‚’å¤‰æ›´ã™ã‚‹
             std::cout << "lambda: a == " << a << std::endl;
         }();
         std::cout << "copy_and_set: a == " << a << std::endl;

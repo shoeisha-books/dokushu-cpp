@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class heavy_class
 {
     int m_value;
 
-    mutable int m_cache; // ƒLƒƒƒbƒVƒ…ƒf[ƒ^
-    mutable bool m_cache_valid; // ƒLƒƒƒbƒVƒ…‚ª—LŒø‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
+    mutable int m_cache; // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãƒ‡ãƒ¼ã‚¿
+    mutable bool m_cache_valid; // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒæœ‰åŠ¹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°
 
 public:
     int generate() const;
@@ -14,32 +14,32 @@ public:
     int get() const;
 };
 
-// İ’è‚³‚ê‚½’l‚©‚çƒf[ƒ^‚ğ¶¬‚·‚éƒƒ“ƒo[ŠÖ”
+// è¨­å®šã•ã‚ŒãŸå€¤ã‹ã‚‰ãƒ‡ãƒ¼ã‚¿ã‚’ç”Ÿæˆã™ã‚‹ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°
 int heavy_class::generate() const
 {
-    std::cout << "‚Æ‚Ä‚àd‚¢ƒf[ƒ^¶¬ŠÖ”" << std::endl;
+    std::cout << "ã¨ã¦ã‚‚é‡ã„ãƒ‡ãƒ¼ã‚¿ç”Ÿæˆé–¢æ•°" << std::endl;
     return m_value;
 }
 
 void heavy_class::set(int value)
 {
-    // –{—ˆ‚ÍƒZƒbƒg‚³‚ê‚½ƒ^ƒCƒ~ƒ“ƒO‚ÅÅI“I‚Ég‚¤ƒf[ƒ^‚ğ¶¬‚Å‚«‚é‚Æ‚æ‚¢‚ªA
-    // ˆ—‚ªd‚¢ê‡‚É‚Í•K—v‚É‚È‚é‚Ü‚Å¶¬‚µ‚È‚¢‚Æ‚¢‚¤‚±‚Æ‚à‚ ‚é
+    // æœ¬æ¥ã¯ã‚»ãƒƒãƒˆã•ã‚ŒãŸã‚¿ã‚¤ãƒŸãƒ³ã‚°ã§æœ€çµ‚çš„ã«ä½¿ã†ãƒ‡ãƒ¼ã‚¿ã‚’ç”Ÿæˆã§ãã‚‹ã¨ã‚ˆã„ãŒã€
+    // å‡¦ç†ãŒé‡ã„å ´åˆã«ã¯å¿…è¦ã«ãªã‚‹ã¾ã§ç”Ÿæˆã—ãªã„ã¨ã„ã†ã“ã¨ã‚‚ã‚ã‚‹
 
-    m_cache_valid = false; // ƒLƒƒƒbƒVƒ…‚ğ–³Œø‰»
+    m_cache_valid = false; // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚’ç„¡åŠ¹åŒ–
     m_value = value;
 }
 
-// getter‚È‚Ì‚Åconstƒƒ“ƒo[ŠÖ”‚Æ‚µ‚½‚¢
+// getterãªã®ã§constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã¨ã—ãŸã„
 int heavy_class::get() const
 {
-    // ƒLƒƒƒbƒVƒ…‚ª—LŒø‚È‚ç‚»‚ê‚ğ•Ô‚·
+    // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒæœ‰åŠ¹ãªã‚‰ãã‚Œã‚’è¿”ã™
     if (m_cache_valid) { return m_cache; }
 
-    // –{—ˆ‚Íconstƒƒ“ƒo[ŠÖ”‚Íƒƒ“ƒo[•Ï”‚ğ•ÏX‚Å‚«‚È‚¢‚ªA
-    // mutable‚Èƒƒ“ƒo[•Ï”‚Í•ÏX‚Å‚«‚é
-    m_cache = generate(); // ƒf[ƒ^‚ğ¶¬‚µ‚ÄƒLƒƒƒbƒVƒ…‚É•Û‘¶
-    m_cache_valid = true; // ƒLƒƒƒbƒVƒ…‚ğ—LŒø‰»
+    // æœ¬æ¥ã¯constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã¯ãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã‚’å¤‰æ›´ã§ããªã„ãŒã€
+    // mutableãªãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã¯å¤‰æ›´ã§ãã‚‹
+    m_cache = generate(); // ãƒ‡ãƒ¼ã‚¿ã‚’ç”Ÿæˆã—ã¦ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã«ä¿å­˜
+    m_cache_valid = true; // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚’æœ‰åŠ¹åŒ–
 
     return m_cache;
 }
@@ -52,13 +52,13 @@ int main()
 
     std::cout << heavy_object.get() << std::endl;
 
-    // ƒf[ƒ^¶¬ŠÖ”‚ÍŒÄ‚Î‚ê‚¸AƒLƒƒƒbƒVƒ…‚ª•Ô‚³‚ê‚é
+    // ãƒ‡ãƒ¼ã‚¿ç”Ÿæˆé–¢æ•°ã¯å‘¼ã°ã‚Œãšã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒè¿”ã•ã‚Œã‚‹
     std::cout << heavy_object.get() << std::endl;
 
     heavy_object.set(200);
 
     std::cout << heavy_object.get() << std::endl;
 
-    // ƒf[ƒ^¶¬ŠÖ”‚ÍŒÄ‚Î‚ê‚¸AƒLƒƒƒbƒVƒ…‚ª•Ô‚³‚ê‚é
+    // ãƒ‡ãƒ¼ã‚¿ç”Ÿæˆé–¢æ•°ã¯å‘¼ã°ã‚Œãšã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒè¿”ã•ã‚Œã‚‹
     std::cout << heavy_object.get() << std::endl;
 }

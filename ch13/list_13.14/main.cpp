@@ -1,20 +1,20 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 
 int main()
 {
-    // ‹ó”’‚Ü‚½‚ÍƒJƒ“ƒ}‚ğ‹æØ‚è•¶š‚Æ‚µ‚Ä•¶š—ñ‚ğØ‚èo‚·
+    // ç©ºç™½ã¾ãŸã¯ã‚«ãƒ³ãƒã‚’åŒºåˆ‡ã‚Šæ–‡å­—ã¨ã—ã¦æ–‡å­—åˆ—ã‚’åˆ‡ã‚Šå‡ºã™
     std::string str = "C,C++,Java,Ruby,";
-    std::string delim = ","; // ‹æØ‚è•¶ši‹ó”’‚Ü‚½‚ÍƒJƒ“ƒ}j
+    std::string delim = ","; // åŒºåˆ‡ã‚Šæ–‡å­—ï¼ˆç©ºç™½ã¾ãŸã¯ã‚«ãƒ³ãƒï¼‰
  
     std::string::size_type fpos = 0;
     while ((fpos = str.find_first_not_of(delim, fpos))
         != std::string::npos)
     {
-        // lposFfposˆÈ~Adelim‚ÉŠÜ‚Ü‚ê‚é•¶š‚ÌˆÊ’u
+        // lposï¼šfposä»¥é™ã€delimã«å«ã¾ã‚Œã‚‹æ–‡å­—ã®ä½ç½®
         auto lpos = str.find_first_of(delim, fpos);
     
-        // •¶š—ñ‚ÆŠJnˆÊ’u‚Æ’·‚³‚Å‰Šú‰»
+        // æ–‡å­—åˆ—ã¨é–‹å§‹ä½ç½®ã¨é•·ã•ã§åˆæœŸåŒ–
         std::string token(str, fpos, lpos - fpos);
         std::cout << "[" << token << "] ";
         fpos = lpos;

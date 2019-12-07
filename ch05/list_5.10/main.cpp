@@ -1,30 +1,30 @@
-#include <iostream>
+﻿#include <iostream>
 
 int* local()
 {
-    int i = 42; // ���[�J���ϐ�
-    return &i; // �x���I�@�_���O�����O�|�C���^�[
+    int i = 42; // ローカル変数
+    return &i; // 警告！　ダングリングポインター
 }
 
 int* dyn_alloc()
 {
-    int* ptr = new int; // int�^�̃I�u�W�F�N�g�𓮓I�m��
-    *ptr = 42; // ���I�m�ۂ���int�^�̃I�u�W�F�N�g�ɃA�N�Z�X
-    return ptr; // ���I�m�ۂ������̂̓X�R�[�v����o�Ă��j������Ȃ�
+    int* ptr = new int; // int型のオブジェクトを動的確保
+    *ptr = 42; // 動的確保したint型のオブジェクトにアクセス
+    return ptr; // 動的確保したものはスコープから出ても破棄されない
 }
 
 int main()
 {
-    // local()�ō�������[�J���ϐ��͂����j������Ă���̂ŁA
-    // ���̃I�u�W�F�N�g���Q�Ƃ��Ă͂����Ȃ�
+    // local()で作ったローカル変数はもう破棄されているので、
+    // このオブジェクトを参照してはいけない
     // int* l = local();
     // std::cout << *l << std::endl;
 
-    // ���I�m�ۂ����I�u�W�F�N�g�͊֐�����߂��Ă��j������Ȃ��̂ŗL��
+    // 動的確保したオブジェクトは関数から戻っても破棄されないので有効
     int* d = dyn_alloc();
     std::cout << *d << std::endl;
-    delete d; // �����Ŕj������Ȃ��̂ŁA�s�v�ɂȂ�����v���O���}�[���j������
+    delete d; // 自動で破棄されないので、不要になったらプログラマーが破棄する
 
-    // �j���������Ƃ̃I�u�W�F�N�g�͂��������ɂȂ��Ă���̂ŎQ�Ƃ��Ă͂����Ȃ�
+    // 破棄したあとのオブジェクトはもう無効になっているので参照してはいけない
     // std::cout << *d << std::endl;
 }

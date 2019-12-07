@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int array[10] = {};
 
-    // ”z—ñ‚ÌƒTƒCƒY‚ğ—v‘f‚ÌŒ^‚ÅŠ„‚é‚Æ”z—ñ‚Ì’·‚³‚ª‚í‚©‚é
+    // é…åˆ—ã®ã‚µã‚¤ã‚ºã‚’è¦ç´ ã®å‹ã§å‰²ã‚‹ã¨é…åˆ—ã®é•·ã•ãŒã‚ã‹ã‚‹
     std::size_t length = sizeof(array) / sizeof(int);
 
     std::cout << "array[" << length << "]" << std::endl;

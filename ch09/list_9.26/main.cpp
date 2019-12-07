@@ -1,18 +1,20 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <utility> // std::move
+
 void show_value_category(int& value)
 {
-    std::cout << "QÆ" << std::endl;
+    std::cout << "å‚ç…§" << std::endl;
 }
+
 void show_value_category(int&& value)
 {
-    std::cout << "‰E•Ó’lQÆ" << std::endl;
+    std::cout << "å³è¾ºå€¤å‚ç…§" << std::endl;
 }
 
 template <typename T>
 void forward(T&& value)
 {
-    // Š®‘S“]‘—
+    // å®Œå…¨è»¢é€
     show_value_category(std::forward<T>(value));
 }
 

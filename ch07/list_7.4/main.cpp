@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
@@ -26,15 +26,15 @@ int main()
 {
     Derived derived;
 
-    // OKBDerived‚ÍBase‚Ìƒƒ“ƒo[ŠÖ”‚ğŒp³‚µ‚Ä‚¢‚é‚Ì‚ÅŒÄ‚Ño‚¹‚é
+    // OKã€‚Derivedã¯Baseã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚’ç¶™æ‰¿ã—ã¦ã„ã‚‹ã®ã§å‘¼ã³å‡ºã›ã‚‹
     derived.method_Base();
     
-    // OKB‚à‚¿‚ë‚ñDerived‚Ìƒƒ“ƒo[ŠÖ”‚àŒÄ‚Ño‚¹‚é
+    // OKã€‚ã‚‚ã¡ã‚ã‚“Derivedã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚‚å‘¼ã³å‡ºã›ã‚‹
     derived.method_Derived();
     
-    // Šî’êƒNƒ‰ƒX‚Ö‚ÌQÆ‚Í”h¶ƒNƒ‰ƒX‚©‚ç‚àì‚ê‚é
+    // åŸºåº•ã‚¯ãƒ©ã‚¹ã¸ã®å‚ç…§ã¯æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ã‹ã‚‰ã‚‚ä½œã‚Œã‚‹
     Base& base = derived;
     
-    // OKBBase‚Ìƒƒ“ƒo[ŠÖ”‚Ö‚ÍBase‚ÌQÆ‚©‚ç‚½‚Ç‚é‚±‚Æ‚ª‚Å‚«‚é
+    // OKã€‚Baseã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã¸ã¯Baseã®å‚ç…§ã‹ã‚‰ãŸã©ã‚‹ã“ã¨ãŒã§ãã‚‹
     base.method_Base();
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 
 int main()
@@ -11,15 +11,15 @@ int main()
         auto state = in.rdstate();
         if (state & std::ios::eofbit)
         {
-            std::cout << "EOF‚É“ž’B‚µ‚Ü‚µ‚½" << std::endl;
+            std::cout << "EOFã«åˆ°é”ã—ã¾ã—ãŸ" << std::endl;
         }
         else if (state & std::ios::failbit)
         {
-            std::cout << "’v–½“I‚Å‚Í‚È‚¢ƒGƒ‰[‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½" << std::endl;
+            std::cout << "è‡´å‘½çš„ã§ã¯ãªã„ã‚¨ãƒ©ãƒ¼ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸ" << std::endl;
         }
         else if (state & std::ios::badbit)
         {
-            std::cout << "’v–½“I‚ÈƒGƒ‰[‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½" << std::endl;
+            std::cout << "è‡´å‘½çš„ãªã‚¨ãƒ©ãƒ¼ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸ" << std::endl;
         }
     }
 }

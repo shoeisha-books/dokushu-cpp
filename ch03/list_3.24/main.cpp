@@ -1,27 +1,27 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class S
 {
-    static int count; // ƒCƒ“ƒXƒ^ƒ“ƒX‚Ì”‚ð”‚¦‚éstaticƒƒ“ƒo[•Ï”
+    static int count; // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®æ•°ã‚’æ•°ãˆã‚‹staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°
 
 public:
     S();
     ~S();
 
-    static void show_count(); // staticƒƒ“ƒo[ŠÖ”‚ÌéŒ¾
+    static void show_count(); // staticãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®å®£è¨€
 };
 
-int S::count = 0; // staticƒƒ“ƒo[•Ï”‚ÌŽÀ‘Ì‚ð’è‹`‚µ‚Ä0‚Å‰Šú‰»‚·‚é
+int S::count = 0; // staticãƒ¡ãƒ³ãƒãƒ¼å¤‰æ•°ã®å®Ÿä½“ã‚’å®šç¾©ã—ã¦0ã§åˆæœŸåŒ–ã™ã‚‹
 
 S::S()
 {
-    // ƒCƒ“ƒXƒ^ƒ“ƒX‚ªì‚ç‚ê‚½‚çƒCƒ“ƒNƒŠƒƒ“ƒg‚·‚é
+    // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒä½œã‚‰ã‚ŒãŸã‚‰ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã™ã‚‹
     ++count;
 }
 
 S::~S()
 {
-    // ”jŠü‚³‚ê‚½‚çƒfƒNƒŠƒƒ“ƒg‚·‚é
+    // ç ´æ£„ã•ã‚ŒãŸã‚‰ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã™ã‚‹
     --count;
 }
 
@@ -32,10 +32,10 @@ void S::show_count()
 
 int main()
 {
-    // ‚Ç‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚É‚àŒ‹‚Ñ•t‚©‚È‚¢‚Ì‚ÅƒCƒ“ƒXƒ^ƒ“ƒX‚ª‚È‚­‚Ä‚àŒÄ‚Ô‚±‚Æ‚ª‚Å‚«‚é
+    // ã©ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã«ã‚‚çµã³ä»˜ã‹ãªã„ã®ã§ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒãªãã¦ã‚‚å‘¼ã¶ã“ã¨ãŒã§ãã‚‹
     S::show_count();
 
     S a;
 
-    a.show_count(); // ƒCƒ“ƒXƒ^ƒ“ƒX‚ðŽg‚Á‚ÄŒÄ‚Ño‚·‚±‚Æ‚à‚Å‚«‚é
+    a.show_count(); // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½¿ã£ã¦å‘¼ã³å‡ºã™ã“ã¨ã‚‚ã§ãã‚‹
 }

@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 void hello()
 {
@@ -12,11 +12,11 @@ void goodbye()
 
 int main()
 {
-#define hello goodbye // hello��goodbye�ɒu��������}�N��
+#define hello goodbye // helloをgoodbyeに置き換えるマクロ
 
-    hello(); // �}�N���ɂ��goodbye()�ɒu����������
+    hello(); // マクロによりgoodbye()に置き換えられる
 
-#undef hello // hello�̃}�N����`������
+#undef hello // helloのマクロ定義を消す
 
-    hello(); // hello�}�N���̒�`���Ȃ��Ȃ����̂Œu�������͋N���炸hello()���Ă΂��
+    hello(); // helloマクロの定義がなくなったので置き換えは起こらずhello()が呼ばれる
 }

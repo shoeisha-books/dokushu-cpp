@@ -1,7 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     float pi = 3.1415926f;
-    std::cout << pi << std::endl; // •‚“®¬”“_”‚ð•\Ž¦‚·‚é
+    std::cout << pi << std::endl; // æµ®å‹•å°æ•°ç‚¹æ•°ã‚’è¡¨ç¤ºã™ã‚‹
 }

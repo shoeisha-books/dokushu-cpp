@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 class A
 {
@@ -21,17 +21,17 @@ class A_observer_ptr
 public:
     explicit A_observer_ptr(A* pointer)
         : pointer{ pointer } { }
-    A& operator*() const; // �ԐڎQ�Ɖ��Z�q
-    A* operator->() const; // �A���[���Z�q
+    A& operator*() const; // 間接参照演算子
+    A* operator->() const; // アロー演算子
 };
 
-// int�^�̂Ƃ��Ɠ�������const�ȎQ�Ƃ�Ԃ�
+// int型のときと同じく非constな参照を返す
 A& A_observer_ptr::operator*() const
 {
     return *pointer;
 }
 
-// �A���[���Z�q�̓|�C���^�[��Ԃ��Ȃ���΂Ȃ�Ȃ����Ƃɒ���
+// アロー演算子はポインターを返さなければならないことに注意
 A* A_observer_ptr::operator->() const
 {
     return pointer;
@@ -43,7 +43,7 @@ int main()
 
     A_observer_ptr pointer{ &a };
 
-    (*pointer).show(); // �ԐڎQ�Ɖ��Z�q���g���ă����o�[�֐��ɃA�N�Z�X
+    (*pointer).show(); // 間接参照演算子を使ってメンバー関数にアクセス
 
-    pointer->show(); // �A���[���Z�q���g���ă����o�[�֐��ɃA�N�Z�X
+    pointer->show(); // アロー演算子を使ってメンバー関数にアクセス
 }

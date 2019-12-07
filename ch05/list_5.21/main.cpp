@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
     int&& i = 0;
-    int&& j = 0; // 0‚©‚ç‚à‚¤ˆê‚Â‰E•Ó’lQÆ‚ğì‚é
+    int&& j = 0; // 0ã‹ã‚‰ã‚‚ã†ä¸€ã¤å³è¾ºå€¤å‚ç…§ã‚’ä½œã‚‹
 
     std::cout << "&i: " << &i << std::endl;
     std::cout << "&j: " << &j << std::endl;

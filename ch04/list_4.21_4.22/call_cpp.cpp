@@ -1,8 +1,8 @@
-#include <iostream>
+﻿#include <iostream>
 
-extern "C" void call_c(); // C�����P�[�W���w�肵��C����̊֐����Ăׂ�悤��
+extern "C" void call_c(); // Cリンケージを指定してC言語の関数を呼べるように
 
-extern "C" void call_cpp() // C�����P�[�W���w�肵��C���ꂩ��Ăׂ�悤��
+extern "C" void call_cpp() // Cリンケージを指定してC言語から呼べるように
 {
     std::cout << "call_cpp" << std::endl;
 

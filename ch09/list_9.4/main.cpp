@@ -1,22 +1,22 @@
-class S
+ï»¿class S
 {
 public:
-    // éŒ¾‚Æ“¯‚É’è‹`‚à—^‚¦‚éê‡
+    // å®£è¨€ã¨åŒæ™‚ã«å®šç¾©ã‚‚ä¸ãˆã‚‹å ´åˆ
     template <typename T>
     void foo(T value)
     {
-        // cc
+        // â€¦â€¦
     }
-    // éŒ¾‚Æ’è‹`‚ğ•ª‚¯‚éê‡
+    // å®£è¨€ã¨å®šç¾©ã‚’åˆ†ã‘ã‚‹å ´åˆ
     template <typename T>
     void bar(T value);
 };
 
-// •’Ê‚Ìƒƒ“ƒo[ŠÖ”’è‹`‚Étemplate‚ª•t‚¢‚½‚¾‚¯
+// æ™®é€šã®ãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°å®šç¾©ã«templateãŒä»˜ã„ãŸã ã‘
 template <typename T>
 void S::bar(T value)
 {
-    // cc
+    // â€¦â€¦
 }
 
 int main()

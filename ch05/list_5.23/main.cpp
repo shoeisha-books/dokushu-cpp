@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void show(int& v)
 {
-    std::cout << "ŽQÆ: " << v << std::endl;
+    std::cout << "å‚ç…§: " << v << std::endl;
 }
 
-void show(int&& v) // ‰E•Ó’lŽQÆ‚ÅŽó‚¯Žæ‚éƒI[ƒo[ƒ[ƒh
+void show(int&& v) // å³è¾ºå€¤å‚ç…§ã§å—ã‘å–ã‚‹ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰
 {
-    std::cout << "‰E•Ó’lŽQÆ: " << v << std::endl;
+    std::cout << "å³è¾ºå€¤å‚ç…§: " << v << std::endl;
 }
 
 int main()
 {
     int v = 1;
-    show(v); // •Ï”‚Í¶•Ó’l
-    show(42); // ”’l‚Í‰E•Ó’l
+    show(v); // å¤‰æ•°ã¯å·¦è¾ºå€¤
+    show(42); // æ•°å€¤ã¯å³è¾ºå€¤
 }

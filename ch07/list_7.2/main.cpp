@@ -1,28 +1,28 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class Base
 {
 public:
-    Base() { std::cout << "BaseƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl; }
-    ~Base() { std::cout << "BaseƒfƒXƒgƒ‰ƒNƒ^[" << std::endl; }
+    Base() { std::cout << "Baseã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl; }
+    ~Base() { std::cout << "Baseãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl; }
 };
 
 class Derived : public Base
 {
 public:
-    Derived() { std::cout << "DerivedƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl; }
-    ~Derived() { std::cout << "DerivedƒfƒXƒgƒ‰ƒNƒ^[" << std::endl; }
+    Derived() { std::cout << "Derivedã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl; }
+    ~Derived() { std::cout << "Derivedãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl; }
 };
 
 class MoreDerived : public Derived
 {
 public:
-    MoreDerived() { std::cout << "MoreDerivedƒRƒ“ƒXƒgƒ‰ƒNƒ^[" << std::endl; }
-    ~MoreDerived() { std::cout << "MoreDerivedƒfƒXƒgƒ‰ƒNƒ^[" << std::endl; }
+    MoreDerived() { std::cout << "MoreDerivedã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl; }
+    ~MoreDerived() { std::cout << "MoreDerivedãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼" << std::endl; }
 };
 
 int main()
 {
     MoreDerived more_derived;
-    std::cout << "ƒIƒuƒWƒFƒNƒg\’zŠ®—¹" << std::endl;
+    std::cout << "ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæ§‹ç¯‰å®Œäº†" << std::endl;
 }

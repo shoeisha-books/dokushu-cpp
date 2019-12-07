@@ -1,31 +1,31 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 class product
 {
-    int id; // ¤•iID
+    int id; // å•†å“ID
 
 public:
-    int get_id(); // ”ñconstƒƒ“ƒo[ŠÖ”
-    int get_id() const; // constƒƒ“ƒo[ŠÖ”
+    int get_id(); // éconstãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°
+    int get_id() const; // constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°
 };
 
 int product::get_id()
 {
-    std::cout << "”ñconstƒƒ“ƒo[ŠÖ”‚Ìget_id()‚ªŒÄ‚Î‚ê‚Ü‚µ‚½B" << std::endl;
+    std::cout << "éconstãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®get_id()ãŒå‘¼ã°ã‚Œã¾ã—ãŸã€‚" << std::endl;
     return id;
 }
 
 int product::get_id() const
 {
-    std::cout << "constƒƒ“ƒo[ŠÖ”‚Ìget_id()‚ªŒÄ‚Î‚ê‚Ü‚µ‚½B" << std::endl;
+    std::cout << "constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã®get_id()ãŒå‘¼ã°ã‚Œã¾ã—ãŸã€‚" << std::endl;
     return id;
 }
 
 int main()
 {
     product p;
-    p.get_id(); // ”ñconstƒƒ“ƒo[ŠÖ”‚ªŒÄ‚Î‚ê‚é
+    p.get_id(); // éconstãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
 
     const product cp{};
-    cp.get_id(); // constƒƒ“ƒo[ŠÖ”‚ªŒÄ‚Î‚ê‚é
+    cp.get_id(); // constãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ãŒå‘¼ã°ã‚Œã‚‹
 }

@@ -1,19 +1,19 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 int main()
 {
-    int value = 42; // intŒ^‚Ì•Ï”
+    int value = 42; // intå‹ã®å¤‰æ•°
 
-    std::cout << "value‚ÌƒAƒhƒŒƒX‚Í" << &value << "‚ÅA’l‚Í" << value <<
-        "‚Å‚·" << std::endl;
+    std::cout << "valueã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &value << "ã§ã€å€¤ã¯" << value <<
+        "ã§ã™" << std::endl;
     
-    int& reference = value; // •Ï”value‚Ö‚ÌQÆ
+    int& reference = value; // å¤‰æ•°valueã¸ã®å‚ç…§
     
-    std::cout << "reference‚ÌƒAƒhƒŒƒX‚Í" << &reference << "‚ÅA’l‚Í" <<
-        reference << "‚Å‚·" << std::endl;
+    std::cout << "referenceã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &reference << "ã§ã€å€¤ã¯" <<
+        reference << "ã§ã™" << std::endl;
     
-    reference = 0; // QÆ‚ğg‚Á‚Ä•Ï”value‚Ì’l‚ğ‘‚«Š·‚¦‚é
+    reference = 0; // å‚ç…§ã‚’ä½¿ã£ã¦å¤‰æ•°valueã®å€¤ã‚’æ›¸ãæ›ãˆã‚‹
     
-    std::cout << "value‚ÌƒAƒhƒŒƒX‚Í" << &value << "‚ÅA’l‚Í" <<
-        value << "‚Å‚·" << std::endl;
+    std::cout << "valueã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯" << &value << "ã§ã€å€¤ã¯" <<
+        value << "ã§ã™" << std::endl;
 }

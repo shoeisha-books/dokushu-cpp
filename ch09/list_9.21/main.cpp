@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
-// ƒwƒ‹ƒp[ƒNƒ‰ƒX‚Ì‘O•ûéŒ¾
+// ãƒ˜ãƒ«ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã®å‰æ–¹å®£è¨€
 template <typename T>
 class helper;
 
-// int‚Ì‚Æ‚«‚Ég‚í‚ê‚éƒwƒ‹ƒp[ƒNƒ‰ƒX
+// intã®ã¨ãã«ä½¿ã‚ã‚Œã‚‹ãƒ˜ãƒ«ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹
 template <>
 class helper<int>
 {
@@ -13,7 +13,7 @@ public:
     static std::string name() { return "int"; }
 };
 
-// double‚Ì‚Æ‚«‚Ég‚í‚ê‚éƒwƒ‹ƒp[ƒNƒ‰ƒX
+// doubleã®ã¨ãã«ä½¿ã‚ã‚Œã‚‹ãƒ˜ãƒ«ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹
 template <>
 class helper<double>
 {
@@ -30,7 +30,7 @@ struct A
 template <typename T>
 void deduce(A<T> a)
 {
-    // „˜_‚³‚ê‚½T‚ğg‚Á‚Äƒwƒ‹ƒp[ƒNƒ‰ƒX‚Ìstaticƒƒ“ƒo[ŠÖ”‚ğŒÄ‚Ño‚·
+    // æ¨è«–ã•ã‚ŒãŸTã‚’ä½¿ã£ã¦ãƒ˜ãƒ«ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã®staticãƒ¡ãƒ³ãƒãƒ¼é–¢æ•°ã‚’å‘¼ã³å‡ºã™
     std::cout << helper<T>::name() << std::endl;
 }
 
@@ -38,9 +38,9 @@ int main()
 {
     A<int> ai;
 
-    deduce(ai); // ai‚©‚ç„˜_‚³‚ê‚éT‚ğ•\¦‚·‚é
+    deduce(ai); // aiã‹ã‚‰æ¨è«–ã•ã‚Œã‚‹Tã‚’è¡¨ç¤ºã™ã‚‹
 
     A<double> ad;
 
-    deduce(ad); // ai‚©‚ç„˜_‚³‚ê‚éT‚ğ•\¦‚·‚é
+    deduce(ad); // aiã‹ã‚‰æ¨è«–ã•ã‚Œã‚‹Tã‚’è¡¨ç¤ºã™ã‚‹
 }

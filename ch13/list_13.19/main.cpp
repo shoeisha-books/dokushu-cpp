@@ -1,20 +1,20 @@
-#include <regex>
+ï»¿#include <regex>
 #include <string>
 #include <iostream>
 
 int main()
 {
-    std::regex re{ "a.*e" }; // ³‹K•\Œ»F'a'‚Ån‚Ü‚è'e'‚ÅI‚í‚é
+    std::regex re{ "a.*e" }; // æ­£è¦è¡¨ç¾ï¼š'a'ã§å§‹ã¾ã‚Š'e'ã§çµ‚ã‚ã‚‹
     std::string input = "delicious applepie and banana";
     std::smatch match;
 
-    // input’†‚Ìre‚Å¦‚³‚ê‚½ƒpƒ^[ƒ“‚Éƒ}ƒbƒ`‚·‚é‰ÓŠ‚ğŒ©‚Â‚¯‚é
-    // Œ‹‰Ê‚Ímatch‚É‹‚ß‚ç‚ê‚é
+    // inputä¸­ã®reã§ç¤ºã•ã‚ŒãŸãƒ‘ã‚¿ãƒ¼ãƒ³ã«ãƒãƒƒãƒã™ã‚‹ç®‡æ‰€ã‚’è¦‹ã¤ã‘ã‚‹
+    // çµæœã¯matchã«æ±‚ã‚ã‚‰ã‚Œã‚‹
     if (std::regex_search(input, match, re))
     {
-        std::cout << match.str() // ƒ}ƒbƒ`‚µ‚½•¶š—ñ‚Æ
-            << " pos = " << match.position() // ‚»‚ÌˆÊ’u‚¨‚æ‚Ñ
-            << " len = " << match.length() // ’·‚³
+        std::cout << match.str() // ãƒãƒƒãƒã—ãŸæ–‡å­—åˆ—ã¨
+            << " pos = " << match.position() // ãã®ä½ç½®ãŠã‚ˆã³
+            << " len = " << match.length() // é•·ã•
             << std::endl;
     }
 }
