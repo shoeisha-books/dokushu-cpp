@@ -9,7 +9,7 @@ public:
     }
     explicit Base(int i)
     {
-        std::cout << "A引数付きコンストラクター: " << i << std::endl;
+        std::cout << "Base引数付きコンストラクター: " << i << std::endl;
     }
 };
 
