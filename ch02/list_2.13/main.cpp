@@ -7,7 +7,7 @@ public:
 
                          // クラスの中では別名を直接使える
     integer get_value();
-    void set_value(integer mew_value);
+    void set_value(integer new_value);
 private:
     integer value;
 };
